@@ -1,0 +1,254 @@
+{
+  "protocol_version": "0.1.0",
+  "source_bvh": "wan_base_gait_sidesh_right_normal_arm_nat_144_f.bvh",
+  "frame_count": 240,
+  "fps": 30.000003000000298,
+  "duration_s": 7.9999992,
+  "joint_count": 50,
+  "joint_names": [
+    "Hips",
+    "Thigh.L",
+    "Shin.L",
+    "Foot.L",
+    "Toe.L",
+    "Thigh.R",
+    "Shin.R",
+    "Foot.R",
+    "Toe.R",
+    "Spine",
+    "Spine.2",
+    "Chest",
+    "Neck",
+    "Head",
+    "Clavicle.L",
+    "UpperArm.L",
+    "ForeArm.L",
+    "Hand.L",
+    "Thumb1.L",
+    "Thumb2.L",
+    "Index1.L",
+    "Index2.L",
+    "Index3.L",
+    "Middle1.L",
+    "Middle2.L",
+    "Middle3.L",
+    "Ring1.L",
+    "Ring2.L",
+    "Ring3.L",
+    "Pinky1.L",
+    "Pinky2.L",
+    "Pinky3.L",
+    "Clavicle.R",
+    "UpperArm.R",
+    "ForeArm.R",
+    "Hand.R",
+    "Thumb1.R",
+    "Thumb2.R",
+    "Index1.R",
+    "Index2.R",
+    "Index3.R",
+    "Middle1.R",
+    "Middle2.R",
+    "Middle3.R",
+    "Ring1.R",
+    "Ring2.R",
+    "Ring3.R",
+    "Pinky1.R",
+    "Pinky2.R",
+    "Pinky3.R"
+  ],
+  "coordinate_note": "BVH vertical axis assumed Z; floor estimated only for independent standard metrics",
+  "root": {
+    "joint": "Hips",
+    "displacement_m": [
+      -2.906804,
+      1.4669109999999999,
+      -0.1423270000000001
+    ],
+    "speed_m_s": {
+      "mean": 0.5063366562073063,
+      "median": 0.38154516814533157,
+      "p95": 1.1915148202100792,
+      "max": 1.5768730769487171
+    }
+  },
+  "whole_body": {
+    "acceleration_m_s2": {
+      "mean": 8.866006346530693,
+      "median": 5.777182651426546,
+      "p95": 29.428905409292273,
+      "max": 59.346427531871065
+    },
+    "jerk_m_s3": {
+      "mean": 390.977599713979,
+      "median": 240.26363268914466,
+      "p95": 1185.8687227530622,
+      "max": 2772.274329452478
+    }
+  },
+  "feet": {
+    "left": {
+      "contact_joint": "Toe.L",
+      "acceleration_contact": {
+        "speed_threshold_m_s": 0.7191892415142216,
+        "acceleration_transition_threshold_m_s2": 24.006133311716766,
+        "transition_frames_zero_based": [
+          36,
+          39,
+          43,
+          80,
+          82,
+          231,
+          232,
+          234
+        ],
+        "probability_mean": 0.3665285313796701,
+        "probability_p95": 0.7372332176372477,
+        "contact_ratio_at_0_5": 0.20416666666666666
+      },
+      "standard_independent_evaluation": {
+        "low_height_frame_count": 108,
+        "foot_skate_ratio": 1.0,
+        "foot_skate_speed_m_s": 1.3980297858284065,
+        "mean_penetration_m": 0.00023147613339044004,
+        "max_penetration_m": 0.006322085535385224
+      }
+    },
+    "right": {
+      "contact_joint": "Toe.R",
+      "acceleration_contact": {
+        "speed_threshold_m_s": 0.714473513216236,
+        "acceleration_transition_threshold_m_s2": 21.347835305027807,
+        "transition_frames_zero_based": [
+          39,
+          52,
+          54,
+          64,
+          65,
+          101,
+          102,
+          238,
+          239
+        ],
+        "probability_mean": 0.36025089658865245,
+        "probability_p95": 0.6824529716643464,
+        "contact_ratio_at_0_5": 0.18333333333333332
+      },
+      "standard_independent_evaluation": {
+        "low_height_frame_count": 97,
+        "foot_skate_ratio": 1.0,
+        "foot_skate_speed_m_s": 1.598589707481313,
+        "mean_penetration_m": 0.0,
+        "max_penetration_m": 0.0
+      }
+    }
+  },
+  "action_profile": {
+    "name": "biped",
+    "height_used_for_contact_inference": false,
+    "available_contact_joints": [
+      "Toe.L",
+      "Toe.R",
+      "Foot.L",
+      "Foot.R"
+    ],
+    "minimum_simultaneous_supports": 1,
+    "support_coverage": 0.2708333333333333,
+    "weighted_contact_speed_m_s": 0.34136835054347286,
+    "active_support_count": {
+      "mean": 0.8,
+      "median": 0.0,
+      "p95": 4.0,
+      "max": 4.0
+    },
+    "detectors": {
+      "Toe.L": {
+        "speed_threshold_m_s": 0.7191892415142216,
+        "acceleration_transition_threshold_m_s2": 24.006133311716766,
+        "transition_frames_zero_based": [
+          36,
+          39,
+          43,
+          80,
+          82,
+          231,
+          232,
+          234
+        ]
+      },
+      "Toe.R": {
+        "speed_threshold_m_s": 0.714473513216236,
+        "acceleration_transition_threshold_m_s2": 21.347835305027807,
+        "transition_frames_zero_based": [
+          39,
+          52,
+          54,
+          64,
+          65,
+          101,
+          102,
+          238,
+          239
+        ]
+      },
+      "Foot.L": {
+        "speed_threshold_m_s": 0.6769403691225369,
+        "acceleration_transition_threshold_m_s2": 20.69745937590372,
+        "transition_frames_zero_based": [
+          36,
+          40,
+          43,
+          75,
+          76,
+          81,
+          82,
+          153,
+          155,
+          219,
+          221,
+          231,
+          232,
+          234
+        ]
+      },
+      "Foot.R": {
+        "speed_threshold_m_s": 0.7235717211997515,
+        "acceleration_transition_threshold_m_s2": 19.618181221109218,
+        "transition_frames_zero_based": [
+          39,
+          52,
+          53,
+          64,
+          65,
+          100,
+          102,
+          136,
+          137,
+          170,
+          171,
+          203,
+          204,
+          238,
+          239
+        ]
+      }
+    },
+    "gates": {
+      "minimum_support_coverage": true,
+      "maximum_weighted_contact_speed": false,
+      "no_hard_direction_reversal": true
+    },
+    "status": "FAIL"
+  },
+  "hard_direction_reversals": {
+    "threshold_degrees": 120.0,
+    "count": 0,
+    "max_one_frame_turn_degrees": 18.207806467952157,
+    "events": []
+  },
+  "interpretation_limits": [
+    "No ground-truth 3D motion: this report measures plausibility, not reconstruction accuracy.",
+    "Estimated floor metrics are stress-test diagnostics and do not replace RICH/EMDB ground truth.",
+    "Acceleration-contact probability is a proposed detector and requires contact-label calibration."
+  ]
+}

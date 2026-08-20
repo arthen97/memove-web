@@ -1,0 +1,9 @@
+
+[2026-08-08T17:15:25+00:00] /workspace/gvhmr_bvh_sop/env/bin/python /workspace/gvhmr_bvh_sop/export_bvh.py --input /workspace/gvhmr_bvh_sop/outputs/customer20_canonical_v2_static/squat_m/squat_m.smplx.npz --model /workspace/gvhmr_bvh_sop/GVHMR/inputs/checkpoints/body_models/smplx/SMPLX_NEUTRAL.npz --output /workspace/gvhmr_bvh_sop/outputs/customer20_canonical_v2_static/squat_m/bvh/squat_m.bvh --validation /workspace/gvhmr_bvh_sop/outputs/customer20_canonical_v2_static/squat_m/bvh/squat_m_validation.json
+{
+  "status": "PASS",
+  "output": "/workspace/gvhmr_bvh_sop/outputs/customer20_canonical_v2_static/squat_m/bvh/squat_m.bvh",
+  "validation": "/workspace/gvhmr_bvh_sop/outputs/customer20_canonical_v2_static/squat_m/bvh/squat_m_validation.json",
+  "max_joint_m": 1.9903276616197517e-06,
+  "max_rotation_deg": 3.1945284701301985e-06
+}

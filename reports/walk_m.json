@@ -1,0 +1,221 @@
+{
+  "protocol_version": "0.1.0",
+  "source_bvh": "walk_m.bvh",
+  "frame_count": 193,
+  "fps": 23.99999808000015,
+  "duration_s": 8.041667310000001,
+  "joint_count": 50,
+  "joint_names": [
+    "Hips",
+    "Thigh.L",
+    "Shin.L",
+    "Foot.L",
+    "Toe.L",
+    "Thigh.R",
+    "Shin.R",
+    "Foot.R",
+    "Toe.R",
+    "Spine",
+    "Spine.2",
+    "Chest",
+    "Neck",
+    "Head",
+    "Clavicle.L",
+    "UpperArm.L",
+    "ForeArm.L",
+    "Hand.L",
+    "Thumb1.L",
+    "Thumb2.L",
+    "Index1.L",
+    "Index2.L",
+    "Index3.L",
+    "Middle1.L",
+    "Middle2.L",
+    "Middle3.L",
+    "Ring1.L",
+    "Ring2.L",
+    "Ring3.L",
+    "Pinky1.L",
+    "Pinky2.L",
+    "Pinky3.L",
+    "Clavicle.R",
+    "UpperArm.R",
+    "ForeArm.R",
+    "Hand.R",
+    "Thumb1.R",
+    "Thumb2.R",
+    "Index1.R",
+    "Index2.R",
+    "Index3.R",
+    "Middle1.R",
+    "Middle2.R",
+    "Middle3.R",
+    "Ring1.R",
+    "Ring2.R",
+    "Ring3.R",
+    "Pinky1.R",
+    "Pinky2.R",
+    "Pinky3.R"
+  ],
+  "coordinate_note": "BVH vertical axis assumed Z; floor estimated only for independent standard metrics",
+  "root": {
+    "joint": "Hips",
+    "displacement_m": [
+      0.023903,
+      2.191834,
+      0.0963099999999999
+    ],
+    "speed_m_s": {
+      "mean": 0.29505212609130593,
+      "median": 0.3055811534031907,
+      "p95": 0.6739536149311327,
+      "max": 0.7891302087005407
+    }
+  },
+  "whole_body": {
+    "acceleration_m_s2": {
+      "mean": 1.7705594446792354,
+      "median": 1.4271433738402806,
+      "p95": 4.5353034172934485,
+      "max": 17.69075906252587
+    },
+    "jerk_m_s3": {
+      "mean": 52.73028398128831,
+      "median": 43.51624703031356,
+      "p95": 129.93134905923276,
+      "max": 463.7331962059718
+    }
+  },
+  "feet": {
+    "left": {
+      "contact_joint": "Toe.L",
+      "acceleration_contact": {
+        "speed_threshold_m_s": 0.20548434110616134,
+        "acceleration_transition_threshold_m_s2": 4.307798731024407,
+        "transition_frames_zero_based": [
+          46,
+          47,
+          49
+        ],
+        "probability_mean": 0.35750321369072147,
+        "probability_p95": 0.5793954197367756,
+        "contact_ratio_at_0_5": 0.24870466321243523
+      },
+      "standard_independent_evaluation": {
+        "low_height_frame_count": 114,
+        "foot_skate_ratio": 0.7017543859649122,
+        "foot_skate_speed_m_s": 0.4673230605167598,
+        "mean_penetration_m": 0.0,
+        "max_penetration_m": 0.0
+      }
+    },
+    "right": {
+      "contact_joint": "Toe.R",
+      "acceleration_contact": {
+        "speed_threshold_m_s": 0.30128806303789907,
+        "acceleration_transition_threshold_m_s2": 4.106391291102724,
+        "transition_frames_zero_based": [
+          44,
+          46,
+          48,
+          130,
+          131,
+          191,
+          192
+        ],
+        "probability_mean": 0.35144904474324684,
+        "probability_p95": 0.6503172640202153,
+        "contact_ratio_at_0_5": 0.24870466321243523
+      },
+      "standard_independent_evaluation": {
+        "low_height_frame_count": 133,
+        "foot_skate_ratio": 0.7518796992481203,
+        "foot_skate_speed_m_s": 0.5325558793667647,
+        "mean_penetration_m": 8.77465200632174e-07,
+        "max_penetration_m": 2.7238638132989768e-05
+      }
+    }
+  },
+  "action_profile": {
+    "name": "biped",
+    "height_used_for_contact_inference": false,
+    "available_contact_joints": [
+      "Toe.L",
+      "Toe.R",
+      "Foot.L",
+      "Foot.R"
+    ],
+    "minimum_simultaneous_supports": 1,
+    "support_coverage": 0.2694300518134715,
+    "weighted_contact_speed_m_s": 0.1435785473682034,
+    "active_support_count": {
+      "mean": 0.9948186528497409,
+      "median": 0.0,
+      "p95": 4.0,
+      "max": 4.0
+    },
+    "detectors": {
+      "Toe.L": {
+        "speed_threshold_m_s": 0.20548434110616134,
+        "acceleration_transition_threshold_m_s2": 4.307798731024407,
+        "transition_frames_zero_based": [
+          46,
+          47,
+          49
+        ]
+      },
+      "Toe.R": {
+        "speed_threshold_m_s": 0.30128806303789907,
+        "acceleration_transition_threshold_m_s2": 4.106391291102724,
+        "transition_frames_zero_based": [
+          44,
+          46,
+          48,
+          130,
+          131,
+          191,
+          192
+        ]
+      },
+      "Foot.L": {
+        "speed_threshold_m_s": 0.1976674339331337,
+        "acceleration_transition_threshold_m_s2": 4.120806861093859,
+        "transition_frames_zero_based": [
+          46,
+          47,
+          48
+        ]
+      },
+      "Foot.R": {
+        "speed_threshold_m_s": 0.2879198763256813,
+        "acceleration_transition_threshold_m_s2": 3.7879176575357376,
+        "transition_frames_zero_based": [
+          42,
+          43,
+          47,
+          130,
+          131,
+          190,
+          192
+        ]
+      }
+    },
+    "gates": {
+      "minimum_support_coverage": true,
+      "maximum_weighted_contact_speed": true,
+      "no_hard_direction_reversal": true
+    },
+    "status": "PASS"
+  },
+  "hard_direction_reversals": {
+    "threshold_degrees": 120.0,
+    "count": 0,
+    "max_one_frame_turn_degrees": 7.277298195883987,
+    "events": []
+  },
+  "interpretation_limits": [
+    "No ground-truth 3D motion: this report measures plausibility, not reconstruction accuracy.",
+    "Estimated floor metrics are stress-test diagnostics and do not replace RICH/EMDB ground truth.",
+    "Acceleration-contact probability is a proposed detector and requires contact-label calibration."
+  ]
+}

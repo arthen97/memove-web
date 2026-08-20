@@ -1,0 +1,9 @@
+
+[2026-08-08T17:45:41+00:00] /workspace/gvhmr_bvh_sop/env/bin/python /workspace/gvhmr_bvh_sop/export_bvh.py --input /workspace/gvhmr_bvh_sop/outputs/customer20_canonical_v2_static/taiji_m/taiji_m.smplx.npz --model /workspace/gvhmr_bvh_sop/GVHMR/inputs/checkpoints/body_models/smplx/SMPLX_NEUTRAL.npz --output /workspace/gvhmr_bvh_sop/outputs/customer20_canonical_v2_static/taiji_m/bvh/taiji_m.bvh --validation /workspace/gvhmr_bvh_sop/outputs/customer20_canonical_v2_static/taiji_m/bvh/taiji_m_validation.json
+{
+  "status": "PASS",
+  "output": "/workspace/gvhmr_bvh_sop/outputs/customer20_canonical_v2_static/taiji_m/bvh/taiji_m.bvh",
+  "validation": "/workspace/gvhmr_bvh_sop/outputs/customer20_canonical_v2_static/taiji_m/bvh/taiji_m_validation.json",
+  "max_joint_m": 2.9762465926835666e-06,
+  "max_rotation_deg": 4.00455336570039e-06
+}

@@ -1,0 +1,4686 @@
+{
+  "version": "product-v1",
+  "generatedAt": "2026-08-11T16:35:35.294090+00:00",
+  "summary": {
+    "actions": 19,
+    "cases": 38,
+    "gpuComplete": 40,
+    "gpuFailed": 0
+  },
+  "actions": [
+    {
+      "actionId": "BASE_WALK_FORWARD_SLOW_ARM_NAT_001",
+      "name": "Slow Forward Walk — Natural Arm Swing",
+      "description": "Walk forward slowly with a natural upright posture and relaxed arm swing.",
+      "category": "Basics",
+      "categorySlug": "base",
+      "subcategory": "Omni Walk",
+      "difficulty": "Easy",
+      "idealDuration": 10,
+      "profile": "biped",
+      "male": {
+        "caseId": "BASE_WALK_FORWARD_SLOW_ARM_NAT_001_M",
+        "gender": "M",
+        "slug": "walk_m",
+        "duration": 8.042,
+        "admission": {
+          "status": "PASS",
+          "gates": {
+            "first_frame_identity": true,
+            "no_excessive_freeze": true,
+            "no_speed_ramp_signature": true,
+            "no_probable_loop": true,
+            "no_probable_end_truncation": true,
+            "constant_stream_rate": true
+          }
+        },
+        "gpu": {
+          "stage": "complete",
+          "completedAt": "2026-08-08T17:09:44+00:00"
+        },
+        "audit": {
+          "profile": "biped",
+          "status": "PASS",
+          "supportCoverage": 0.2694300518134715,
+          "contactSpeed": 0.1435785473682034,
+          "maxTurnDegrees": 7.277298195883987
+        },
+        "validation": {
+          "status": "PASS",
+          "frameCount": 193,
+          "fps": 24.0
+        },
+        "refinement": {
+          "available": true,
+          "accepted": false,
+          "gates": {
+            "contactSpeedImproved": false,
+            "independentSkateNotWorse": true,
+            "supportCoverageNotWorse": true,
+            "sourceDeviationWithin20mm": true
+          },
+          "baselineContactSpeed": 0.1435785473682034,
+          "refinedContactSpeed": 0.14386533009600438,
+          "sourceDeviation": 0.008865151567935055
+        },
+        "lineage": {
+          "status": "partial",
+          "reason": "Archived GPU source is hashed; original Seedance download is not retained for byte comparison.",
+          "archivedSourceSha256": "be9010a837b32bc2757ef9ed137c81e2e1e4caa49b5cfc5a3d867b438bfb53af",
+          "referenceSha256": "a4b470763d41652b3cfd4e1270848cc9d7362fc4d6b1a8e201ab9d9b5fd88a74"
+        },
+        "files": [
+          {
+            "kind": "seedance",
+            "name": "0_input_video.mp4",
+            "url": "/artifacts/walk_m/video/0_input_video.mp4",
+            "size": 860292,
+            "sha256": "be9010a837b32bc2757ef9ed137c81e2e1e4caa49b5cfc5a3d867b438bfb53af",
+            "available": true
+          },
+          {
+            "kind": "gvhmr_preview",
+            "name": "1_incam.mp4",
+            "url": "/artifacts/walk_m/video/1_incam.mp4",
+            "size": 816112,
+            "sha256": "ca7a5b36cd4b21828acb196c167a3a50a93a85c2ae41fdd8842aa68981de619d",
+            "available": true
+          },
+          {
+            "kind": "gvhmr_global",
+            "name": "2_global.mp4",
+            "url": "/artifacts/walk_m/video/2_global.mp4",
+            "size": 236648,
+            "sha256": "e2f5ce4487e9d92fecb31143e01bc0aab523c915caf0d1a220cdc8c7583613e7",
+            "available": true
+          },
+          {
+            "kind": "gvhmr",
+            "name": "hmr4d_results.pt",
+            "url": "/artifacts/walk_m/video/hmr4d_results.pt",
+            "size": 845439,
+            "sha256": "effb4c4cb24806fcb85797c3edb1586b489a8e46ba81c8a5fe37e3b8470795ca",
+            "available": true
+          },
+          {
+            "kind": "smplx",
+            "name": "walk_m.smplx.npz",
+            "url": "/artifacts/walk_m/walk_m.smplx.npz",
+            "size": 51457,
+            "sha256": "fb259a15989878e7cb0acddfd6329948a7345bf7f78b9b5623f75f4b9b0e6f36",
+            "available": true
+          },
+          {
+            "kind": "bvh",
+            "name": "walk_m.bvh",
+            "url": "/artifacts/walk_m/bvh/walk_m.bvh",
+            "size": 282985,
+            "sha256": "f1491a1d0675511428a36fbe5dee303b24000621cadac2f4fd7beb39ace9e671",
+            "available": true
+          },
+          {
+            "kind": "validation",
+            "name": "walk_m_validation.json",
+            "url": "/artifacts/walk_m/bvh/walk_m_validation.json",
+            "size": 14639,
+            "sha256": "2455b626de24853ba05699056c651ba99c0fc02d55fe8704b8ebf4900d1c5bdb",
+            "available": true
+          },
+          {
+            "kind": "bvh_preview",
+            "name": "3_bvh_preview.mp4",
+            "url": "/artifacts/walk_m/video/3_bvh_preview.mp4",
+            "size": 231492,
+            "sha256": "d52e239183111550f8a3f38dd6ab99f52993c1abe96cc9bfe93b37d01e21e5a5",
+            "available": true
+          }
+        ]
+      },
+      "female": {
+        "caseId": "BASE_WALK_FORWARD_SLOW_ARM_NAT_001_F",
+        "gender": "F",
+        "slug": "walk_f",
+        "duration": 8.042,
+        "admission": {
+          "status": "PASS",
+          "gates": {
+            "first_frame_identity": true,
+            "no_excessive_freeze": true,
+            "no_speed_ramp_signature": true,
+            "no_probable_loop": true,
+            "no_probable_end_truncation": true,
+            "constant_stream_rate": true
+          }
+        },
+        "gpu": {
+          "stage": "complete",
+          "completedAt": "2026-08-08T17:12:46+00:00"
+        },
+        "audit": {
+          "profile": "biped",
+          "status": "FAIL",
+          "supportCoverage": 0.29015544041450775,
+          "contactSpeed": 0.34838463915850243,
+          "maxTurnDegrees": 16.954874417083115
+        },
+        "validation": {
+          "status": "PASS",
+          "frameCount": 193,
+          "fps": 24.0
+        },
+        "refinement": {
+          "available": true,
+          "accepted": true,
+          "gates": {
+            "contactSpeedImproved": true,
+            "independentSkateNotWorse": true,
+            "supportCoverageNotWorse": true,
+            "sourceDeviationWithin20mm": true
+          },
+          "baselineContactSpeed": 0.34838463915850243,
+          "refinedContactSpeed": 0.30924344738204174,
+          "sourceDeviation": 0.017421426869384058
+        },
+        "lineage": {
+          "status": "partial",
+          "reason": "Archived GPU source is hashed; original Seedance download is not retained for byte comparison.",
+          "archivedSourceSha256": "ba95d55314c87bcb41ab26aee551cbc7aaf9c7a233d35b627f1b76adae566dad",
+          "referenceSha256": "c9d69ecae4e980c4bba0677ff7e31e79b7f66adb20e47b780c8790c9cfb2b212"
+        },
+        "files": [
+          {
+            "kind": "seedance",
+            "name": "0_input_video.mp4",
+            "url": "/artifacts/walk_f/video/0_input_video.mp4",
+            "size": 777672,
+            "sha256": "ba95d55314c87bcb41ab26aee551cbc7aaf9c7a233d35b627f1b76adae566dad",
+            "available": true
+          },
+          {
+            "kind": "gvhmr_preview",
+            "name": "1_incam.mp4",
+            "url": "/artifacts/walk_f/video/1_incam.mp4",
+            "size": 781572,
+            "sha256": "7e81d6840370c9452859d83e53a0351b7c78bf34778853bc2433c7c843fa046e",
+            "available": true
+          },
+          {
+            "kind": "gvhmr_global",
+            "name": "2_global.mp4",
+            "url": "/artifacts/walk_f/video/2_global.mp4",
+            "size": 253615,
+            "sha256": "9e8e7325eed074ce24b920630381c9f712d11e59bca7bbace11e55b7145d37fc",
+            "available": true
+          },
+          {
+            "kind": "gvhmr",
+            "name": "hmr4d_results.pt",
+            "url": "/artifacts/walk_f/video/hmr4d_results.pt",
+            "size": 845439,
+            "sha256": "ec0280813bef9d4f1ebe121fc8672d16bd35502546f0b258f2f1caec62e9c7ef",
+            "available": true
+          },
+          {
+            "kind": "smplx",
+            "name": "walk_f.smplx.npz",
+            "url": "/artifacts/walk_f/walk_f.smplx.npz",
+            "size": 51423,
+            "sha256": "ab9ff3074ff6c14d7a5ef17c3448cd00045820913ef521f34e807a40cb4d59ef",
+            "available": true
+          },
+          {
+            "kind": "bvh",
+            "name": "walk_f.bvh",
+            "url": "/artifacts/walk_f/bvh/walk_f.bvh",
+            "size": 282239,
+            "sha256": "e58d7ab684f4739292c52147ac7c01aae5c7c7982cccc90f71c895135528ce22",
+            "available": true
+          },
+          {
+            "kind": "validation",
+            "name": "walk_f_validation.json",
+            "url": "/artifacts/walk_f/bvh/walk_f_validation.json",
+            "size": 14804,
+            "sha256": "e69701382c3f026b8857bbe7f743bcf7dc3b4dad45e328603351d3eddd47593e",
+            "available": true
+          },
+          {
+            "kind": "bvh_preview",
+            "name": "3_bvh_preview.mp4",
+            "url": "/artifacts/walk_f/video/3_bvh_preview.mp4",
+            "size": 319656,
+            "sha256": "3b8508e92d70b8d255cb920e528171df244a7fe5cfa3a408ee57c668a05ddaa6",
+            "available": true
+          },
+          {
+            "kind": "bvh_refined",
+            "name": "walk_f_contact_refined.bvh",
+            "url": "/artifacts/refined/walk_f_contact_refined.bvh",
+            "size": 283401,
+            "sha256": "f91d29f8c531094eea60753f027e1cfad71ee21d6d4a86d94e11df21502f8b92",
+            "available": true
+          }
+        ]
+      }
+    },
+    {
+      "actionId": "BASE_SQUATKNEEL_HALF_SQUAT_1_241",
+      "name": "Slow Half Squat to Stand",
+      "description": "Lower from standing into a half squat, then return to standing at a controlled slow pace.",
+      "category": "Basics",
+      "categorySlug": "base",
+      "subcategory": "Squat & Kneel",
+      "difficulty": "Medium",
+      "idealDuration": 8,
+      "profile": "biped",
+      "male": {
+        "caseId": "BASE_SQUATKNEEL_HALF_SQUAT_1_241_M",
+        "gender": "M",
+        "slug": "squat_m",
+        "duration": 4.042,
+        "admission": {
+          "status": "PASS",
+          "gates": {
+            "first_frame_identity": true,
+            "no_excessive_freeze": true,
+            "no_speed_ramp_signature": true,
+            "no_probable_loop": true,
+            "no_probable_end_truncation": true,
+            "constant_stream_rate": true
+          }
+        },
+        "gpu": {
+          "stage": "complete",
+          "completedAt": "2026-08-08T17:15:33+00:00"
+        },
+        "audit": {
+          "profile": "biped",
+          "status": "PASS",
+          "supportCoverage": 0.26804123711340205,
+          "contactSpeed": 0.10100588923392756,
+          "maxTurnDegrees": 4.721524316028192
+        },
+        "validation": {
+          "status": "PASS",
+          "frameCount": 97,
+          "fps": 24.0
+        },
+        "refinement": {
+          "available": true,
+          "accepted": true,
+          "gates": {
+            "contactSpeedImproved": true,
+            "independentSkateNotWorse": true,
+            "supportCoverageNotWorse": true,
+            "sourceDeviationWithin20mm": true
+          },
+          "baselineContactSpeed": 0.10100588923392756,
+          "refinedContactSpeed": 0.0781884950570975,
+          "sourceDeviation": 0.005709301620361878
+        },
+        "lineage": {
+          "status": "partial",
+          "reason": "Archived GPU source is hashed; original Seedance download is not retained for byte comparison.",
+          "archivedSourceSha256": "f269491780adbceb244e0e64537274886c1b4fc1520c970c54d8b1bdff82a9cd",
+          "referenceSha256": "a4b470763d41652b3cfd4e1270848cc9d7362fc4d6b1a8e201ab9d9b5fd88a74"
+        },
+        "files": [
+          {
+            "kind": "seedance",
+            "name": "0_input_video.mp4",
+            "url": "/artifacts/squat_m/video/0_input_video.mp4",
+            "size": 315232,
+            "sha256": "f269491780adbceb244e0e64537274886c1b4fc1520c970c54d8b1bdff82a9cd",
+            "available": true
+          },
+          {
+            "kind": "gvhmr_preview",
+            "name": "1_incam.mp4",
+            "url": "/artifacts/squat_m/video/1_incam.mp4",
+            "size": 313822,
+            "sha256": "d19a5371d2d291ad8c696431c30ff8d38061183ebf616a5c83ba23d35165acb8",
+            "available": true
+          },
+          {
+            "kind": "gvhmr_global",
+            "name": "2_global.mp4",
+            "url": "/artifacts/squat_m/video/2_global.mp4",
+            "size": 143162,
+            "sha256": "22bcb6b1ed356307dc8ac863f1237abc3612a64c5472777fab85d2a210cba0d8",
+            "available": true
+          },
+          {
+            "kind": "gvhmr",
+            "name": "hmr4d_results.pt",
+            "url": "/artifacts/squat_m/video/hmr4d_results.pt",
+            "size": 428735,
+            "sha256": "8bd7f9a3287e7c748e62ff33bcee6104d19288f8075e6f55704254d96ffa16c6",
+            "available": true
+          },
+          {
+            "kind": "smplx",
+            "name": "squat_m.smplx.npz",
+            "url": "/artifacts/squat_m/squat_m.smplx.npz",
+            "size": 26697,
+            "sha256": "c2b881f6e49895a3c5b7ab7981d9b2eaf5fccefcadc2948347e5a2e89102a73e",
+            "available": true
+          },
+          {
+            "kind": "bvh",
+            "name": "squat_m.bvh",
+            "url": "/artifacts/squat_m/bvh/squat_m.bvh",
+            "size": 147091,
+            "sha256": "82cb6fb636bb2b834592c733771e16d6413f2dfb8f67dae6e464c03f69506d17",
+            "available": true
+          },
+          {
+            "kind": "validation",
+            "name": "squat_m_validation.json",
+            "url": "/artifacts/squat_m/bvh/squat_m_validation.json",
+            "size": 14723,
+            "sha256": "6da6c272dffb217dc3c5365d9c4b6892d21d875081c921cf4a067d88615af39b",
+            "available": true
+          },
+          {
+            "kind": "bvh_preview",
+            "name": "3_bvh_preview.mp4",
+            "url": "/artifacts/squat_m/video/3_bvh_preview.mp4",
+            "size": 131957,
+            "sha256": "a3f599f5c34336cc7c7cf18fc37c9ef957f9750bcdf97b112a71685ad5a2f541",
+            "available": true
+          },
+          {
+            "kind": "bvh_refined",
+            "name": "squat_m_contact_refined.bvh",
+            "url": "/artifacts/refined/squat_m_contact_refined.bvh",
+            "size": 147673,
+            "sha256": "cd09174b0f30b9fe53c9f0b62133b874437baefe67c88ad8733ab764c6c886f2",
+            "available": true
+          }
+        ]
+      },
+      "female": {
+        "caseId": "BASE_SQUATKNEEL_HALF_SQUAT_1_241_F",
+        "gender": "F",
+        "slug": "squat_f",
+        "duration": 4.042,
+        "admission": {
+          "status": "PASS",
+          "gates": {
+            "first_frame_identity": true,
+            "no_excessive_freeze": true,
+            "no_speed_ramp_signature": true,
+            "no_probable_loop": true,
+            "no_probable_end_truncation": true,
+            "constant_stream_rate": true
+          }
+        },
+        "gpu": {
+          "stage": "complete",
+          "completedAt": "2026-08-08T17:18:17+00:00"
+        },
+        "audit": {
+          "profile": "biped",
+          "status": "FAIL",
+          "supportCoverage": 0.2268041237113402,
+          "contactSpeed": 0.061433028790096225,
+          "maxTurnDegrees": 4.726459917957885
+        },
+        "validation": {
+          "status": "PASS",
+          "frameCount": 97,
+          "fps": 24.0
+        },
+        "refinement": {
+          "available": true,
+          "accepted": false,
+          "gates": {
+            "contactSpeedImproved": true,
+            "independentSkateNotWorse": true,
+            "supportCoverageNotWorse": false,
+            "sourceDeviationWithin20mm": true
+          },
+          "baselineContactSpeed": 0.061433028790096225,
+          "refinedContactSpeed": 0.0404732675000291,
+          "sourceDeviation": 0.002909020202633218
+        },
+        "lineage": {
+          "status": "partial",
+          "reason": "Archived GPU source is hashed; original Seedance download is not retained for byte comparison.",
+          "archivedSourceSha256": "0224a04c679643743851e44daec6e9a2d8f452c0d255d5640ef8f26f66ec9fe2",
+          "referenceSha256": "c9d69ecae4e980c4bba0677ff7e31e79b7f66adb20e47b780c8790c9cfb2b212"
+        },
+        "files": [
+          {
+            "kind": "seedance",
+            "name": "0_input_video.mp4",
+            "url": "/artifacts/squat_f/video/0_input_video.mp4",
+            "size": 296060,
+            "sha256": "0224a04c679643743851e44daec6e9a2d8f452c0d255d5640ef8f26f66ec9fe2",
+            "available": true
+          },
+          {
+            "kind": "gvhmr_preview",
+            "name": "1_incam.mp4",
+            "url": "/artifacts/squat_f/video/1_incam.mp4",
+            "size": 310406,
+            "sha256": "104f72f56c7cce3128fe964abc1bc992469bf0ccf3095801f26f1eb204527aa8",
+            "available": true
+          },
+          {
+            "kind": "gvhmr_global",
+            "name": "2_global.mp4",
+            "url": "/artifacts/squat_f/video/2_global.mp4",
+            "size": 141899,
+            "sha256": "d1f7e1c1fcc17c7e6a1f37d9cada4fa3d0bfe4ad125a3464018445cbeee4801d",
+            "available": true
+          },
+          {
+            "kind": "gvhmr",
+            "name": "hmr4d_results.pt",
+            "url": "/artifacts/squat_f/video/hmr4d_results.pt",
+            "size": 428735,
+            "sha256": "88a75bd3a13f0caeae9b244fc6551c2fded4ac4bc0c33b6894deb6a410a56c08",
+            "available": true
+          },
+          {
+            "kind": "smplx",
+            "name": "squat_f.smplx.npz",
+            "url": "/artifacts/squat_f/squat_f.smplx.npz",
+            "size": 26652,
+            "sha256": "72cc26ee51b15aa4245350159ba49e53bbc7aaabe2b000663dd4a69d204c2ba3",
+            "available": true
+          },
+          {
+            "kind": "bvh",
+            "name": "squat_f.bvh",
+            "url": "/artifacts/squat_f/bvh/squat_f.bvh",
+            "size": 146444,
+            "sha256": "e943ad0f21ff2a501fe66a91be51b55b194711e34678f5bb9fff7017b95b7fb4",
+            "available": true
+          },
+          {
+            "kind": "validation",
+            "name": "squat_f_validation.json",
+            "url": "/artifacts/squat_f/bvh/squat_f_validation.json",
+            "size": 15006,
+            "sha256": "f8a73d643436b58ca4324b8e09c39472493fa3151d2b65788223e1623a05bad1",
+            "available": true
+          },
+          {
+            "kind": "bvh_preview",
+            "name": "3_bvh_preview.mp4",
+            "url": "/artifacts/squat_f/video/3_bvh_preview.mp4",
+            "size": 129194,
+            "sha256": "0776a7dba5b3d73fd9c03d03f571d8146d1643f258c0e606ebcfd6a6fa3da1ef",
+            "available": true
+          }
+        ]
+      }
+    },
+    {
+      "actionId": "GROUND_GETUP_SUPINE_TWO_HAND_301",
+      "name": "Supine Floor Get-Up — Hand Assisted",
+      "description": "Begin lying on the back, use both hands for support, and recover to a stable standing pose.",
+      "category": "Ground",
+      "categorySlug": "ground",
+      "subcategory": "Floor Get-Up",
+      "difficulty": "Medium",
+      "idealDuration": 12,
+      "profile": "biped",
+      "male": {
+        "caseId": "GROUND_GETUP_SUPINE_TWO_HAND_301_M",
+        "gender": "M",
+        "slug": "getup_m",
+        "duration": 12.042,
+        "admission": {
+          "status": "PASS",
+          "gates": {
+            "first_frame_identity": true,
+            "no_excessive_freeze": true,
+            "no_speed_ramp_signature": true,
+            "no_probable_loop": true,
+            "no_probable_end_truncation": true,
+            "constant_stream_rate": true
+          }
+        },
+        "gpu": {
+          "stage": "complete",
+          "completedAt": "2026-08-08T17:21:18+00:00"
+        },
+        "audit": {
+          "profile": "biped",
+          "status": "FAIL",
+          "supportCoverage": 0.2041522491349481,
+          "contactSpeed": 0.04041822617863158,
+          "maxTurnDegrees": 9.088983058558698
+        },
+        "validation": {
+          "status": "PASS",
+          "frameCount": 289,
+          "fps": 24.0
+        },
+        "refinement": {
+          "available": true,
+          "accepted": true,
+          "gates": {
+            "contactSpeedImproved": true,
+            "independentSkateNotWorse": true,
+            "supportCoverageNotWorse": true,
+            "sourceDeviationWithin20mm": true
+          },
+          "baselineContactSpeed": 0.04041822617863158,
+          "refinedContactSpeed": 0.02976743016677974,
+          "sourceDeviation": 0.0014954560219697331
+        },
+        "lineage": {
+          "status": "partial",
+          "reason": "Archived GPU source is hashed; original Seedance download is not retained for byte comparison.",
+          "archivedSourceSha256": "24ddd2c116c29fe7e158b859f957ce721426f6dbe96b8469efd0caffa1220750",
+          "referenceSha256": "a4b470763d41652b3cfd4e1270848cc9d7362fc4d6b1a8e201ab9d9b5fd88a74"
+        },
+        "files": [
+          {
+            "kind": "seedance",
+            "name": "0_input_video.mp4",
+            "url": "/artifacts/getup_m/video/0_input_video.mp4",
+            "size": 785324,
+            "sha256": "24ddd2c116c29fe7e158b859f957ce721426f6dbe96b8469efd0caffa1220750",
+            "available": true
+          },
+          {
+            "kind": "gvhmr_preview",
+            "name": "1_incam.mp4",
+            "url": "/artifacts/getup_m/video/1_incam.mp4",
+            "size": 781515,
+            "sha256": "28fa82570c1051ed10211f49184194dc667252327de0b028cdeda3f26978d611",
+            "available": true
+          },
+          {
+            "kind": "gvhmr_global",
+            "name": "2_global.mp4",
+            "url": "/artifacts/getup_m/video/2_global.mp4",
+            "size": 332227,
+            "sha256": "0848bb0fe2185dc6e3b4a9d920b0fe5a248fd6efed9ca8a8ecdad553e638036e",
+            "available": true
+          },
+          {
+            "kind": "gvhmr",
+            "name": "hmr4d_results.pt",
+            "url": "/artifacts/getup_m/video/hmr4d_results.pt",
+            "size": 1262079,
+            "sha256": "8c0fbeefe5fed6f935e52e0b5019fa128af2694970fb4b71c116b2fc08ae0088",
+            "available": true
+          },
+          {
+            "kind": "smplx",
+            "name": "getup_m.smplx.npz",
+            "url": "/artifacts/getup_m/getup_m.smplx.npz",
+            "size": 76244,
+            "sha256": "fb0b4f878b508e017cf9a9b0326baa509fce8ba5d68539d3a534b48c74d027d8",
+            "available": true
+          },
+          {
+            "kind": "bvh",
+            "name": "getup_m.bvh",
+            "url": "/artifacts/getup_m/bvh/getup_m.bvh",
+            "size": 421395,
+            "sha256": "9ed52b2fa64de7fc51fee68262eaf54fa06393c732498a8cc7815e331e89f15d",
+            "available": true
+          },
+          {
+            "kind": "validation",
+            "name": "getup_m_validation.json",
+            "url": "/artifacts/getup_m/bvh/getup_m_validation.json",
+            "size": 14751,
+            "sha256": "7316b0bbf329de14b5b31790543ef4d9f553dda7b803d3e4e76a7f75b7dd689b",
+            "available": true
+          },
+          {
+            "kind": "bvh_preview",
+            "name": "3_bvh_preview.mp4",
+            "url": "/artifacts/getup_m/video/3_bvh_preview.mp4",
+            "size": 295993,
+            "sha256": "45c9d6d65efbfdc5fdbdb8ea3e36f4839182811b2a42ee6385a461e806208ac4",
+            "available": true
+          },
+          {
+            "kind": "bvh_refined",
+            "name": "getup_m_contact_refined.bvh",
+            "url": "/artifacts/refined/getup_m_contact_refined.bvh",
+            "size": 423129,
+            "sha256": "e3429ec4516ca931262ace2eeee9a70282688c1f290391819f2275780f49c28a",
+            "available": true
+          }
+        ]
+      },
+      "female": {
+        "caseId": "GROUND_GETUP_SUPINE_TWO_HAND_301_F",
+        "gender": "F",
+        "slug": "getup_f",
+        "duration": 12.042,
+        "admission": {
+          "status": "PASS",
+          "gates": {
+            "first_frame_identity": true,
+            "no_excessive_freeze": true,
+            "no_speed_ramp_signature": true,
+            "no_probable_loop": true,
+            "no_probable_end_truncation": true,
+            "constant_stream_rate": true
+          }
+        },
+        "gpu": {
+          "stage": "complete",
+          "completedAt": "2026-08-08T17:24:16+00:00"
+        },
+        "audit": {
+          "profile": "biped",
+          "status": "PASS",
+          "supportCoverage": 0.2560553633217993,
+          "contactSpeed": 0.03940380782319775,
+          "maxTurnDegrees": 6.424534971714102
+        },
+        "validation": {
+          "status": "PASS",
+          "frameCount": 289,
+          "fps": 24.0
+        },
+        "refinement": {
+          "available": true,
+          "accepted": true,
+          "gates": {
+            "contactSpeedImproved": true,
+            "independentSkateNotWorse": true,
+            "supportCoverageNotWorse": true,
+            "sourceDeviationWithin20mm": true
+          },
+          "baselineContactSpeed": 0.03940380782319775,
+          "refinedContactSpeed": 0.028448614837458367,
+          "sourceDeviation": 0.0016405866554490083
+        },
+        "lineage": {
+          "status": "partial",
+          "reason": "Archived GPU source is hashed; original Seedance download is not retained for byte comparison.",
+          "archivedSourceSha256": "e5570cdd07a939110aaad0f3ce15798f866ca68e45aa827c3d2528a22d1eab62",
+          "referenceSha256": "c9d69ecae4e980c4bba0677ff7e31e79b7f66adb20e47b780c8790c9cfb2b212"
+        },
+        "files": [
+          {
+            "kind": "seedance",
+            "name": "0_input_video.mp4",
+            "url": "/artifacts/getup_f/video/0_input_video.mp4",
+            "size": 833835,
+            "sha256": "e5570cdd07a939110aaad0f3ce15798f866ca68e45aa827c3d2528a22d1eab62",
+            "available": true
+          },
+          {
+            "kind": "gvhmr_preview",
+            "name": "1_incam.mp4",
+            "url": "/artifacts/getup_f/video/1_incam.mp4",
+            "size": 895257,
+            "sha256": "6ddb8ce2b5c1d584e63e72716fad6d6a92189e82d4bfe090e317caa472c94842",
+            "available": true
+          },
+          {
+            "kind": "gvhmr_global",
+            "name": "2_global.mp4",
+            "url": "/artifacts/getup_f/video/2_global.mp4",
+            "size": 332874,
+            "sha256": "e1fc6e316f51c1486d3eb4d393c1b41ab07cfd8c94cae4211d5fe6c51bf46a5f",
+            "available": true
+          },
+          {
+            "kind": "gvhmr",
+            "name": "hmr4d_results.pt",
+            "url": "/artifacts/getup_f/video/hmr4d_results.pt",
+            "size": 1262079,
+            "sha256": "8893511234fb2671cbbd3dda455d88ac20f67a6333741de55576319989b318da",
+            "available": true
+          },
+          {
+            "kind": "smplx",
+            "name": "getup_f.smplx.npz",
+            "url": "/artifacts/getup_f/getup_f.smplx.npz",
+            "size": 76132,
+            "sha256": "80f4c8ddc5c245cc44cdf75eb8ac891fc639f9d07042bc4322a28cdb4bdea4ee",
+            "available": true
+          },
+          {
+            "kind": "bvh",
+            "name": "getup_f.bvh",
+            "url": "/artifacts/getup_f/bvh/getup_f.bvh",
+            "size": 421854,
+            "sha256": "da8d68dd5dc77e21d1a6dc0e4b8a2c300f86be484939e36d74759c176b2c23f3",
+            "available": true
+          },
+          {
+            "kind": "validation",
+            "name": "getup_f_validation.json",
+            "url": "/artifacts/getup_f/bvh/getup_f_validation.json",
+            "size": 14779,
+            "sha256": "a073a31541adbe5d585cdf52e2961717efdba1601ab4afa7df3319282c84a077",
+            "available": true
+          },
+          {
+            "kind": "bvh_preview",
+            "name": "3_bvh_preview.mp4",
+            "url": "/artifacts/getup_f/video/3_bvh_preview.mp4",
+            "size": 354837,
+            "sha256": "76dd713dc0d5fbce6fd0c9dc8954c7569b3927f0907251a175f4f0941b6cb0d6",
+            "available": true
+          },
+          {
+            "kind": "bvh_refined",
+            "name": "getup_f_contact_refined.bvh",
+            "url": "/artifacts/refined/getup_f_contact_refined.bvh",
+            "size": 423596,
+            "sha256": "370264c406981315571767f315e19311fcff2f0d629aef7e1cb70ff1344363f6",
+            "available": true
+          }
+        ]
+      }
+    },
+    {
+      "actionId": "GROUND_CRAWL_CRAWL_HANDKNEE_FWD_SLOW_381",
+      "name": "Slow Hands-and-Knees Forward Crawl",
+      "description": "Crawl forward slowly on hands and knees with coherent weight transfer.",
+      "category": "Ground",
+      "categorySlug": "ground",
+      "subcategory": "Crawl",
+      "difficulty": "Medium",
+      "idealDuration": 10,
+      "profile": "crawl",
+      "male": {
+        "caseId": "GROUND_CRAWL_CRAWL_HANDKNEE_FWD_SLOW_381_M",
+        "gender": "M",
+        "slug": "crawl_m",
+        "duration": 4.042,
+        "admission": {
+          "status": "PASS",
+          "gates": {
+            "first_frame_identity": true,
+            "no_excessive_freeze": true,
+            "no_speed_ramp_signature": true,
+            "no_probable_loop": true,
+            "no_probable_end_truncation": true,
+            "constant_stream_rate": true
+          }
+        },
+        "gpu": {
+          "stage": "complete",
+          "completedAt": "2026-08-08T17:27:06+00:00"
+        },
+        "audit": {
+          "profile": "crawl",
+          "status": "PASS",
+          "supportCoverage": 0.4020618556701031,
+          "contactSpeed": 0.23629084268445907,
+          "maxTurnDegrees": 13.388169909008028
+        },
+        "validation": {
+          "status": "PASS",
+          "frameCount": 97,
+          "fps": 24.0
+        },
+        "refinement": {
+          "available": true,
+          "accepted": true,
+          "gates": {
+            "contactSpeedImproved": true,
+            "independentSkateNotWorse": true,
+            "supportCoverageNotWorse": true,
+            "sourceDeviationWithin20mm": true
+          },
+          "baselineContactSpeed": 0.23629084268445907,
+          "refinedContactSpeed": 0.20590448052509608,
+          "sourceDeviation": 0.010284657706054355
+        },
+        "lineage": {
+          "status": "partial",
+          "reason": "Archived GPU source is hashed; original Seedance download is not retained for byte comparison.",
+          "archivedSourceSha256": "c0618555d2097772a8f4bc414f8b9fe054e603d0b1eb18a6c6a11ca20484df27",
+          "referenceSha256": "a4b470763d41652b3cfd4e1270848cc9d7362fc4d6b1a8e201ab9d9b5fd88a74"
+        },
+        "files": [
+          {
+            "kind": "seedance",
+            "name": "0_input_video.mp4",
+            "url": "/artifacts/crawl_m/video/0_input_video.mp4",
+            "size": 368969,
+            "sha256": "c0618555d2097772a8f4bc414f8b9fe054e603d0b1eb18a6c6a11ca20484df27",
+            "available": true
+          },
+          {
+            "kind": "gvhmr_preview",
+            "name": "1_incam.mp4",
+            "url": "/artifacts/crawl_m/video/1_incam.mp4",
+            "size": 350398,
+            "sha256": "48d5bf521834ce1b99b5c358c84fc1cd1f0f76671242f8789ef17e2d6ba847bd",
+            "available": true
+          },
+          {
+            "kind": "gvhmr_global",
+            "name": "2_global.mp4",
+            "url": "/artifacts/crawl_m/video/2_global.mp4",
+            "size": 147434,
+            "sha256": "b3d2409099cf0e745e6f99c2e3f33336f9d5ab649e207e9ba30731827da0539a",
+            "available": true
+          },
+          {
+            "kind": "gvhmr",
+            "name": "hmr4d_results.pt",
+            "url": "/artifacts/crawl_m/video/hmr4d_results.pt",
+            "size": 428735,
+            "sha256": "3cbf3fb9137e9578d5b9027606aaad550ae8ca1ebf0ac772f2d6a22ead70fd8a",
+            "available": true
+          },
+          {
+            "kind": "smplx",
+            "name": "crawl_m.smplx.npz",
+            "url": "/artifacts/crawl_m/crawl_m.smplx.npz",
+            "size": 26781,
+            "sha256": "84079fec4680642dabe0638b67a71fb241bac0dafbf6a7533b64274ab0125a8c",
+            "available": true
+          },
+          {
+            "kind": "bvh",
+            "name": "crawl_m.bvh",
+            "url": "/artifacts/crawl_m/bvh/crawl_m.bvh",
+            "size": 147385,
+            "sha256": "dbcaa1bb15019a4313dc8ef6b2a7be9622fd496d76207f4a36aacde6f751329e",
+            "available": true
+          },
+          {
+            "kind": "validation",
+            "name": "crawl_m_validation.json",
+            "url": "/artifacts/crawl_m/bvh/crawl_m_validation.json",
+            "size": 14625,
+            "sha256": "8f236f579a71e317795b29fe7bd5f4f1333930c5b6b9846c77423505a9de96ec",
+            "available": true
+          },
+          {
+            "kind": "bvh_preview",
+            "name": "3_bvh_preview.mp4",
+            "url": "/artifacts/crawl_m/video/3_bvh_preview.mp4",
+            "size": 166261,
+            "sha256": "625d3e53f46aa805489fcaa286c16a982a307077035abb5f031cadd52daa9fac",
+            "available": true
+          },
+          {
+            "kind": "bvh_refined",
+            "name": "crawl_m_contact_refined.bvh",
+            "url": "/artifacts/refined/crawl_m_contact_refined.bvh",
+            "size": 147966,
+            "sha256": "25f5bd6aad04521a5ee06f4f0b1c90816ca322a251cadfbec23afa910885a68b",
+            "available": true
+          }
+        ]
+      },
+      "female": {
+        "caseId": "GROUND_CRAWL_CRAWL_HANDKNEE_FWD_SLOW_381_F",
+        "gender": "F",
+        "slug": "wan_ground_crawl_crawl_handknee_fwd_slow_381_f",
+        "duration": 8.0,
+        "admission": {
+          "status": "PASS",
+          "gates": {
+            "first_frame_identity": true,
+            "no_excessive_freeze": true,
+            "no_speed_ramp_signature": true,
+            "no_probable_loop": true,
+            "no_probable_end_truncation": true,
+            "constant_stream_rate": true,
+            "requested_duration_match": true,
+            "requested_travel_observed": true,
+            "no_forward_reverse_contradiction": true
+          }
+        },
+        "gpu": {
+          "stage": "complete",
+          "completedAt": "2026-08-11T14:45:05+00:00"
+        },
+        "audit": {
+          "profile": "crawl",
+          "status": "FAIL",
+          "supportCoverage": 0.275,
+          "contactSpeed": 0.1924888889796839,
+          "maxTurnDegrees": 9.78706760377538
+        },
+        "validation": {
+          "status": "PASS",
+          "frameCount": 240,
+          "fps": 30.0
+        },
+        "refinement": {
+          "available": false,
+          "accepted": false,
+          "gates": {}
+        },
+        "lineage": {
+          "status": "partial",
+          "reason": "Archived GPU source is hashed; original Seedance download is not retained for byte comparison.",
+          "archivedSourceSha256": "603fe8a8fe5b40201463eb41514b88173b2775242993d34b612d69de224abea7",
+          "referenceSha256": "68bea57b9fa43919bcc8a5c0fee0ab5408161d4220743a9ba47af296edb44f60"
+        },
+        "files": [
+          {
+            "kind": "wan_source",
+            "name": "0_input_video.mp4",
+            "url": "/artifacts/wan_ground_crawl_crawl_handknee_fwd_slow_381_f/video/0_input_video.mp4",
+            "size": 7170512,
+            "sha256": "603fe8a8fe5b40201463eb41514b88173b2775242993d34b612d69de224abea7",
+            "available": true
+          },
+          {
+            "kind": "gvhmr_preview",
+            "name": "1_incam.mp4",
+            "url": "/artifacts/wan_ground_crawl_crawl_handknee_fwd_slow_381_f/video/1_incam.mp4",
+            "size": 1300017,
+            "sha256": "cc424f0978b960c9690f0800f7c04ba127b18b2231adeaf8140c3c6003f2ff97",
+            "available": true
+          },
+          {
+            "kind": "gvhmr_global",
+            "name": "2_global.mp4",
+            "url": "/artifacts/wan_ground_crawl_crawl_handknee_fwd_slow_381_f/video/2_global.mp4",
+            "size": 307378,
+            "sha256": "4c05c8704b1714ddc4629756e753d79d110c0152693df89bbc03b6fe704d9c78",
+            "available": true
+          },
+          {
+            "kind": "gvhmr",
+            "name": "hmr4d_results.pt",
+            "url": "/artifacts/wan_ground_crawl_crawl_handknee_fwd_slow_381_f/video/hmr4d_results.pt",
+            "size": 1049855,
+            "sha256": "ce2b7384d055eb0b01c366f09e8ae82bf6431d95732cf189ac45e5eaec3ebc47",
+            "available": true
+          },
+          {
+            "kind": "smplx",
+            "name": "wan_ground_crawl_crawl_handknee_fwd_slow_381_f.smplx.npz",
+            "url": "/artifacts/wan_ground_crawl_crawl_handknee_fwd_slow_381_f/wan_ground_crawl_crawl_handknee_fwd_slow_381_f.smplx.npz",
+            "size": 63706,
+            "sha256": "18f3d8c90a9984eaa2e3f12ee88fd9324b281346f78749bdf4d6b713497f0a03",
+            "available": true
+          },
+          {
+            "kind": "bvh",
+            "name": "wan_ground_crawl_crawl_handknee_fwd_slow_381_f.bvh",
+            "url": "/artifacts/wan_ground_crawl_crawl_handknee_fwd_slow_381_f/bvh/wan_ground_crawl_crawl_handknee_fwd_slow_381_f.bvh",
+            "size": 353123,
+            "sha256": "db9304ea102815d4abc700cc12c41c43dbf43ac92dd9b37aaea4140f74ad7e92",
+            "available": true
+          },
+          {
+            "kind": "validation",
+            "name": "wan_ground_crawl_crawl_handknee_fwd_slow_381_f_validation.json",
+            "url": "/artifacts/wan_ground_crawl_crawl_handknee_fwd_slow_381_f/bvh/wan_ground_crawl_crawl_handknee_fwd_slow_381_f_validation.json",
+            "size": 15191,
+            "sha256": "3728cbf16d162e4a19542ebaeec3cc769da3234b954b304d3e2e3cfe61cd2137",
+            "available": true
+          },
+          {
+            "kind": "bvh_preview",
+            "name": "3_bvh_preview.mp4",
+            "url": "/artifacts/wan_ground_crawl_crawl_handknee_fwd_slow_381_f/video/3_bvh_preview.mp4",
+            "size": 306380,
+            "sha256": "e841081ac0a94a1c56a88ba4cd7774b88c5c519b979fd63384d313b01275f393",
+            "available": true
+          }
+        ]
+      }
+    },
+    {
+      "actionId": "DANCE_HIPHOP_HIPHOP_EASY_01_401",
+      "name": "Basic Hip-Hop Combination 01",
+      "description": "Perform two eight-count phrases with foundational steps, representative arm positions, rhythmic weight shifts, pauses, and body isolations.",
+      "category": "Dance",
+      "categorySlug": "dance",
+      "subcategory": "Hip-Hop",
+      "difficulty": "Easy",
+      "idealDuration": 16,
+      "profile": "biped",
+      "male": {
+        "caseId": "DANCE_HIPHOP_HIPHOP_EASY_01_401_M",
+        "gender": "M",
+        "slug": "hiphop_m",
+        "duration": 15.042,
+        "admission": {
+          "status": "PASS",
+          "gates": {
+            "first_frame_identity": true,
+            "no_excessive_freeze": true,
+            "no_speed_ramp_signature": true,
+            "no_probable_loop": true,
+            "no_probable_end_truncation": true,
+            "constant_stream_rate": true
+          }
+        },
+        "gpu": {
+          "stage": "complete",
+          "completedAt": "2026-08-08T17:33:00+00:00"
+        },
+        "audit": {
+          "profile": "biped",
+          "status": "FAIL",
+          "supportCoverage": 0.21052631578947367,
+          "contactSpeed": 0.26324090488191426,
+          "maxTurnDegrees": 26.11783385325905
+        },
+        "validation": {
+          "status": "PASS",
+          "frameCount": 361,
+          "fps": 24.0
+        },
+        "refinement": {
+          "available": true,
+          "accepted": true,
+          "gates": {
+            "contactSpeedImproved": true,
+            "independentSkateNotWorse": true,
+            "supportCoverageNotWorse": true,
+            "sourceDeviationWithin20mm": true
+          },
+          "baselineContactSpeed": 0.26324090488191426,
+          "refinedContactSpeed": 0.18141802772785107,
+          "sourceDeviation": 0.013498829939702374
+        },
+        "lineage": {
+          "status": "partial",
+          "reason": "Archived GPU source is hashed; original Seedance download is not retained for byte comparison.",
+          "archivedSourceSha256": "5919fd19ad9ad21148c72e49b084378521772c527e981f29540e84e54d933554",
+          "referenceSha256": "a4b470763d41652b3cfd4e1270848cc9d7362fc4d6b1a8e201ab9d9b5fd88a74"
+        },
+        "files": [
+          {
+            "kind": "seedance",
+            "name": "0_input_video.mp4",
+            "url": "/artifacts/hiphop_m/video/0_input_video.mp4",
+            "size": 1697038,
+            "sha256": "5919fd19ad9ad21148c72e49b084378521772c527e981f29540e84e54d933554",
+            "available": true
+          },
+          {
+            "kind": "gvhmr_preview",
+            "name": "1_incam.mp4",
+            "url": "/artifacts/hiphop_m/video/1_incam.mp4",
+            "size": 1667532,
+            "sha256": "910fe43fa719b0a0060a5a8117d21b563eb972979d83b1880b63039ff3e8a902",
+            "available": true
+          },
+          {
+            "kind": "gvhmr_global",
+            "name": "2_global.mp4",
+            "url": "/artifacts/hiphop_m/video/2_global.mp4",
+            "size": 831351,
+            "sha256": "1119fdb6fd662b27cd2555c40faa6176efc81131e89e31efb7449f0361deff34",
+            "available": true
+          },
+          {
+            "kind": "gvhmr",
+            "name": "hmr4d_results.pt",
+            "url": "/artifacts/hiphop_m/video/hmr4d_results.pt",
+            "size": 1574079,
+            "sha256": "4c15d046a76871462c23a602f71d635d3ec0b48f1baaa7c2e0377f3d66a6ac12",
+            "available": true
+          },
+          {
+            "kind": "smplx",
+            "name": "hiphop_m.smplx.npz",
+            "url": "/artifacts/hiphop_m/hiphop_m.smplx.npz",
+            "size": 94992,
+            "sha256": "78b093a4480f2c574802f48889064813438c433805bc8a97cb37816aee5b0fe6",
+            "available": true
+          },
+          {
+            "kind": "bvh",
+            "name": "hiphop_m.bvh",
+            "url": "/artifacts/hiphop_m/bvh/hiphop_m.bvh",
+            "size": 526724,
+            "sha256": "093bdbb4f98e84b401257b80a46ebdd1f29b6b989811125133603e4fc8048dc5",
+            "available": true
+          },
+          {
+            "kind": "validation",
+            "name": "hiphop_m_validation.json",
+            "url": "/artifacts/hiphop_m/bvh/hiphop_m_validation.json",
+            "size": 14691,
+            "sha256": "b6b52e3edd66bd11a4ff6dac4590970791e5848c0fe08745a5349f40c78be688",
+            "available": true
+          },
+          {
+            "kind": "bvh_preview",
+            "name": "3_bvh_preview.mp4",
+            "url": "/artifacts/hiphop_m/video/3_bvh_preview.mp4",
+            "size": 782883,
+            "sha256": "a1e8202d7654814162e19e63c0156ab65c9af2b86abf17caed4af6e9e94e7023",
+            "available": true
+          },
+          {
+            "kind": "bvh_refined",
+            "name": "hiphop_m_contact_refined.bvh",
+            "url": "/artifacts/refined/hiphop_m_contact_refined.bvh",
+            "size": 528883,
+            "sha256": "b5c8950d4f6bda7d372d5802b8f504a39504a1f193f5ed3e6fd321e35fcf3b3b",
+            "available": true
+          }
+        ]
+      },
+      "female": {
+        "caseId": "DANCE_HIPHOP_HIPHOP_EASY_01_401_F",
+        "gender": "F",
+        "slug": "hiphop_f",
+        "duration": 8.042,
+        "admission": {
+          "status": "PASS",
+          "gates": {
+            "first_frame_identity": true,
+            "no_excessive_freeze": true,
+            "no_speed_ramp_signature": true,
+            "no_probable_loop": true,
+            "no_probable_end_truncation": true,
+            "constant_stream_rate": true
+          }
+        },
+        "gpu": {
+          "stage": "complete",
+          "completedAt": "2026-08-08T17:35:59+00:00"
+        },
+        "audit": {
+          "profile": "biped",
+          "status": "FAIL",
+          "supportCoverage": 0.24870466321243523,
+          "contactSpeed": 0.18117527200190836,
+          "maxTurnDegrees": 26.806237709540802
+        },
+        "validation": {
+          "status": "PASS",
+          "frameCount": 193,
+          "fps": 24.0
+        },
+        "refinement": {
+          "available": true,
+          "accepted": true,
+          "gates": {
+            "contactSpeedImproved": true,
+            "independentSkateNotWorse": true,
+            "supportCoverageNotWorse": true,
+            "sourceDeviationWithin20mm": true
+          },
+          "baselineContactSpeed": 0.18117527200190836,
+          "refinedContactSpeed": 0.1493362552892335,
+          "sourceDeviation": 0.00961906118377809
+        },
+        "lineage": {
+          "status": "partial",
+          "reason": "Archived GPU source is hashed; original Seedance download is not retained for byte comparison.",
+          "archivedSourceSha256": "969f8f4320aea25d5a9bafe29ba378bb4fa3201892c135cae2e066b5393c4255",
+          "referenceSha256": "c9d69ecae4e980c4bba0677ff7e31e79b7f66adb20e47b780c8790c9cfb2b212"
+        },
+        "files": [
+          {
+            "kind": "seedance",
+            "name": "0_input_video.mp4",
+            "url": "/artifacts/hiphop_f/video/0_input_video.mp4",
+            "size": 761368,
+            "sha256": "969f8f4320aea25d5a9bafe29ba378bb4fa3201892c135cae2e066b5393c4255",
+            "available": true
+          },
+          {
+            "kind": "gvhmr_preview",
+            "name": "1_incam.mp4",
+            "url": "/artifacts/hiphop_f/video/1_incam.mp4",
+            "size": 790041,
+            "sha256": "8be294bffe23e265b8a1f113b757e4c9725e7f98a23107d5a74ddb9ccc05e78d",
+            "available": true
+          },
+          {
+            "kind": "gvhmr_global",
+            "name": "2_global.mp4",
+            "url": "/artifacts/hiphop_f/video/2_global.mp4",
+            "size": 426958,
+            "sha256": "d0ff42a6a9c833b3a54c8279109d6f3ce37d865e33b640c83cac1c1748606bc3",
+            "available": true
+          },
+          {
+            "kind": "gvhmr",
+            "name": "hmr4d_results.pt",
+            "url": "/artifacts/hiphop_f/video/hmr4d_results.pt",
+            "size": 845439,
+            "sha256": "567d214448c807173b5ef6387dfa42867d791fb25e3d45f9292eaa6edf133c70",
+            "available": true
+          },
+          {
+            "kind": "smplx",
+            "name": "hiphop_f.smplx.npz",
+            "url": "/artifacts/hiphop_f/hiphop_f.smplx.npz",
+            "size": 51470,
+            "sha256": "f8532bbe72ed9003278108e06186f86f7aa2642dbd632d88fa6e2ec6d7fba5e5",
+            "available": true
+          },
+          {
+            "kind": "bvh",
+            "name": "hiphop_f.bvh",
+            "url": "/artifacts/hiphop_f/bvh/hiphop_f.bvh",
+            "size": 283166,
+            "sha256": "a1292980ac1b06eadaee6b9f23feeaec8614f39fca97b6a016192f30684d736e",
+            "available": true
+          },
+          {
+            "kind": "validation",
+            "name": "hiphop_f_validation.json",
+            "url": "/artifacts/hiphop_f/bvh/hiphop_f_validation.json",
+            "size": 14572,
+            "sha256": "7743d7cb0fc8a87534de38a7d86c3af30437e5eb891c6a3716cbc4206951f469",
+            "available": true
+          },
+          {
+            "kind": "bvh_preview",
+            "name": "3_bvh_preview.mp4",
+            "url": "/artifacts/hiphop_f/video/3_bvh_preview.mp4",
+            "size": 406034,
+            "sha256": "c13c2e71662270b73064cd715b064ec0089017827eb044146ec86c953691ac00",
+            "available": true
+          },
+          {
+            "kind": "bvh_refined",
+            "name": "hiphop_f_contact_refined.bvh",
+            "url": "/artifacts/refined/hiphop_f_contact_refined.bvh",
+            "size": 284325,
+            "sha256": "283b75bffe3639ec50bfd96ca5a99e0fb601bb50846606abfec41f40c67b8ac8",
+            "available": true
+          }
+        ]
+      }
+    },
+    {
+      "actionId": "DANCE_LATIN_LATIN_EASY_01_491",
+      "name": "Basic Latin Dance Combination 01",
+      "description": "Perform two eight-count phrases with foundational steps, representative arm positions, hip rhythm, forward-back steps, and body turns.",
+      "category": "Dance",
+      "categorySlug": "dance",
+      "subcategory": "Latin Dance",
+      "difficulty": "Easy",
+      "idealDuration": 16,
+      "profile": "biped",
+      "male": {
+        "caseId": "DANCE_LATIN_LATIN_EASY_01_491_M",
+        "gender": "M",
+        "slug": "latin_m",
+        "duration": 15.042,
+        "admission": {
+          "status": "PASS",
+          "gates": {
+            "first_frame_identity": true,
+            "no_excessive_freeze": true,
+            "no_speed_ramp_signature": true,
+            "no_probable_loop": true,
+            "no_probable_end_truncation": true,
+            "constant_stream_rate": true
+          }
+        },
+        "gpu": {
+          "stage": "complete",
+          "completedAt": "2026-08-08T17:39:22+00:00"
+        },
+        "audit": {
+          "profile": "biped",
+          "status": "FAIL",
+          "supportCoverage": 0.19667590027700832,
+          "contactSpeed": 0.22854594880959844,
+          "maxTurnDegrees": 28.254568010318962
+        },
+        "validation": {
+          "status": "PASS",
+          "frameCount": 361,
+          "fps": 24.0
+        },
+        "refinement": {
+          "available": true,
+          "accepted": true,
+          "gates": {
+            "contactSpeedImproved": true,
+            "independentSkateNotWorse": true,
+            "supportCoverageNotWorse": true,
+            "sourceDeviationWithin20mm": true
+          },
+          "baselineContactSpeed": 0.22854594880959844,
+          "refinedContactSpeed": 0.16672368299039605,
+          "sourceDeviation": 0.017563849389473266
+        },
+        "lineage": {
+          "status": "partial",
+          "reason": "Archived GPU source is hashed; original Seedance download is not retained for byte comparison.",
+          "archivedSourceSha256": "4e0f6fa24faf03358c4d76a7cd8aa9c9f46d1d6075b666dfc7e396f00388caf4",
+          "referenceSha256": "a4b470763d41652b3cfd4e1270848cc9d7362fc4d6b1a8e201ab9d9b5fd88a74"
+        },
+        "files": [
+          {
+            "kind": "seedance",
+            "name": "0_input_video.mp4",
+            "url": "/artifacts/latin_m/video/0_input_video.mp4",
+            "size": 1467467,
+            "sha256": "4e0f6fa24faf03358c4d76a7cd8aa9c9f46d1d6075b666dfc7e396f00388caf4",
+            "available": true
+          },
+          {
+            "kind": "gvhmr_preview",
+            "name": "1_incam.mp4",
+            "url": "/artifacts/latin_m/video/1_incam.mp4",
+            "size": 1415138,
+            "sha256": "46d0f2369873435e4f206adefc55b0b22193bc5b93007cad1d0a5ae0200b234b",
+            "available": true
+          },
+          {
+            "kind": "gvhmr_global",
+            "name": "2_global.mp4",
+            "url": "/artifacts/latin_m/video/2_global.mp4",
+            "size": 827779,
+            "sha256": "5a91852878631574e588d23746914caa53da7254a860d28a344799a3490c064b",
+            "available": true
+          },
+          {
+            "kind": "gvhmr",
+            "name": "hmr4d_results.pt",
+            "url": "/artifacts/latin_m/video/hmr4d_results.pt",
+            "size": 1574079,
+            "sha256": "ee7bfeb1478eecb059bb9d080c16deca63caaf8a00c23ba18dc9e1d30e1f8427",
+            "available": true
+          },
+          {
+            "kind": "smplx",
+            "name": "latin_m.smplx.npz",
+            "url": "/artifacts/latin_m/latin_m.smplx.npz",
+            "size": 94964,
+            "sha256": "9ef4f5fee13878e6fa3c673114b2ba098a7c407d57c45903bc9d7b08497bb1a9",
+            "available": true
+          },
+          {
+            "kind": "bvh",
+            "name": "latin_m.bvh",
+            "url": "/artifacts/latin_m/bvh/latin_m.bvh",
+            "size": 524939,
+            "sha256": "c5827db6daddd2d91f2236b21470a2349f5cd9a798522db88dff0e053d701390",
+            "available": true
+          },
+          {
+            "kind": "validation",
+            "name": "latin_m_validation.json",
+            "url": "/artifacts/latin_m/bvh/latin_m_validation.json",
+            "size": 14823,
+            "sha256": "9200c369b858acd49d8135993cec8c6b42846cbf7dce303ef45d11c246633371",
+            "available": true
+          },
+          {
+            "kind": "bvh_preview",
+            "name": "3_bvh_preview.mp4",
+            "url": "/artifacts/latin_m/video/3_bvh_preview.mp4",
+            "size": 698839,
+            "sha256": "660d436436ffa9827ceef96c22f1066656fdbc6043328141ad748665f82a6710",
+            "available": true
+          },
+          {
+            "kind": "bvh_refined",
+            "name": "latin_m_contact_refined.bvh",
+            "url": "/artifacts/refined/latin_m_contact_refined.bvh",
+            "size": 527112,
+            "sha256": "09559b71c249bc5acad90ade2bd131803cf1101e8fdb363c11897a29b4d508c0",
+            "available": true
+          }
+        ]
+      },
+      "female": {
+        "caseId": "DANCE_LATIN_LATIN_EASY_01_491_F",
+        "gender": "F",
+        "slug": "latin_f",
+        "duration": 12.042,
+        "admission": {
+          "status": "PASS",
+          "gates": {
+            "first_frame_identity": true,
+            "no_excessive_freeze": true,
+            "no_speed_ramp_signature": true,
+            "no_probable_loop": true,
+            "no_probable_end_truncation": true,
+            "constant_stream_rate": true
+          }
+        },
+        "gpu": {
+          "stage": "complete",
+          "completedAt": "2026-08-08T17:42:41+00:00"
+        },
+        "audit": {
+          "profile": "biped",
+          "status": "PASS",
+          "supportCoverage": 0.2698961937716263,
+          "contactSpeed": 0.15238426704071978,
+          "maxTurnDegrees": 80.29526664650858
+        },
+        "validation": {
+          "status": "PASS",
+          "frameCount": 289,
+          "fps": 24.0
+        },
+        "refinement": {
+          "available": true,
+          "accepted": true,
+          "gates": {
+            "contactSpeedImproved": true,
+            "independentSkateNotWorse": true,
+            "supportCoverageNotWorse": true,
+            "sourceDeviationWithin20mm": true
+          },
+          "baselineContactSpeed": 0.15238426704071978,
+          "refinedContactSpeed": 0.12423287060115006,
+          "sourceDeviation": 0.010777284914391035
+        },
+        "lineage": {
+          "status": "partial",
+          "reason": "Archived GPU source is hashed; original Seedance download is not retained for byte comparison.",
+          "archivedSourceSha256": "d015c29e5c031709ec21b0d5a8cd0ec64670dd52830c176bc34c20ffcf63edc5",
+          "referenceSha256": "c9d69ecae4e980c4bba0677ff7e31e79b7f66adb20e47b780c8790c9cfb2b212"
+        },
+        "files": [
+          {
+            "kind": "seedance",
+            "name": "0_input_video.mp4",
+            "url": "/artifacts/latin_f/video/0_input_video.mp4",
+            "size": 1113026,
+            "sha256": "d015c29e5c031709ec21b0d5a8cd0ec64670dd52830c176bc34c20ffcf63edc5",
+            "available": true
+          },
+          {
+            "kind": "gvhmr_preview",
+            "name": "1_incam.mp4",
+            "url": "/artifacts/latin_f/video/1_incam.mp4",
+            "size": 1153075,
+            "sha256": "0d4e5624d8fe25f3f1e6253775dedeef75fcdfbe66b0ab65188381406cfe6828",
+            "available": true
+          },
+          {
+            "kind": "gvhmr_global",
+            "name": "2_global.mp4",
+            "url": "/artifacts/latin_f/video/2_global.mp4",
+            "size": 554183,
+            "sha256": "5679c722aa79093a728b44eda18b3058ef8aec049ae9f0fff54ca481fd9163d3",
+            "available": true
+          },
+          {
+            "kind": "gvhmr",
+            "name": "hmr4d_results.pt",
+            "url": "/artifacts/latin_f/video/hmr4d_results.pt",
+            "size": 1262079,
+            "sha256": "0ebb408935deee07d24b3b98ed3d480900957663bad9ca4f19b2265e6831dc2d",
+            "available": true
+          },
+          {
+            "kind": "smplx",
+            "name": "latin_f.smplx.npz",
+            "url": "/artifacts/latin_f/latin_f.smplx.npz",
+            "size": 76194,
+            "sha256": "84c7a6b7f1a1a2f509e478f824b3aa81641f319e6fe9501b163b63b8c01ce70d",
+            "available": true
+          },
+          {
+            "kind": "bvh",
+            "name": "latin_f.bvh",
+            "url": "/artifacts/latin_f/bvh/latin_f.bvh",
+            "size": 420564,
+            "sha256": "1e3861842ac2b0fd76a841f64afd88c482a1f7291cf01dac3e0093c35ab1aff7",
+            "available": true
+          },
+          {
+            "kind": "validation",
+            "name": "latin_f_validation.json",
+            "url": "/artifacts/latin_f/bvh/latin_f_validation.json",
+            "size": 14921,
+            "sha256": "ac1f6df8ee4785b8f012592e166597eb67f430ed7d60987ed708af4106eaaa0e",
+            "available": true
+          },
+          {
+            "kind": "bvh_preview",
+            "name": "3_bvh_preview.mp4",
+            "url": "/artifacts/latin_f/video/3_bvh_preview.mp4",
+            "size": 508653,
+            "sha256": "6bfd85d70f47776709f8b7fc91783aedea9ebf966ef7442751c6f3606e384ffc",
+            "available": true
+          },
+          {
+            "kind": "bvh_refined",
+            "name": "latin_f_contact_refined.bvh",
+            "url": "/artifacts/refined/latin_f_contact_refined.bvh",
+            "size": 422294,
+            "sha256": "f6a1b4ad75414b4f493ccd4774dbbd03946a50335324c692237a43c7bf11199e",
+            "available": true
+          }
+        ]
+      }
+    },
+    {
+      "actionId": "KUNGFU_TAIJI_TAIJI_EASY_01_551",
+      "name": "Basic Tai Chi Sequence 01",
+      "description": "Perform a short Tai Chi sequence with controlled weight transfer, clear empty-full changes, and coordinated hands and feet.",
+      "category": "Martial Arts",
+      "categorySlug": "kungfu",
+      "subcategory": "Tai Chi",
+      "difficulty": "Easy",
+      "idealDuration": 10,
+      "profile": "biped",
+      "male": {
+        "caseId": "KUNGFU_TAIJI_TAIJI_EASY_01_551_M",
+        "gender": "M",
+        "slug": "taiji_m",
+        "duration": 8.042,
+        "admission": {
+          "status": "PASS",
+          "gates": {
+            "first_frame_identity": true,
+            "no_excessive_freeze": true,
+            "no_speed_ramp_signature": true,
+            "no_probable_loop": true,
+            "no_probable_end_truncation": true,
+            "constant_stream_rate": true
+          }
+        },
+        "gpu": {
+          "stage": "complete",
+          "completedAt": "2026-08-08T17:45:50+00:00"
+        },
+        "audit": {
+          "profile": "biped",
+          "status": "PASS",
+          "supportCoverage": 0.2849740932642487,
+          "contactSpeed": 0.12275648446569946,
+          "maxTurnDegrees": 4.479326530056584
+        },
+        "validation": {
+          "status": "PASS",
+          "frameCount": 193,
+          "fps": 24.0
+        },
+        "refinement": {
+          "available": true,
+          "accepted": true,
+          "gates": {
+            "contactSpeedImproved": true,
+            "independentSkateNotWorse": true,
+            "supportCoverageNotWorse": true,
+            "sourceDeviationWithin20mm": true
+          },
+          "baselineContactSpeed": 0.12275648446569946,
+          "refinedContactSpeed": 0.07666078461747927,
+          "sourceDeviation": 0.005467512639156543
+        },
+        "lineage": {
+          "status": "partial",
+          "reason": "Archived GPU source is hashed; original Seedance download is not retained for byte comparison.",
+          "archivedSourceSha256": "3654f60be4e8956a2096cfe2d0ec416f5975067e7d9b9062047ebe2ff5172927",
+          "referenceSha256": "a4b470763d41652b3cfd4e1270848cc9d7362fc4d6b1a8e201ab9d9b5fd88a74"
+        },
+        "files": [
+          {
+            "kind": "seedance",
+            "name": "0_input_video.mp4",
+            "url": "/artifacts/taiji_m/video/0_input_video.mp4",
+            "size": 788638,
+            "sha256": "3654f60be4e8956a2096cfe2d0ec416f5975067e7d9b9062047ebe2ff5172927",
+            "available": true
+          },
+          {
+            "kind": "gvhmr_preview",
+            "name": "1_incam.mp4",
+            "url": "/artifacts/taiji_m/video/1_incam.mp4",
+            "size": 785028,
+            "sha256": "8a807e227be48726c0a9b65c6063e44e4a02c18d530247bd79fbab662312e99f",
+            "available": true
+          },
+          {
+            "kind": "gvhmr_global",
+            "name": "2_global.mp4",
+            "url": "/artifacts/taiji_m/video/2_global.mp4",
+            "size": 337027,
+            "sha256": "58a17326d44322bde656e3676c3aacf31beabdeeb6cc4162f472a918597b752f",
+            "available": true
+          },
+          {
+            "kind": "gvhmr",
+            "name": "hmr4d_results.pt",
+            "url": "/artifacts/taiji_m/video/hmr4d_results.pt",
+            "size": 845439,
+            "sha256": "36f2afdc470e9cb7ab1acfc67ed8dac5191005ecdff6ead4f1db8d0c1ed4d018",
+            "available": true
+          },
+          {
+            "kind": "smplx",
+            "name": "taiji_m.smplx.npz",
+            "url": "/artifacts/taiji_m/taiji_m.smplx.npz",
+            "size": 51501,
+            "sha256": "99791df024e2029cc2342e6b613425d7e8075880b519149079247f07e3417952",
+            "available": true
+          },
+          {
+            "kind": "bvh",
+            "name": "taiji_m.bvh",
+            "url": "/artifacts/taiji_m/bvh/taiji_m.bvh",
+            "size": 284937,
+            "sha256": "dcbaa120d786de88195b865b337cda9c4013f66ae69bbe1eae513c5b62ad2681",
+            "available": true
+          },
+          {
+            "kind": "validation",
+            "name": "taiji_m_validation.json",
+            "url": "/artifacts/taiji_m/bvh/taiji_m_validation.json",
+            "size": 15137,
+            "sha256": "f3356dc86eadd38d3840f5532a699e612719c62cbd94e34199fb6bc593cbf615",
+            "available": true
+          },
+          {
+            "kind": "bvh_preview",
+            "name": "3_bvh_preview.mp4",
+            "url": "/artifacts/taiji_m/video/3_bvh_preview.mp4",
+            "size": 262230,
+            "sha256": "e5afa03039d251758d84b149a997ba832c1c99a6ce85f80c2abdb48d981b74ff",
+            "available": true
+          },
+          {
+            "kind": "bvh_refined",
+            "name": "taiji_m_contact_refined.bvh",
+            "url": "/artifacts/refined/taiji_m_contact_refined.bvh",
+            "size": 286098,
+            "sha256": "4c5147be322782c7393f6537d6653fc6ef27afd3c24b4f6548530b00a3ab23d4",
+            "available": true
+          }
+        ]
+      },
+      "female": {
+        "caseId": "KUNGFU_TAIJI_TAIJI_EASY_01_551_F",
+        "gender": "F",
+        "slug": "taiji_f",
+        "duration": 4.042,
+        "admission": {
+          "status": "PASS",
+          "gates": {
+            "first_frame_identity": true,
+            "no_excessive_freeze": true,
+            "no_speed_ramp_signature": true,
+            "no_probable_loop": true,
+            "no_probable_end_truncation": true,
+            "constant_stream_rate": true
+          }
+        },
+        "gpu": {
+          "stage": "complete",
+          "completedAt": "2026-08-08T17:48:46+00:00"
+        },
+        "audit": {
+          "profile": "biped",
+          "status": "PASS",
+          "supportCoverage": 0.26804123711340205,
+          "contactSpeed": 0.08635898768949919,
+          "maxTurnDegrees": 3.9709845105605646
+        },
+        "validation": {
+          "status": "PASS",
+          "frameCount": 97,
+          "fps": 24.0
+        },
+        "refinement": {
+          "available": true,
+          "accepted": false,
+          "gates": {
+            "contactSpeedImproved": true,
+            "independentSkateNotWorse": true,
+            "supportCoverageNotWorse": false,
+            "sourceDeviationWithin20mm": true
+          },
+          "baselineContactSpeed": 0.08635898768949919,
+          "refinedContactSpeed": 0.05735649076784071,
+          "sourceDeviation": 0.002837738832519526
+        },
+        "lineage": {
+          "status": "partial",
+          "reason": "Archived GPU source is hashed; original Seedance download is not retained for byte comparison.",
+          "archivedSourceSha256": "5e8bba8a839253ae2f932a820b08883d19a97dd0c2c87bba6164fed34404b31c",
+          "referenceSha256": "c9d69ecae4e980c4bba0677ff7e31e79b7f66adb20e47b780c8790c9cfb2b212"
+        },
+        "files": [
+          {
+            "kind": "seedance",
+            "name": "0_input_video.mp4",
+            "url": "/artifacts/taiji_f/video/0_input_video.mp4",
+            "size": 319996,
+            "sha256": "5e8bba8a839253ae2f932a820b08883d19a97dd0c2c87bba6164fed34404b31c",
+            "available": true
+          },
+          {
+            "kind": "gvhmr_preview",
+            "name": "1_incam.mp4",
+            "url": "/artifacts/taiji_f/video/1_incam.mp4",
+            "size": 358321,
+            "sha256": "69c01fab550095e6ad1f51676b63c49408eb5961d3b8102b87e097850986fa06",
+            "available": true
+          },
+          {
+            "kind": "gvhmr_global",
+            "name": "2_global.mp4",
+            "url": "/artifacts/taiji_f/video/2_global.mp4",
+            "size": 148213,
+            "sha256": "5a544f6566c1b2027d70b7ce1a79a86af1502296afac091bc5cd2850f4601b6e",
+            "available": true
+          },
+          {
+            "kind": "gvhmr",
+            "name": "hmr4d_results.pt",
+            "url": "/artifacts/taiji_f/video/hmr4d_results.pt",
+            "size": 428735,
+            "sha256": "0f3625be1dae99b436e753de72e10bc9b87def27e4af1b0d209f540501fd7bcc",
+            "available": true
+          },
+          {
+            "kind": "smplx",
+            "name": "taiji_f.smplx.npz",
+            "url": "/artifacts/taiji_f/taiji_f.smplx.npz",
+            "size": 26543,
+            "sha256": "3d0de34fa14e38cbf23ba078ca31c16d76c86525789d266f3fd74f4c991d682e",
+            "available": true
+          },
+          {
+            "kind": "bvh",
+            "name": "taiji_f.bvh",
+            "url": "/artifacts/taiji_f/bvh/taiji_f.bvh",
+            "size": 146690,
+            "sha256": "de9a37fee192aa17c24808c4067d446507f4a619c3cbef00fff29c9a68a12492",
+            "available": true
+          },
+          {
+            "kind": "validation",
+            "name": "taiji_f_validation.json",
+            "url": "/artifacts/taiji_f/bvh/taiji_f_validation.json",
+            "size": 14555,
+            "sha256": "081154b943b0e1c1318b7f8a9733ad8a6b8d8e522f6365f7d977549ec36892ca",
+            "available": true
+          },
+          {
+            "kind": "bvh_preview",
+            "name": "3_bvh_preview.mp4",
+            "url": "/artifacts/taiji_f/video/3_bvh_preview.mp4",
+            "size": 129299,
+            "sha256": "041d9518f7c92891f4c39be63783d3482806de883e7a2172ec47b6a23a74ee8e",
+            "available": true
+          }
+        ]
+      }
+    },
+    {
+      "actionId": "KUNGFU_WINGCHUN_WINGCHUN_EASY_01_641",
+      "name": "Basic Wing Chun Sequence 01",
+      "description": "Perform a short Wing Chun sequence with compact footwork, continuous hand techniques, and centerline control.",
+      "category": "Martial Arts",
+      "categorySlug": "kungfu",
+      "subcategory": "Wing Chun",
+      "difficulty": "Easy",
+      "idealDuration": 10,
+      "profile": "biped",
+      "male": {
+        "caseId": "KUNGFU_WINGCHUN_WINGCHUN_EASY_01_641_M",
+        "gender": "M",
+        "slug": "wingchun_m",
+        "duration": 4.042,
+        "admission": {
+          "status": "PASS",
+          "gates": {
+            "first_frame_identity": true,
+            "no_excessive_freeze": true,
+            "no_speed_ramp_signature": true,
+            "no_probable_loop": true,
+            "no_probable_end_truncation": true,
+            "constant_stream_rate": true
+          }
+        },
+        "gpu": {
+          "stage": "complete",
+          "completedAt": "2026-08-08T17:52:24+00:00"
+        },
+        "audit": {
+          "profile": "biped",
+          "status": "FAIL",
+          "supportCoverage": 0.16494845360824742,
+          "contactSpeed": 0.12005432793763883,
+          "maxTurnDegrees": 16.963035642820422
+        },
+        "validation": {
+          "status": "PASS",
+          "frameCount": 97,
+          "fps": 24.0
+        },
+        "refinement": {
+          "available": true,
+          "accepted": false,
+          "gates": {
+            "contactSpeedImproved": true,
+            "independentSkateNotWorse": true,
+            "supportCoverageNotWorse": false,
+            "sourceDeviationWithin20mm": true
+          },
+          "baselineContactSpeed": 0.12005432793763883,
+          "refinedContactSpeed": 0.07858325048833491,
+          "sourceDeviation": 0.006025560519125755
+        },
+        "lineage": {
+          "status": "partial",
+          "reason": "Archived GPU source is hashed; original Seedance download is not retained for byte comparison.",
+          "archivedSourceSha256": "1b54525a6140c290ebbe5e1650032460c3745314fef47c09f878f8356e405165",
+          "referenceSha256": "a4b470763d41652b3cfd4e1270848cc9d7362fc4d6b1a8e201ab9d9b5fd88a74"
+        },
+        "files": [
+          {
+            "kind": "seedance",
+            "name": "0_input_video.mp4",
+            "url": "/artifacts/wingchun_m/video/0_input_video.mp4",
+            "size": 413102,
+            "sha256": "1b54525a6140c290ebbe5e1650032460c3745314fef47c09f878f8356e405165",
+            "available": true
+          },
+          {
+            "kind": "gvhmr_preview",
+            "name": "1_incam.mp4",
+            "url": "/artifacts/wingchun_m/video/1_incam.mp4",
+            "size": 399778,
+            "sha256": "10c3eba23d8403e23429205cfb0e78e378a61b54d2e356859363fb65ffbe800c",
+            "available": true
+          },
+          {
+            "kind": "gvhmr_global",
+            "name": "2_global.mp4",
+            "url": "/artifacts/wingchun_m/video/2_global.mp4",
+            "size": 191707,
+            "sha256": "8e76ec30a53d06f46ccca700e0830b47d5cacfbcbaebcd4b730b810aeb9c5a82",
+            "available": true
+          },
+          {
+            "kind": "gvhmr",
+            "name": "hmr4d_results.pt",
+            "url": "/artifacts/wingchun_m/video/hmr4d_results.pt",
+            "size": 428735,
+            "sha256": "39ce72906c4a1799e989ed861b82489f72ed85b0418fe1e4ef5a32d9fc69f90e",
+            "available": true
+          },
+          {
+            "kind": "smplx",
+            "name": "wingchun_m.smplx.npz",
+            "url": "/artifacts/wingchun_m/wingchun_m.smplx.npz",
+            "size": 26761,
+            "sha256": "71820c10cb5cb3598b614140c055a32e507ff8c36a495b7b45c3567830dad641",
+            "available": true
+          },
+          {
+            "kind": "bvh",
+            "name": "wingchun_m.bvh",
+            "url": "/artifacts/wingchun_m/bvh/wingchun_m.bvh",
+            "size": 147414,
+            "sha256": "c8bd5a5c355a5200abc68c80962550e03d05a2256088a17940b75963b34d8ced",
+            "available": true
+          },
+          {
+            "kind": "validation",
+            "name": "wingchun_m_validation.json",
+            "url": "/artifacts/wingchun_m/bvh/wingchun_m_validation.json",
+            "size": 14402,
+            "sha256": "8bbdf7a8366e9944db6ca06de85e7b0c419feab13f9a6cc1cd7d820cd307987b",
+            "available": true
+          },
+          {
+            "kind": "bvh_preview",
+            "name": "3_bvh_preview.mp4",
+            "url": "/artifacts/wingchun_m/video/3_bvh_preview.mp4",
+            "size": 153311,
+            "sha256": "658df6d029d7e09019bae502936cff155d24bc783dcbdfc4f95de8fbd0930134",
+            "available": true
+          }
+        ]
+      },
+      "female": {
+        "caseId": "KUNGFU_WINGCHUN_WINGCHUN_EASY_01_641_F",
+        "gender": "F",
+        "slug": "wingchun_f",
+        "duration": 4.042,
+        "admission": {
+          "status": "PASS",
+          "gates": {
+            "first_frame_identity": true,
+            "no_excessive_freeze": true,
+            "no_speed_ramp_signature": true,
+            "no_probable_loop": true,
+            "no_probable_end_truncation": true,
+            "constant_stream_rate": true
+          }
+        },
+        "gpu": {
+          "stage": "complete",
+          "completedAt": "2026-08-08T17:56:20+00:00"
+        },
+        "audit": {
+          "profile": "biped",
+          "status": "FAIL",
+          "supportCoverage": 0.17525773195876287,
+          "contactSpeed": 0.23476374834684569,
+          "maxTurnDegrees": 23.77553175499436
+        },
+        "validation": {
+          "status": "PASS",
+          "frameCount": 97,
+          "fps": 24.0
+        },
+        "refinement": {
+          "available": true,
+          "accepted": true,
+          "gates": {
+            "contactSpeedImproved": true,
+            "independentSkateNotWorse": true,
+            "supportCoverageNotWorse": true,
+            "sourceDeviationWithin20mm": true
+          },
+          "baselineContactSpeed": 0.23476374834684569,
+          "refinedContactSpeed": 0.13735060380091582,
+          "sourceDeviation": 0.014219104666638465
+        },
+        "lineage": {
+          "status": "partial",
+          "reason": "Archived GPU source is hashed; original Seedance download is not retained for byte comparison.",
+          "archivedSourceSha256": "d3be2087ed16db1e2c032606039cc1e557fe7fb1c1ee659ee55b90bff03b65f4",
+          "referenceSha256": "c9d69ecae4e980c4bba0677ff7e31e79b7f66adb20e47b780c8790c9cfb2b212"
+        },
+        "files": [
+          {
+            "kind": "seedance",
+            "name": "0_input_video.mp4",
+            "url": "/artifacts/wingchun_f/video/0_input_video.mp4",
+            "size": 420989,
+            "sha256": "d3be2087ed16db1e2c032606039cc1e557fe7fb1c1ee659ee55b90bff03b65f4",
+            "available": true
+          },
+          {
+            "kind": "gvhmr_preview",
+            "name": "1_incam.mp4",
+            "url": "/artifacts/wingchun_f/video/1_incam.mp4",
+            "size": 457909,
+            "sha256": "f8364803543f66642ae0a318af975c7dfa153eb9f2dcd558c250757796fc4baa",
+            "available": true
+          },
+          {
+            "kind": "gvhmr_global",
+            "name": "2_global.mp4",
+            "url": "/artifacts/wingchun_f/video/2_global.mp4",
+            "size": 218017,
+            "sha256": "af5c74a88d3594a54f91a03b0e23d063637fe74dbddb46f24de63ef7d92dae8e",
+            "available": true
+          },
+          {
+            "kind": "gvhmr",
+            "name": "hmr4d_results.pt",
+            "url": "/artifacts/wingchun_f/video/hmr4d_results.pt",
+            "size": 428735,
+            "sha256": "3a315ddce0e3c92350ae1db95d542345c81c082933cf3309a25302ffa04f064b",
+            "available": true
+          },
+          {
+            "kind": "smplx",
+            "name": "wingchun_f.smplx.npz",
+            "url": "/artifacts/wingchun_f/wingchun_f.smplx.npz",
+            "size": 26697,
+            "sha256": "5fbd04f327824c0607501d1b368e738ffe575f5c41ffc55b5ba324a59766e4a1",
+            "available": true
+          },
+          {
+            "kind": "bvh",
+            "name": "wingchun_f.bvh",
+            "url": "/artifacts/wingchun_f/bvh/wingchun_f.bvh",
+            "size": 147041,
+            "sha256": "fa752ae8bd205078e038c07d97665fb0302770971beaa737e5a6464f72bf23e7",
+            "available": true
+          },
+          {
+            "kind": "validation",
+            "name": "wingchun_f_validation.json",
+            "url": "/artifacts/wingchun_f/bvh/wingchun_f_validation.json",
+            "size": 15441,
+            "sha256": "aab12ce5e193429a1c428de8d2506f4967ec33c43f57a1a68a17d5861e4f6b5b",
+            "available": true
+          },
+          {
+            "kind": "bvh_preview",
+            "name": "3_bvh_preview.mp4",
+            "url": "/artifacts/wingchun_f/video/3_bvh_preview.mp4",
+            "size": 249365,
+            "sha256": "e13d103edcb42734c58ef5e9f38218452bcd036efddef32a462cd3abd20a5fa9",
+            "available": true
+          },
+          {
+            "kind": "bvh_refined",
+            "name": "wingchun_f_contact_refined.bvh",
+            "url": "/artifacts/refined/wingchun_f_contact_refined.bvh",
+            "size": 147629,
+            "sha256": "a12640c6d923d3f336245d775c772a59c8876e1006ca578420ada0fcae82c2e0",
+            "available": true
+          }
+        ]
+      }
+    },
+    {
+      "actionId": "SCENE_BOX_BOX_01_701",
+      "name": "Floor Box Lift and Side Placement",
+      "description": "Squat to lift a box from the floor and place it on the ground to the side at natural speed.",
+      "category": "Scene",
+      "categorySlug": "scene",
+      "subcategory": "Box Handling",
+      "difficulty": "Medium",
+      "idealDuration": 15,
+      "profile": "biped",
+      "male": {
+        "caseId": "SCENE_BOX_BOX_01_701_M",
+        "gender": "M",
+        "slug": "box_m",
+        "duration": 8.042,
+        "admission": {
+          "status": "PASS",
+          "gates": {
+            "first_frame_identity": true,
+            "no_excessive_freeze": true,
+            "no_speed_ramp_signature": true,
+            "no_probable_loop": true,
+            "no_probable_end_truncation": true,
+            "constant_stream_rate": true
+          }
+        },
+        "gpu": {
+          "stage": "complete",
+          "completedAt": "2026-08-08T17:59:34+00:00"
+        },
+        "audit": {
+          "profile": "biped",
+          "status": "PASS",
+          "supportCoverage": 0.27979274611398963,
+          "contactSpeed": 0.09516003472207862,
+          "maxTurnDegrees": 8.490771989907167
+        },
+        "validation": {
+          "status": "PASS",
+          "frameCount": 193,
+          "fps": 24.0
+        },
+        "refinement": {
+          "available": true,
+          "accepted": false,
+          "gates": {
+            "contactSpeedImproved": true,
+            "independentSkateNotWorse": true,
+            "supportCoverageNotWorse": false,
+            "sourceDeviationWithin20mm": true
+          },
+          "baselineContactSpeed": 0.09516003472207862,
+          "refinedContactSpeed": 0.0669445181983228,
+          "sourceDeviation": 0.004975129191608397
+        },
+        "lineage": {
+          "status": "partial",
+          "reason": "Archived GPU source is hashed; original Seedance download is not retained for byte comparison.",
+          "archivedSourceSha256": "d299a8ac7f593c9f7985b6b453442ca4c7ad1e188d13b7e17241e0f47bebcb11",
+          "referenceSha256": "a4b470763d41652b3cfd4e1270848cc9d7362fc4d6b1a8e201ab9d9b5fd88a74"
+        },
+        "files": [
+          {
+            "kind": "seedance",
+            "name": "0_input_video.mp4",
+            "url": "/artifacts/box_m/video/0_input_video.mp4",
+            "size": 720045,
+            "sha256": "d299a8ac7f593c9f7985b6b453442ca4c7ad1e188d13b7e17241e0f47bebcb11",
+            "available": true
+          },
+          {
+            "kind": "gvhmr_preview",
+            "name": "1_incam.mp4",
+            "url": "/artifacts/box_m/video/1_incam.mp4",
+            "size": 721512,
+            "sha256": "4fc69e44e818fcd8e814763dfe1735a8833e62804542245eeb165e309af3639a",
+            "available": true
+          },
+          {
+            "kind": "gvhmr_global",
+            "name": "2_global.mp4",
+            "url": "/artifacts/box_m/video/2_global.mp4",
+            "size": 313385,
+            "sha256": "42ffd3d6499d863c1bf9c5b9a2e7c409bd7388ab612e415cec75b676529cfa9f",
+            "available": true
+          },
+          {
+            "kind": "gvhmr",
+            "name": "hmr4d_results.pt",
+            "url": "/artifacts/box_m/video/hmr4d_results.pt",
+            "size": 845439,
+            "sha256": "3b9fbd7297df7e5d9fbe37ebcebb73db9e13108180f1f1bdb440428ebda3baae",
+            "available": true
+          },
+          {
+            "kind": "smplx",
+            "name": "box_m.smplx.npz",
+            "url": "/artifacts/box_m/box_m.smplx.npz",
+            "size": 51691,
+            "sha256": "90d20b22d8d812afcebf8966d9e5d08dd1ee1d92a9d6e192f00ce7d211f02f32",
+            "available": true
+          },
+          {
+            "kind": "bvh",
+            "name": "box_m.bvh",
+            "url": "/artifacts/box_m/bvh/box_m.bvh",
+            "size": 285949,
+            "sha256": "7ead5be73280579d8f9aaf36e16154ff75798546441bb616e0f2a75ed2df5c98",
+            "available": true
+          },
+          {
+            "kind": "validation",
+            "name": "box_m_validation.json",
+            "url": "/artifacts/box_m/bvh/box_m_validation.json",
+            "size": 14597,
+            "sha256": "c67ab08dbe9d8e2650335d4d48b669e9ca35ebf937a0dc4728a90da51def80e6",
+            "available": true
+          },
+          {
+            "kind": "bvh_preview",
+            "name": "3_bvh_preview.mp4",
+            "url": "/artifacts/box_m/video/3_bvh_preview.mp4",
+            "size": 312807,
+            "sha256": "cc17168f47e9d645e915cb0681e5c4ffb4aa3a5a1df2a3d9bc6c05cbcc95bd69",
+            "available": true
+          }
+        ]
+      },
+      "female": {
+        "caseId": "SCENE_BOX_BOX_01_701_F",
+        "gender": "F",
+        "slug": "box_f",
+        "duration": 8.042,
+        "admission": {
+          "status": "PASS",
+          "gates": {
+            "first_frame_identity": true,
+            "no_excessive_freeze": true,
+            "no_speed_ramp_signature": true,
+            "no_probable_loop": true,
+            "no_probable_end_truncation": true,
+            "constant_stream_rate": true
+          }
+        },
+        "gpu": {
+          "stage": "complete",
+          "completedAt": "2026-08-08T18:02:35+00:00"
+        },
+        "audit": {
+          "profile": "biped",
+          "status": "FAIL",
+          "supportCoverage": 0.24870466321243523,
+          "contactSpeed": 0.1041663354721974,
+          "maxTurnDegrees": 7.399242281624493
+        },
+        "validation": {
+          "status": "PASS",
+          "frameCount": 193,
+          "fps": 24.0
+        },
+        "refinement": {
+          "available": true,
+          "accepted": false,
+          "gates": {
+            "contactSpeedImproved": true,
+            "independentSkateNotWorse": true,
+            "supportCoverageNotWorse": false,
+            "sourceDeviationWithin20mm": true
+          },
+          "baselineContactSpeed": 0.1041663354721974,
+          "refinedContactSpeed": 0.06321288579272467,
+          "sourceDeviation": 0.005747984390413245
+        },
+        "lineage": {
+          "status": "partial",
+          "reason": "Archived GPU source is hashed; original Seedance download is not retained for byte comparison.",
+          "archivedSourceSha256": "081d4cdd2846a12d5e3c193cf1ab4d575eb284ffc56d7499f6538bdc9a32a973",
+          "referenceSha256": "c9d69ecae4e980c4bba0677ff7e31e79b7f66adb20e47b780c8790c9cfb2b212"
+        },
+        "files": [
+          {
+            "kind": "seedance",
+            "name": "0_input_video.mp4",
+            "url": "/artifacts/box_f/video/0_input_video.mp4",
+            "size": 641883,
+            "sha256": "081d4cdd2846a12d5e3c193cf1ab4d575eb284ffc56d7499f6538bdc9a32a973",
+            "available": true
+          },
+          {
+            "kind": "gvhmr_preview",
+            "name": "1_incam.mp4",
+            "url": "/artifacts/box_f/video/1_incam.mp4",
+            "size": 673743,
+            "sha256": "2ea8121ba2f41121e0ba5f641613205c001ae07eb8dfcf5a7ae45f2100721ddf",
+            "available": true
+          },
+          {
+            "kind": "gvhmr_global",
+            "name": "2_global.mp4",
+            "url": "/artifacts/box_f/video/2_global.mp4",
+            "size": 324899,
+            "sha256": "5bab2cfb36bc6b6bb178c8efb23a12e2eef41958b1cce562dc4639b0bcd81e7c",
+            "available": true
+          },
+          {
+            "kind": "gvhmr",
+            "name": "hmr4d_results.pt",
+            "url": "/artifacts/box_f/video/hmr4d_results.pt",
+            "size": 845439,
+            "sha256": "ebbd78017640bcca919ded6f2db83204708c6e8a24681ac09caf4bc001adecee",
+            "available": true
+          },
+          {
+            "kind": "smplx",
+            "name": "box_f.smplx.npz",
+            "url": "/artifacts/box_f/box_f.smplx.npz",
+            "size": 51530,
+            "sha256": "30bd2c945d4a01e501090a32c48ba741dd2c3f270b82760e6ab0e6500fae1050",
+            "available": true
+          },
+          {
+            "kind": "bvh",
+            "name": "box_f.bvh",
+            "url": "/artifacts/box_f/bvh/box_f.bvh",
+            "size": 285354,
+            "sha256": "9d38e0ffa93f2ea29756a23d17f02e546ffccff13a54cb0207ee86c2e7f67c47",
+            "available": true
+          },
+          {
+            "kind": "validation",
+            "name": "box_f_validation.json",
+            "url": "/artifacts/box_f/bvh/box_f_validation.json",
+            "size": 14608,
+            "sha256": "68513c43584811f97885dbb07600d9bfbad1cc371329a63ad1b238f579a8647c",
+            "available": true
+          },
+          {
+            "kind": "bvh_preview",
+            "name": "3_bvh_preview.mp4",
+            "url": "/artifacts/box_f/video/3_bvh_preview.mp4",
+            "size": 292561,
+            "sha256": "e6ee6b07c378f7401695aa646cee81b891a7bdf0d15066077c3ed6e550af320d",
+            "available": true
+          }
+        ]
+      }
+    },
+    {
+      "actionId": "SCENE_CLEAN_CLEAN_11_711",
+      "name": "Sweeping Motion — Natural Speed",
+      "description": "Perform a complete floor-sweeping task at natural speed.",
+      "category": "Scene",
+      "categorySlug": "scene",
+      "subcategory": "Cleaning",
+      "difficulty": "Medium",
+      "idealDuration": 20,
+      "profile": "biped",
+      "male": {
+        "caseId": "SCENE_CLEAN_CLEAN_11_711_M",
+        "gender": "M",
+        "slug": "clean_m",
+        "duration": 15.042,
+        "admission": {
+          "status": "PASS",
+          "gates": {
+            "first_frame_identity": true,
+            "no_excessive_freeze": true,
+            "no_speed_ramp_signature": true,
+            "no_probable_loop": true,
+            "no_probable_end_truncation": true,
+            "constant_stream_rate": true
+          }
+        },
+        "gpu": {
+          "stage": "complete",
+          "completedAt": "2026-08-08T18:05:31+00:00"
+        },
+        "audit": {
+          "profile": "biped",
+          "status": "FAIL",
+          "supportCoverage": 0.21606648199445982,
+          "contactSpeed": 0.08605262360443865,
+          "maxTurnDegrees": 17.019172161495522
+        },
+        "validation": {
+          "status": "PASS",
+          "frameCount": 361,
+          "fps": 24.0
+        },
+        "refinement": {
+          "available": true,
+          "accepted": false,
+          "gates": {
+            "contactSpeedImproved": true,
+            "independentSkateNotWorse": true,
+            "supportCoverageNotWorse": false,
+            "sourceDeviationWithin20mm": true
+          },
+          "baselineContactSpeed": 0.08605262360443865,
+          "refinedContactSpeed": 0.06802551792095286,
+          "sourceDeviation": 0.006906307161577542
+        },
+        "lineage": {
+          "status": "partial",
+          "reason": "Archived GPU source is hashed; original Seedance download is not retained for byte comparison.",
+          "archivedSourceSha256": "26f4b143f0961d95b225a45d38e021381e5225d9717e07a35bdbdc9ea0706522",
+          "referenceSha256": "a4b470763d41652b3cfd4e1270848cc9d7362fc4d6b1a8e201ab9d9b5fd88a74"
+        },
+        "files": [
+          {
+            "kind": "seedance",
+            "name": "0_input_video.mp4",
+            "url": "/artifacts/clean_m/video/0_input_video.mp4",
+            "size": 1407912,
+            "sha256": "26f4b143f0961d95b225a45d38e021381e5225d9717e07a35bdbdc9ea0706522",
+            "available": true
+          },
+          {
+            "kind": "gvhmr_preview",
+            "name": "1_incam.mp4",
+            "url": "/artifacts/clean_m/video/1_incam.mp4",
+            "size": 1400344,
+            "sha256": "d94c03d3cbce3c2c6557ef138f82d55060eec76e446990e6d262115f36da2630",
+            "available": true
+          },
+          {
+            "kind": "gvhmr_global",
+            "name": "2_global.mp4",
+            "url": "/artifacts/clean_m/video/2_global.mp4",
+            "size": 606701,
+            "sha256": "efe47d47298a3e7c9322a5b2c1c8855f8b8fe5c41c98e303c30745b4d70d6755",
+            "available": true
+          },
+          {
+            "kind": "gvhmr",
+            "name": "hmr4d_results.pt",
+            "url": "/artifacts/clean_m/video/hmr4d_results.pt",
+            "size": 1574079,
+            "sha256": "4ce2f5d35565defe0d516d5ae4414da50ea44be6fbeaaa6b1ff9e4b372779fe4",
+            "available": true
+          },
+          {
+            "kind": "smplx",
+            "name": "clean_m.smplx.npz",
+            "url": "/artifacts/clean_m/clean_m.smplx.npz",
+            "size": 94915,
+            "sha256": "b4bc61b3ddfb8e7646ddc9bec9bfc292e2e7387cde9700ae68f864f2abcea040",
+            "available": true
+          },
+          {
+            "kind": "bvh",
+            "name": "clean_m.bvh",
+            "url": "/artifacts/clean_m/bvh/clean_m.bvh",
+            "size": 526376,
+            "sha256": "02d3e0a5a42e2a660389c2d6d943685aa126fc7eeafacc923c76827787189f89",
+            "available": true
+          },
+          {
+            "kind": "validation",
+            "name": "clean_m_validation.json",
+            "url": "/artifacts/clean_m/bvh/clean_m_validation.json",
+            "size": 15082,
+            "sha256": "a84ca2fd932f0b7009c3e1c96e3a21d80e60877bf3d4e1272000561b973024e4",
+            "available": true
+          },
+          {
+            "kind": "bvh_preview",
+            "name": "3_bvh_preview.mp4",
+            "url": "/artifacts/clean_m/video/3_bvh_preview.mp4",
+            "size": 576002,
+            "sha256": "3f4c5a65e19b1e1f4b23670b9dfd0de26f6a2a93cc4813eca5347b069e543504",
+            "available": true
+          }
+        ]
+      },
+      "female": {
+        "caseId": "SCENE_CLEAN_CLEAN_11_711_F",
+        "gender": "F",
+        "slug": "clean_f",
+        "duration": 15.042,
+        "admission": {
+          "status": "PASS",
+          "gates": {
+            "first_frame_identity": true,
+            "no_excessive_freeze": true,
+            "no_speed_ramp_signature": true,
+            "no_probable_loop": true,
+            "no_probable_end_truncation": true,
+            "constant_stream_rate": true
+          }
+        },
+        "gpu": {
+          "stage": "complete",
+          "completedAt": "2026-08-08T18:08:43+00:00"
+        },
+        "audit": {
+          "profile": "biped",
+          "status": "FAIL",
+          "supportCoverage": 0.23545706371191136,
+          "contactSpeed": 0.12717461289693519,
+          "maxTurnDegrees": 13.710834625808687
+        },
+        "validation": {
+          "status": "PASS",
+          "frameCount": 361,
+          "fps": 24.0
+        },
+        "refinement": {
+          "available": true,
+          "accepted": true,
+          "gates": {
+            "contactSpeedImproved": true,
+            "independentSkateNotWorse": true,
+            "supportCoverageNotWorse": true,
+            "sourceDeviationWithin20mm": true
+          },
+          "baselineContactSpeed": 0.12717461289693519,
+          "refinedContactSpeed": 0.10214941276218921,
+          "sourceDeviation": 0.006244542785972939
+        },
+        "lineage": {
+          "status": "partial",
+          "reason": "Archived GPU source is hashed; original Seedance download is not retained for byte comparison.",
+          "archivedSourceSha256": "47f81c79f96d690dfd5d9efcddd3bf9199e5d409ad3d8c1c1a930db22a93b8c7",
+          "referenceSha256": "c9d69ecae4e980c4bba0677ff7e31e79b7f66adb20e47b780c8790c9cfb2b212"
+        },
+        "files": [
+          {
+            "kind": "seedance",
+            "name": "0_input_video.mp4",
+            "url": "/artifacts/clean_f/video/0_input_video.mp4",
+            "size": 1644134,
+            "sha256": "47f81c79f96d690dfd5d9efcddd3bf9199e5d409ad3d8c1c1a930db22a93b8c7",
+            "available": true
+          },
+          {
+            "kind": "gvhmr_preview",
+            "name": "1_incam.mp4",
+            "url": "/artifacts/clean_f/video/1_incam.mp4",
+            "size": 1681856,
+            "sha256": "5025fad35d6363f91a24d1188634b14e38a9aea670284289b56423350f865b2e",
+            "available": true
+          },
+          {
+            "kind": "gvhmr_global",
+            "name": "2_global.mp4",
+            "url": "/artifacts/clean_f/video/2_global.mp4",
+            "size": 634694,
+            "sha256": "5c2c86276834dbf80254c47266fa238ebc6e63dd61bccd964464643882752e04",
+            "available": true
+          },
+          {
+            "kind": "gvhmr",
+            "name": "hmr4d_results.pt",
+            "url": "/artifacts/clean_f/video/hmr4d_results.pt",
+            "size": 1574079,
+            "sha256": "b7b6157746c3d52bb0812ecd39a3f2c45b102bf44a0f6a39066ceb1c06a713e6",
+            "available": true
+          },
+          {
+            "kind": "smplx",
+            "name": "clean_f.smplx.npz",
+            "url": "/artifacts/clean_f/clean_f.smplx.npz",
+            "size": 94878,
+            "sha256": "5e29141401c64805302017e17bc399499a7c39f7cae020d1acd60b78f4d29a5b",
+            "available": true
+          },
+          {
+            "kind": "bvh",
+            "name": "clean_f.bvh",
+            "url": "/artifacts/clean_f/bvh/clean_f.bvh",
+            "size": 524659,
+            "sha256": "27072c1335b8311c72752e86f601ea52f2b7d38d1cc9a1c06a4526a8e07ac807",
+            "available": true
+          },
+          {
+            "kind": "validation",
+            "name": "clean_f_validation.json",
+            "url": "/artifacts/clean_f/bvh/clean_f_validation.json",
+            "size": 15143,
+            "sha256": "8c4afaa3ffcddaa94da1a0cc6b931a3f51c19985676140228d48aa9f9433758c",
+            "available": true
+          },
+          {
+            "kind": "bvh_preview",
+            "name": "3_bvh_preview.mp4",
+            "url": "/artifacts/clean_f/video/3_bvh_preview.mp4",
+            "size": 600745,
+            "sha256": "b16bc16e7d5963a606f20c3aa65215d10b35b392400e46cfac45ba313fd9fe85",
+            "available": true
+          },
+          {
+            "kind": "bvh_refined",
+            "name": "clean_f_contact_refined.bvh",
+            "url": "/artifacts/refined/clean_f_contact_refined.bvh",
+            "size": 526819,
+            "sha256": "51aa3c58dd23094cfd1257cac559de6dada9385d0bd85f5277ab4881cf9ba16e",
+            "available": true
+          }
+        ]
+      }
+    },
+    {
+      "actionId": "BASE_WALK_FORWARD_SLOW_HEAD_TURN_002",
+      "name": "Slow Forward Walk — Head Turn",
+      "description": "Walk forward slowly while making a small, natural observational head turn.",
+      "category": "Basics",
+      "categorySlug": "base",
+      "subcategory": "Omni Walk",
+      "difficulty": "Easy",
+      "idealDuration": 10,
+      "profile": "biped",
+      "male": {
+        "caseId": "BASE_WALK_FORWARD_SLOW_HEAD_TURN_002_M",
+        "gender": "M",
+        "slug": "walk_slow_head_turn_m",
+        "duration": 8.042,
+        "admission": {
+          "status": "PASS",
+          "gates": {
+            "first_frame_identity": true,
+            "no_excessive_freeze": true,
+            "no_speed_ramp_signature": true,
+            "no_probable_loop": true,
+            "no_probable_end_truncation": true,
+            "constant_stream_rate": true,
+            "requested_duration_match": true
+          }
+        },
+        "gpu": {
+          "stage": "complete",
+          "completedAt": "2026-08-09T20:09:58.629338+00:00"
+        },
+        "audit": {
+          "profile": "biped",
+          "status": "PASS",
+          "supportCoverage": 0.27461139896373055,
+          "contactSpeed": 0.13374001834806404,
+          "maxTurnDegrees": 11.776598625277215
+        },
+        "validation": {
+          "status": "PASS",
+          "frameCount": 193,
+          "fps": 24.0
+        },
+        "refinement": {
+          "available": false,
+          "accepted": false,
+          "gates": {}
+        },
+        "lineage": {
+          "status": "partial",
+          "reason": "Archived GPU source is hashed; original Seedance download is not retained for byte comparison.",
+          "archivedSourceSha256": "013c9b6a0ca9bb55b083e1ff67fd735db6169e6c519937755b0502cd79ca76af",
+          "referenceSha256": "73abf31d0b804dc3dec554338f0f1d68d7c6c62c52363475b04305d98c1ec11f"
+        },
+        "files": [
+          {
+            "kind": "seedance",
+            "name": "0_input_video.mp4",
+            "url": "/artifacts/walk_slow_head_turn_m/video/0_input_video.mp4",
+            "size": 2123775,
+            "sha256": "013c9b6a0ca9bb55b083e1ff67fd735db6169e6c519937755b0502cd79ca76af",
+            "available": true
+          },
+          {
+            "kind": "gvhmr_preview",
+            "name": "1_incam.mp4",
+            "url": "/artifacts/walk_slow_head_turn_m/video/1_incam.mp4",
+            "size": 767969,
+            "sha256": "31fa24555be961681d2b4492544810ddbb8f4e80542843e92377fa55ac7ae0ac",
+            "available": true
+          },
+          {
+            "kind": "gvhmr_global",
+            "name": "2_global.mp4",
+            "url": "/artifacts/walk_slow_head_turn_m/video/2_global.mp4",
+            "size": 181471,
+            "sha256": "a0aa9671b1453c1906ea0a84b6c3d480e876211cb5d7a9e65507a75dd6b12dcb",
+            "available": true
+          },
+          {
+            "kind": "gvhmr",
+            "name": "hmr4d_results.pt",
+            "url": "/artifacts/walk_slow_head_turn_m/video/hmr4d_results.pt",
+            "size": 845439,
+            "sha256": "8a4ed461e25892b7e11b7d3abd2d69a33ed705833450501081d6366ada6faec1",
+            "available": true
+          },
+          {
+            "kind": "smplx",
+            "name": "walk_slow_head_turn_m.smplx.npz",
+            "url": "/artifacts/walk_slow_head_turn_m/walk_slow_head_turn_m.smplx.npz",
+            "size": 51392,
+            "sha256": "1bbc166a22d4485a24b50aa966a81853de6f3880b2d66692acaac5a8b49d6abb",
+            "available": true
+          },
+          {
+            "kind": "bvh",
+            "name": "walk_slow_head_turn_m.bvh",
+            "url": "/artifacts/walk_slow_head_turn_m/bvh/walk_slow_head_turn_m.bvh",
+            "size": 282570,
+            "sha256": "a4ddce472c974be2948a93aba740554ef852a65fb864aba4d402e2823752b0a3",
+            "available": true
+          },
+          {
+            "kind": "validation",
+            "name": "walk_slow_head_turn_m_validation.json",
+            "url": "/artifacts/walk_slow_head_turn_m/bvh/walk_slow_head_turn_m_validation.json",
+            "size": 14671,
+            "sha256": "fc77a71e398310fbad07c2dd133edf66f744d4efcca9d5805b56bb003f941a71",
+            "available": true
+          },
+          {
+            "kind": "bvh_preview",
+            "name": "3_bvh_preview.mp4",
+            "url": "/artifacts/walk_slow_head_turn_m/video/3_bvh_preview.mp4",
+            "size": 235020,
+            "sha256": "892bdae03a89272eb2cd70d74b133c4857ab83a6eea9aebbdbd16addebd52131",
+            "available": true
+          }
+        ]
+      },
+      "female": {
+        "caseId": "BASE_WALK_FORWARD_SLOW_HEAD_TURN_002_F",
+        "gender": "F",
+        "slug": "walk_slow_head_turn_f",
+        "duration": 8.042,
+        "admission": {
+          "status": "PASS",
+          "gates": {
+            "first_frame_identity": true,
+            "no_excessive_freeze": true,
+            "no_speed_ramp_signature": true,
+            "no_probable_loop": true,
+            "no_probable_end_truncation": true,
+            "constant_stream_rate": true,
+            "requested_duration_match": true
+          }
+        },
+        "gpu": {
+          "stage": "complete",
+          "completedAt": "2026-08-09T20:09:59.214024+00:00"
+        },
+        "audit": {
+          "profile": "biped",
+          "status": "FAIL",
+          "supportCoverage": 0.32642487046632124,
+          "contactSpeed": 0.36282815448385264,
+          "maxTurnDegrees": 16.49858421122462
+        },
+        "validation": {
+          "status": "PASS",
+          "frameCount": 193,
+          "fps": 24.0
+        },
+        "refinement": {
+          "available": false,
+          "accepted": false,
+          "gates": {}
+        },
+        "lineage": {
+          "status": "partial",
+          "reason": "Archived GPU source is hashed; original Seedance download is not retained for byte comparison.",
+          "archivedSourceSha256": "c55fde6ca4986df0ff6888906e6e0f4fbe101f84648d52d54f1feaf0a49c2f4d",
+          "referenceSha256": "68bea57b9fa43919bcc8a5c0fee0ab5408161d4220743a9ba47af296edb44f60"
+        },
+        "files": [
+          {
+            "kind": "seedance",
+            "name": "0_input_video.mp4",
+            "url": "/artifacts/walk_slow_head_turn_f/video/0_input_video.mp4",
+            "size": 1817301,
+            "sha256": "c55fde6ca4986df0ff6888906e6e0f4fbe101f84648d52d54f1feaf0a49c2f4d",
+            "available": true
+          },
+          {
+            "kind": "gvhmr_preview",
+            "name": "1_incam.mp4",
+            "url": "/artifacts/walk_slow_head_turn_f/video/1_incam.mp4",
+            "size": 753203,
+            "sha256": "75b970ca31e16c659bf5b0908cf1e33fb8fbb7fdca9eb1f5ed3542f9f0fe89e4",
+            "available": true
+          },
+          {
+            "kind": "gvhmr_global",
+            "name": "2_global.mp4",
+            "url": "/artifacts/walk_slow_head_turn_f/video/2_global.mp4",
+            "size": 262628,
+            "sha256": "ca62f29ff63fe607adb3fb907f63f1adcef235bd97aa0b3b123e0657189a9d71",
+            "available": true
+          },
+          {
+            "kind": "gvhmr",
+            "name": "hmr4d_results.pt",
+            "url": "/artifacts/walk_slow_head_turn_f/video/hmr4d_results.pt",
+            "size": 845439,
+            "sha256": "7267467a531c57a18e0e91075738d873b7ea061f248ea703340406301d366b21",
+            "available": true
+          },
+          {
+            "kind": "smplx",
+            "name": "walk_slow_head_turn_f.smplx.npz",
+            "url": "/artifacts/walk_slow_head_turn_f/walk_slow_head_turn_f.smplx.npz",
+            "size": 51342,
+            "sha256": "7660b0c9704c33684f6be96eab46324df8257be7bca2edd854698910ab720b50",
+            "available": true
+          },
+          {
+            "kind": "bvh",
+            "name": "walk_slow_head_turn_f.bvh",
+            "url": "/artifacts/walk_slow_head_turn_f/bvh/walk_slow_head_turn_f.bvh",
+            "size": 282502,
+            "sha256": "b1fcee0aaf2603bcffedf29a8bfd9321a9080856f482db71082b37c49f6ac53a",
+            "available": true
+          },
+          {
+            "kind": "validation",
+            "name": "walk_slow_head_turn_f_validation.json",
+            "url": "/artifacts/walk_slow_head_turn_f/bvh/walk_slow_head_turn_f_validation.json",
+            "size": 14673,
+            "sha256": "0ebb8d0d4d2c90c6a3370dfd153541772b96e0c5c7c2566fce70c9aba5857569",
+            "available": true
+          },
+          {
+            "kind": "bvh_preview",
+            "name": "3_bvh_preview.mp4",
+            "url": "/artifacts/walk_slow_head_turn_f/video/3_bvh_preview.mp4",
+            "size": 321441,
+            "sha256": "7bf1502a128c816d57bf1f4b5dae31fc2a0c669a366f8f72479bd5ec2ad84855",
+            "available": true
+          }
+        ]
+      }
+    },
+    {
+      "actionId": "BASE_WALK_FORWARD_SLOW_ARM_SMALL_003",
+      "name": "Slow Forward Walk — Relaxed Arms",
+      "description": "Walk forward slowly with relaxed arms moving through a compact natural range.",
+      "category": "Basics",
+      "categorySlug": "base",
+      "subcategory": "Omni Walk",
+      "difficulty": "Easy",
+      "idealDuration": 10,
+      "profile": "biped",
+      "male": {
+        "caseId": "BASE_WALK_FORWARD_SLOW_ARM_SMALL_003_M",
+        "gender": "M",
+        "slug": "walk_slow_arm_small_m",
+        "duration": 8.042,
+        "admission": {
+          "status": "PASS",
+          "gates": {
+            "first_frame_identity": true,
+            "no_excessive_freeze": true,
+            "no_speed_ramp_signature": true,
+            "no_probable_loop": true,
+            "no_probable_end_truncation": true,
+            "constant_stream_rate": true,
+            "requested_duration_match": true
+          }
+        },
+        "gpu": {
+          "stage": "complete",
+          "completedAt": "2026-08-09T20:09:59.833822+00:00"
+        },
+        "audit": {
+          "profile": "biped",
+          "status": "PASS",
+          "supportCoverage": 0.27979274611398963,
+          "contactSpeed": 0.21285724634942463,
+          "maxTurnDegrees": 18.280837273027124
+        },
+        "validation": {
+          "status": "PASS",
+          "frameCount": 193,
+          "fps": 24.0
+        },
+        "refinement": {
+          "available": false,
+          "accepted": false,
+          "gates": {}
+        },
+        "lineage": {
+          "status": "partial",
+          "reason": "Archived GPU source is hashed; original Seedance download is not retained for byte comparison.",
+          "archivedSourceSha256": "974374a5b03f55171e77565de323170351e87cc673fcc7f561067ad71b1bfc5e",
+          "referenceSha256": "73abf31d0b804dc3dec554338f0f1d68d7c6c62c52363475b04305d98c1ec11f"
+        },
+        "files": [
+          {
+            "kind": "seedance",
+            "name": "0_input_video.mp4",
+            "url": "/artifacts/walk_slow_arm_small_m/video/0_input_video.mp4",
+            "size": 2241291,
+            "sha256": "974374a5b03f55171e77565de323170351e87cc673fcc7f561067ad71b1bfc5e",
+            "available": true
+          },
+          {
+            "kind": "gvhmr_preview",
+            "name": "1_incam.mp4",
+            "url": "/artifacts/walk_slow_arm_small_m/video/1_incam.mp4",
+            "size": 875283,
+            "sha256": "0f420fc2d7f6e25c766abce3b93a3aa3e93bc4e03f26c56e0ea7273594f7b40a",
+            "available": true
+          },
+          {
+            "kind": "gvhmr_global",
+            "name": "2_global.mp4",
+            "url": "/artifacts/walk_slow_arm_small_m/video/2_global.mp4",
+            "size": 323742,
+            "sha256": "47d4aa0032f45d32439317f72e1abf0481c7e77e665455f6057674e1bd977a9b",
+            "available": true
+          },
+          {
+            "kind": "gvhmr",
+            "name": "hmr4d_results.pt",
+            "url": "/artifacts/walk_slow_arm_small_m/video/hmr4d_results.pt",
+            "size": 845439,
+            "sha256": "bbc35897ce6da2b7cabfc80d9f3bc2469d2ac2c0aede1962f13f58c1e770f86d",
+            "available": true
+          },
+          {
+            "kind": "smplx",
+            "name": "walk_slow_arm_small_m.smplx.npz",
+            "url": "/artifacts/walk_slow_arm_small_m/walk_slow_arm_small_m.smplx.npz",
+            "size": 51361,
+            "sha256": "1216d9aafc9763469c858f0a798a72cf71376da7a9c7f57b70e6f62f57ffe2c7",
+            "available": true
+          },
+          {
+            "kind": "bvh",
+            "name": "walk_slow_arm_small_m.bvh",
+            "url": "/artifacts/walk_slow_arm_small_m/bvh/walk_slow_arm_small_m.bvh",
+            "size": 283164,
+            "sha256": "b0964c109db8e0b8657f45d284edfa5a6f2a682e3a6fd40fff9c38c4234a57d4",
+            "available": true
+          },
+          {
+            "kind": "validation",
+            "name": "walk_slow_arm_small_m_validation.json",
+            "url": "/artifacts/walk_slow_arm_small_m/bvh/walk_slow_arm_small_m_validation.json",
+            "size": 14614,
+            "sha256": "996c0394b3c52172c1db4163eb53eecabfe56356d6867932058ab7cd655138d2",
+            "available": true
+          },
+          {
+            "kind": "bvh_preview",
+            "name": "3_bvh_preview.mp4",
+            "url": "/artifacts/walk_slow_arm_small_m/video/3_bvh_preview.mp4",
+            "size": 275861,
+            "sha256": "c88738632041e385d5d0c7305228209920ac54c5c50b13ec1f9a901fd79fd13c",
+            "available": true
+          }
+        ]
+      },
+      "female": {
+        "caseId": "BASE_WALK_FORWARD_SLOW_ARM_SMALL_003_F",
+        "gender": "F",
+        "slug": "walk_slow_arm_small_f",
+        "duration": 8.042,
+        "admission": {
+          "status": "PASS",
+          "gates": {
+            "first_frame_identity": true,
+            "no_excessive_freeze": true,
+            "no_speed_ramp_signature": true,
+            "no_probable_loop": true,
+            "no_probable_end_truncation": true,
+            "constant_stream_rate": true,
+            "requested_duration_match": true
+          }
+        },
+        "gpu": {
+          "stage": "complete",
+          "completedAt": "2026-08-09T20:10:00.421982+00:00"
+        },
+        "audit": {
+          "profile": "biped",
+          "status": "PASS",
+          "supportCoverage": 0.2849740932642487,
+          "contactSpeed": 0.1874899173671131,
+          "maxTurnDegrees": 13.248779398350916
+        },
+        "validation": {
+          "status": "PASS",
+          "frameCount": 193,
+          "fps": 24.0
+        },
+        "refinement": {
+          "available": false,
+          "accepted": false,
+          "gates": {}
+        },
+        "lineage": {
+          "status": "partial",
+          "reason": "Archived GPU source is hashed; original Seedance download is not retained for byte comparison.",
+          "archivedSourceSha256": "55c8b1081b2d1098d3233eee31c617f5b42d5b5bcc74016f0d6193f8f6fe92b8",
+          "referenceSha256": "68bea57b9fa43919bcc8a5c0fee0ab5408161d4220743a9ba47af296edb44f60"
+        },
+        "files": [
+          {
+            "kind": "seedance",
+            "name": "0_input_video.mp4",
+            "url": "/artifacts/walk_slow_arm_small_f/video/0_input_video.mp4",
+            "size": 1693530,
+            "sha256": "55c8b1081b2d1098d3233eee31c617f5b42d5b5bcc74016f0d6193f8f6fe92b8",
+            "available": true
+          },
+          {
+            "kind": "gvhmr_preview",
+            "name": "1_incam.mp4",
+            "url": "/artifacts/walk_slow_arm_small_f/video/1_incam.mp4",
+            "size": 672446,
+            "sha256": "3a6ea32eca89b53b80398e3a9e86097606725af05f1dfb304d8692514a57501d",
+            "available": true
+          },
+          {
+            "kind": "gvhmr_global",
+            "name": "2_global.mp4",
+            "url": "/artifacts/walk_slow_arm_small_f/video/2_global.mp4",
+            "size": 319735,
+            "sha256": "9ed6376c2a78f0c1acf374fa3bd7a4522f9b25821bf75a44f4fb8e53dac29d92",
+            "available": true
+          },
+          {
+            "kind": "gvhmr",
+            "name": "hmr4d_results.pt",
+            "url": "/artifacts/walk_slow_arm_small_f/video/hmr4d_results.pt",
+            "size": 845439,
+            "sha256": "342f6edd063d997d27c539b009f19fcd0caa2d102079c69108b2200837e18f5f",
+            "available": true
+          },
+          {
+            "kind": "smplx",
+            "name": "walk_slow_arm_small_f.smplx.npz",
+            "url": "/artifacts/walk_slow_arm_small_f/walk_slow_arm_small_f.smplx.npz",
+            "size": 51353,
+            "sha256": "5765ff80ecd5f8bef12ab6675e1078feaa959aee14eef0ef1febab4068d1b666",
+            "available": true
+          },
+          {
+            "kind": "bvh",
+            "name": "walk_slow_arm_small_f.bvh",
+            "url": "/artifacts/walk_slow_arm_small_f/bvh/walk_slow_arm_small_f.bvh",
+            "size": 282259,
+            "sha256": "279a76dad15b677543e0fce1f8509963430f6604333103e4286a594935247292",
+            "available": true
+          },
+          {
+            "kind": "validation",
+            "name": "walk_slow_arm_small_f_validation.json",
+            "url": "/artifacts/walk_slow_arm_small_f/bvh/walk_slow_arm_small_f_validation.json",
+            "size": 15077,
+            "sha256": "6e6abab0bc236979955ccfdd6946da683a148cc86eb6678b1dc47c18912d0eab",
+            "available": true
+          },
+          {
+            "kind": "bvh_preview",
+            "name": "3_bvh_preview.mp4",
+            "url": "/artifacts/walk_slow_arm_small_f/video/3_bvh_preview.mp4",
+            "size": 276924,
+            "sha256": "7b733b93cc285dae4dfbfa0cde2792879abc78571548163d52c52b681b8ef02d",
+            "available": true
+          }
+        ]
+      }
+    },
+    {
+      "actionId": "BASE_WALK_FORWARD_NORMAL_ARM_NAT_004",
+      "name": "Forward Walk — Natural Arm Swing",
+      "description": "Walk forward at an ordinary pace with upright posture and natural arm swing.",
+      "category": "Basics",
+      "categorySlug": "base",
+      "subcategory": "Omni Walk",
+      "difficulty": "Easy",
+      "idealDuration": 10,
+      "profile": "biped",
+      "male": {
+        "caseId": "BASE_WALK_FORWARD_NORMAL_ARM_NAT_004_M",
+        "gender": "M",
+        "slug": "walk_normal_arm_nat_m",
+        "duration": 8.042,
+        "admission": {
+          "status": "PASS",
+          "gates": {
+            "first_frame_identity": true,
+            "no_excessive_freeze": true,
+            "no_speed_ramp_signature": true,
+            "no_probable_loop": true,
+            "no_probable_end_truncation": true,
+            "constant_stream_rate": true,
+            "requested_duration_match": true
+          }
+        },
+        "gpu": {
+          "stage": "complete",
+          "completedAt": "2026-08-09T20:10:01.033230+00:00"
+        },
+        "audit": {
+          "profile": "biped",
+          "status": "FAIL",
+          "supportCoverage": 0.2849740932642487,
+          "contactSpeed": 0.33889469430430236,
+          "maxTurnDegrees": 17.918939927745548
+        },
+        "validation": {
+          "status": "PASS",
+          "frameCount": 193,
+          "fps": 24.0
+        },
+        "refinement": {
+          "available": false,
+          "accepted": false,
+          "gates": {}
+        },
+        "lineage": {
+          "status": "partial",
+          "reason": "Archived GPU source is hashed; original Seedance download is not retained for byte comparison.",
+          "archivedSourceSha256": "91ba136a18e505a21a537b5ce8513c4762e254dd4809af5d67e7d56b4f471fff",
+          "referenceSha256": "73abf31d0b804dc3dec554338f0f1d68d7c6c62c52363475b04305d98c1ec11f"
+        },
+        "files": [
+          {
+            "kind": "seedance",
+            "name": "0_input_video.mp4",
+            "url": "/artifacts/walk_normal_arm_nat_m/video/0_input_video.mp4",
+            "size": 2262013,
+            "sha256": "91ba136a18e505a21a537b5ce8513c4762e254dd4809af5d67e7d56b4f471fff",
+            "available": true
+          },
+          {
+            "kind": "gvhmr_preview",
+            "name": "1_incam.mp4",
+            "url": "/artifacts/walk_normal_arm_nat_m/video/1_incam.mp4",
+            "size": 976779,
+            "sha256": "cd37f7fe0f5a66dbbfd69a32ef2b16d7982d8e4e85b7783d10c809ef682619d9",
+            "available": true
+          },
+          {
+            "kind": "gvhmr_global",
+            "name": "2_global.mp4",
+            "url": "/artifacts/walk_normal_arm_nat_m/video/2_global.mp4",
+            "size": 369389,
+            "sha256": "49c0d3e016f45964e88bab9480e884fe80dcc4a7acee398c77f04a382f186c04",
+            "available": true
+          },
+          {
+            "kind": "gvhmr",
+            "name": "hmr4d_results.pt",
+            "url": "/artifacts/walk_normal_arm_nat_m/video/hmr4d_results.pt",
+            "size": 845439,
+            "sha256": "2bc9c8d285519e528f02a4996f2fd41d845bd3c04d93a1040329782db506b41e",
+            "available": true
+          },
+          {
+            "kind": "smplx",
+            "name": "walk_normal_arm_nat_m.smplx.npz",
+            "url": "/artifacts/walk_normal_arm_nat_m/walk_normal_arm_nat_m.smplx.npz",
+            "size": 51430,
+            "sha256": "ebac16707d312614c75794f5680505b76693ba78993505d8889930321a780333",
+            "available": true
+          },
+          {
+            "kind": "bvh",
+            "name": "walk_normal_arm_nat_m.bvh",
+            "url": "/artifacts/walk_normal_arm_nat_m/bvh/walk_normal_arm_nat_m.bvh",
+            "size": 283595,
+            "sha256": "a9d5c7c0bbc5c7d988dbd0c0470699ae12eb84d9e2bdf11196f3c1b17151aa39",
+            "available": true
+          },
+          {
+            "kind": "validation",
+            "name": "walk_normal_arm_nat_m_validation.json",
+            "url": "/artifacts/walk_normal_arm_nat_m/bvh/walk_normal_arm_nat_m_validation.json",
+            "size": 14624,
+            "sha256": "df1e822690ee7398347557acd2efbf7fcb9f6de71cc79b7d7c2701ceb43661bb",
+            "available": true
+          },
+          {
+            "kind": "bvh_preview",
+            "name": "3_bvh_preview.mp4",
+            "url": "/artifacts/walk_normal_arm_nat_m/video/3_bvh_preview.mp4",
+            "size": 317974,
+            "sha256": "adb030d2171f3b2605237b806e728b0907095428da53209ef7074254df9ae01b",
+            "available": true
+          }
+        ]
+      },
+      "female": {
+        "caseId": "BASE_WALK_FORWARD_NORMAL_ARM_NAT_004_F",
+        "gender": "F",
+        "slug": "walk_normal_arm_nat_f",
+        "duration": 8.042,
+        "admission": {
+          "status": "PASS",
+          "gates": {
+            "first_frame_identity": true,
+            "no_excessive_freeze": true,
+            "no_speed_ramp_signature": true,
+            "no_probable_loop": true,
+            "no_probable_end_truncation": true,
+            "constant_stream_rate": true,
+            "requested_duration_match": true
+          }
+        },
+        "gpu": {
+          "stage": "complete",
+          "completedAt": "2026-08-09T20:10:01.643418+00:00"
+        },
+        "audit": {
+          "profile": "biped",
+          "status": "PASS",
+          "supportCoverage": 0.29015544041450775,
+          "contactSpeed": 0.18230305951419615,
+          "maxTurnDegrees": 16.598010101844455
+        },
+        "validation": {
+          "status": "PASS",
+          "frameCount": 193,
+          "fps": 24.0
+        },
+        "refinement": {
+          "available": false,
+          "accepted": false,
+          "gates": {}
+        },
+        "lineage": {
+          "status": "partial",
+          "reason": "Archived GPU source is hashed; original Seedance download is not retained for byte comparison.",
+          "archivedSourceSha256": "30563330b850a207153c2ee5af6606bfbfe59cb422128d05ef7902c5d82e4b99",
+          "referenceSha256": "68bea57b9fa43919bcc8a5c0fee0ab5408161d4220743a9ba47af296edb44f60"
+        },
+        "files": [
+          {
+            "kind": "seedance",
+            "name": "0_input_video.mp4",
+            "url": "/artifacts/walk_normal_arm_nat_f/video/0_input_video.mp4",
+            "size": 1909227,
+            "sha256": "30563330b850a207153c2ee5af6606bfbfe59cb422128d05ef7902c5d82e4b99",
+            "available": true
+          },
+          {
+            "kind": "gvhmr_preview",
+            "name": "1_incam.mp4",
+            "url": "/artifacts/walk_normal_arm_nat_f/video/1_incam.mp4",
+            "size": 658513,
+            "sha256": "d8ac786964291ea2558fd5605f41148f4239a77999c63b5a3ad6f27e03f09b4e",
+            "available": true
+          },
+          {
+            "kind": "gvhmr_global",
+            "name": "2_global.mp4",
+            "url": "/artifacts/walk_normal_arm_nat_f/video/2_global.mp4",
+            "size": 201638,
+            "sha256": "0fffc0c6f14efa32c74dd32cf9a883c97b3c47119565b0983ef40a00e32257f2",
+            "available": true
+          },
+          {
+            "kind": "gvhmr",
+            "name": "hmr4d_results.pt",
+            "url": "/artifacts/walk_normal_arm_nat_f/video/hmr4d_results.pt",
+            "size": 845439,
+            "sha256": "0f63ed15d62cfe111b78716b65ace69b3cd698f70958537b90259f6c979ae2c0",
+            "available": true
+          },
+          {
+            "kind": "smplx",
+            "name": "walk_normal_arm_nat_f.smplx.npz",
+            "url": "/artifacts/walk_normal_arm_nat_f/walk_normal_arm_nat_f.smplx.npz",
+            "size": 51273,
+            "sha256": "1e5e3643d757d72a3bb841ff5214db548fca3b474fad3c7d77a20d2da85889e9",
+            "available": true
+          },
+          {
+            "kind": "bvh",
+            "name": "walk_normal_arm_nat_f.bvh",
+            "url": "/artifacts/walk_normal_arm_nat_f/bvh/walk_normal_arm_nat_f.bvh",
+            "size": 282345,
+            "sha256": "219a3379d0bcbe9a3cc116958e687ec533a52bd81865c0f2abe43d703ed316bd",
+            "available": true
+          },
+          {
+            "kind": "validation",
+            "name": "walk_normal_arm_nat_f_validation.json",
+            "url": "/artifacts/walk_normal_arm_nat_f/bvh/walk_normal_arm_nat_f_validation.json",
+            "size": 14891,
+            "sha256": "db32ef02bb3e524457f875ce9220579e4b435beafdcda16eded6d37a529ec547",
+            "available": true
+          },
+          {
+            "kind": "bvh_preview",
+            "name": "3_bvh_preview.mp4",
+            "url": "/artifacts/walk_normal_arm_nat_f/video/3_bvh_preview.mp4",
+            "size": 295822,
+            "sha256": "d45299e4c55e5625d279d55f55e63e1de6395a0cc43d02b72b4e8bfa47f4de5d",
+            "available": true
+          }
+        ]
+      }
+    },
+    {
+      "actionId": "BASE_WALK_FORWARD_NORMAL_HEAD_TURN_005",
+      "name": "Forward Walk — Head Turn",
+      "description": "Walk forward at an ordinary pace while making a small observational head turn.",
+      "category": "Basics",
+      "categorySlug": "base",
+      "subcategory": "Omni Walk",
+      "difficulty": "Easy",
+      "idealDuration": 10,
+      "profile": "biped",
+      "male": {
+        "caseId": "BASE_WALK_FORWARD_NORMAL_HEAD_TURN_005_M",
+        "gender": "M",
+        "slug": "walk_normal_head_turn_m",
+        "duration": 8.042,
+        "admission": {
+          "status": "PASS",
+          "gates": {
+            "first_frame_identity": true,
+            "no_excessive_freeze": true,
+            "no_speed_ramp_signature": true,
+            "no_probable_loop": true,
+            "no_probable_end_truncation": true,
+            "constant_stream_rate": true,
+            "requested_duration_match": true
+          }
+        },
+        "gpu": {
+          "stage": "complete",
+          "completedAt": "2026-08-09T20:10:02.304987+00:00"
+        },
+        "audit": {
+          "profile": "biped",
+          "status": "FAIL",
+          "supportCoverage": 0.30569948186528495,
+          "contactSpeed": 0.26707786508590087,
+          "maxTurnDegrees": 13.539785711839595
+        },
+        "validation": {
+          "status": "PASS",
+          "frameCount": 193,
+          "fps": 24.0
+        },
+        "refinement": {
+          "available": false,
+          "accepted": false,
+          "gates": {}
+        },
+        "lineage": {
+          "status": "partial",
+          "reason": "Archived GPU source is hashed; original Seedance download is not retained for byte comparison.",
+          "archivedSourceSha256": "7d9979cb66c4c1963d478f3fd173aa95ba1b4fe91af3e86995c581c86eb6ddf3",
+          "referenceSha256": "73abf31d0b804dc3dec554338f0f1d68d7c6c62c52363475b04305d98c1ec11f"
+        },
+        "files": [
+          {
+            "kind": "seedance",
+            "name": "0_input_video.mp4",
+            "url": "/artifacts/walk_normal_head_turn_m/video/0_input_video.mp4",
+            "size": 1831278,
+            "sha256": "7d9979cb66c4c1963d478f3fd173aa95ba1b4fe91af3e86995c581c86eb6ddf3",
+            "available": true
+          },
+          {
+            "kind": "gvhmr_preview",
+            "name": "1_incam.mp4",
+            "url": "/artifacts/walk_normal_head_turn_m/video/1_incam.mp4",
+            "size": 615709,
+            "sha256": "44e1c9634e0a19a9cbfa4d547e2e44ebe7f4df4ab0b87c84d1947a3e6ffc35cc",
+            "available": true
+          },
+          {
+            "kind": "gvhmr_global",
+            "name": "2_global.mp4",
+            "url": "/artifacts/walk_normal_head_turn_m/video/2_global.mp4",
+            "size": 322887,
+            "sha256": "a94adcad30004998fbf9c7b81ef54bc6a9c7e61cd5a18211282e10677aab4397",
+            "available": true
+          },
+          {
+            "kind": "gvhmr",
+            "name": "hmr4d_results.pt",
+            "url": "/artifacts/walk_normal_head_turn_m/video/hmr4d_results.pt",
+            "size": 845439,
+            "sha256": "77d2d8ad1fb31012ed2ec1dd4a38773cd86fabdfe4b844a33b016441fdd4ab3d",
+            "available": true
+          },
+          {
+            "kind": "smplx",
+            "name": "walk_normal_head_turn_m.smplx.npz",
+            "url": "/artifacts/walk_normal_head_turn_m/walk_normal_head_turn_m.smplx.npz",
+            "size": 51459,
+            "sha256": "c628fd104c82e5296cd111113a1c8b2e65abc6220497b060f1e1bda1832cb270",
+            "available": true
+          },
+          {
+            "kind": "bvh",
+            "name": "walk_normal_head_turn_m.bvh",
+            "url": "/artifacts/walk_normal_head_turn_m/bvh/walk_normal_head_turn_m.bvh",
+            "size": 283409,
+            "sha256": "f5dfbb081480d0a42cb1442da805948bf6f4cdbb506c844bc21bfd9ce1c1a4f6",
+            "available": true
+          },
+          {
+            "kind": "validation",
+            "name": "walk_normal_head_turn_m_validation.json",
+            "url": "/artifacts/walk_normal_head_turn_m/bvh/walk_normal_head_turn_m_validation.json",
+            "size": 14628,
+            "sha256": "7b4b2cdd892bdb2841819a19754d6b0de40caba3a0d93590bc6b22d362f5b093",
+            "available": true
+          },
+          {
+            "kind": "bvh_preview",
+            "name": "3_bvh_preview.mp4",
+            "url": "/artifacts/walk_normal_head_turn_m/video/3_bvh_preview.mp4",
+            "size": 269542,
+            "sha256": "82a05f6fff5915e1dc99a8aebc8401a62fd011972294e04a0482c6a3581e4ba2",
+            "available": true
+          }
+        ]
+      },
+      "female": {
+        "caseId": "BASE_WALK_FORWARD_NORMAL_HEAD_TURN_005_F",
+        "gender": "F",
+        "slug": "walk_normal_head_turn_f",
+        "duration": 8.042,
+        "admission": {
+          "status": "PASS",
+          "gates": {
+            "first_frame_identity": true,
+            "no_excessive_freeze": true,
+            "no_speed_ramp_signature": true,
+            "no_probable_loop": true,
+            "no_probable_end_truncation": true,
+            "constant_stream_rate": true,
+            "requested_duration_match": true
+          }
+        },
+        "gpu": {
+          "stage": "complete",
+          "completedAt": "2026-08-09T20:10:02.941346+00:00"
+        },
+        "audit": {
+          "profile": "biped",
+          "status": "PASS",
+          "supportCoverage": 0.25906735751295334,
+          "contactSpeed": 0.18812019979064903,
+          "maxTurnDegrees": 15.859227209295392
+        },
+        "validation": {
+          "status": "PASS",
+          "frameCount": 193,
+          "fps": 24.0
+        },
+        "refinement": {
+          "available": false,
+          "accepted": false,
+          "gates": {}
+        },
+        "lineage": {
+          "status": "partial",
+          "reason": "Archived GPU source is hashed; original Seedance download is not retained for byte comparison.",
+          "archivedSourceSha256": "0bb73e685b658dd3d23e046541149700a5aff3051f71b618164347fb90444f44",
+          "referenceSha256": "68bea57b9fa43919bcc8a5c0fee0ab5408161d4220743a9ba47af296edb44f60"
+        },
+        "files": [
+          {
+            "kind": "seedance",
+            "name": "0_input_video.mp4",
+            "url": "/artifacts/walk_normal_head_turn_f/video/0_input_video.mp4",
+            "size": 1905001,
+            "sha256": "0bb73e685b658dd3d23e046541149700a5aff3051f71b618164347fb90444f44",
+            "available": true
+          },
+          {
+            "kind": "gvhmr_preview",
+            "name": "1_incam.mp4",
+            "url": "/artifacts/walk_normal_head_turn_f/video/1_incam.mp4",
+            "size": 711523,
+            "sha256": "0814713ec7152d045f6c3edb2989c9abde2105ea23f4e9a1a3f5f79e2228d7b5",
+            "available": true
+          },
+          {
+            "kind": "gvhmr_global",
+            "name": "2_global.mp4",
+            "url": "/artifacts/walk_normal_head_turn_f/video/2_global.mp4",
+            "size": 281912,
+            "sha256": "d8c6b39ad7cb0650b6af341f7e1fabd745460d5c734f4b64fc6f34d6b568beba",
+            "available": true
+          },
+          {
+            "kind": "gvhmr",
+            "name": "hmr4d_results.pt",
+            "url": "/artifacts/walk_normal_head_turn_f/video/hmr4d_results.pt",
+            "size": 845439,
+            "sha256": "4d470d54330eba5a1e62a26a4baae0a3f5d55a4f36be9c7b36d1795d7606b754",
+            "available": true
+          },
+          {
+            "kind": "smplx",
+            "name": "walk_normal_head_turn_f.smplx.npz",
+            "url": "/artifacts/walk_normal_head_turn_f/walk_normal_head_turn_f.smplx.npz",
+            "size": 51385,
+            "sha256": "7ee352400930fa42d1cf1730b5a8334f268de589fff8ef684ff8903684a01305",
+            "available": true
+          },
+          {
+            "kind": "bvh",
+            "name": "walk_normal_head_turn_f.bvh",
+            "url": "/artifacts/walk_normal_head_turn_f/bvh/walk_normal_head_turn_f.bvh",
+            "size": 282436,
+            "sha256": "14dbdfe8e92cd290c6bb5ce99d7fdb514dfcb52d10b5b94ab82790fbcc939a07",
+            "available": true
+          },
+          {
+            "kind": "validation",
+            "name": "walk_normal_head_turn_f_validation.json",
+            "url": "/artifacts/walk_normal_head_turn_f/bvh/walk_normal_head_turn_f_validation.json",
+            "size": 15178,
+            "sha256": "07a14a79a00e5e0c407b18fc20ad7d4e6fcdaead52f161312a124f279a32a8fb",
+            "available": true
+          },
+          {
+            "kind": "bvh_preview",
+            "name": "3_bvh_preview.mp4",
+            "url": "/artifacts/walk_normal_head_turn_f/video/3_bvh_preview.mp4",
+            "size": 293288,
+            "sha256": "274d763a7527ef97e4c4421c3a8dbfd0211bcccb879d0545ee90a8d0cbd805c6",
+            "available": true
+          }
+        ]
+      }
+    },
+    {
+      "actionId": "BASE_WALK_FORWARD_NORMAL_ARM_SMALL_006",
+      "name": "Forward Walk — Relaxed Arms",
+      "description": "Walk forward at an ordinary pace with relaxed, compact arm movement.",
+      "category": "Basics",
+      "categorySlug": "base",
+      "subcategory": "Omni Walk",
+      "difficulty": "Easy",
+      "idealDuration": 10,
+      "profile": "biped",
+      "male": {
+        "caseId": "BASE_WALK_FORWARD_NORMAL_ARM_SMALL_006_M",
+        "gender": "M",
+        "slug": "walk_normal_arm_small_m",
+        "duration": 8.042,
+        "admission": {
+          "status": "PASS",
+          "gates": {
+            "first_frame_identity": true,
+            "no_excessive_freeze": true,
+            "no_speed_ramp_signature": true,
+            "no_probable_loop": true,
+            "no_probable_end_truncation": true,
+            "constant_stream_rate": true,
+            "requested_duration_match": true
+          }
+        },
+        "gpu": {
+          "stage": "complete",
+          "completedAt": "2026-08-09T20:10:03.544097+00:00"
+        },
+        "audit": {
+          "profile": "biped",
+          "status": "PASS",
+          "supportCoverage": 0.27979274611398963,
+          "contactSpeed": 0.23049759433817832,
+          "maxTurnDegrees": 17.61932695062874
+        },
+        "validation": {
+          "status": "PASS",
+          "frameCount": 193,
+          "fps": 24.0
+        },
+        "refinement": {
+          "available": false,
+          "accepted": false,
+          "gates": {}
+        },
+        "lineage": {
+          "status": "partial",
+          "reason": "Archived GPU source is hashed; original Seedance download is not retained for byte comparison.",
+          "archivedSourceSha256": "870bcd7e0064ab3a7e99ad9ad59604afec8435b78eea311884e943e9fcbe9fa1",
+          "referenceSha256": "73abf31d0b804dc3dec554338f0f1d68d7c6c62c52363475b04305d98c1ec11f"
+        },
+        "files": [
+          {
+            "kind": "seedance",
+            "name": "0_input_video.mp4",
+            "url": "/artifacts/walk_normal_arm_small_m/video/0_input_video.mp4",
+            "size": 1897146,
+            "sha256": "870bcd7e0064ab3a7e99ad9ad59604afec8435b78eea311884e943e9fcbe9fa1",
+            "available": true
+          },
+          {
+            "kind": "gvhmr_preview",
+            "name": "1_incam.mp4",
+            "url": "/artifacts/walk_normal_arm_small_m/video/1_incam.mp4",
+            "size": 664133,
+            "sha256": "86c1a7b5ff4692ba0ce61de50a734b7647cbcdfe0d0f024c066bfafd58b2a02f",
+            "available": true
+          },
+          {
+            "kind": "gvhmr_global",
+            "name": "2_global.mp4",
+            "url": "/artifacts/walk_normal_arm_small_m/video/2_global.mp4",
+            "size": 378993,
+            "sha256": "cc8225ee07cd71d79215bfd93abc5686b686bb5973b646b7fcb731934532ed54",
+            "available": true
+          },
+          {
+            "kind": "gvhmr",
+            "name": "hmr4d_results.pt",
+            "url": "/artifacts/walk_normal_arm_small_m/video/hmr4d_results.pt",
+            "size": 845439,
+            "sha256": "5b3e05ab28c1e02d822029c8ad9e1bdecfbb3aa146056f0fa384bb3c9d87839e",
+            "available": true
+          },
+          {
+            "kind": "smplx",
+            "name": "walk_normal_arm_small_m.smplx.npz",
+            "url": "/artifacts/walk_normal_arm_small_m/walk_normal_arm_small_m.smplx.npz",
+            "size": 51422,
+            "sha256": "bf4e349258ddf5b8954b9c62ba2bda7f63ec924a674bbf39bdf300ed872ab1f1",
+            "available": true
+          },
+          {
+            "kind": "bvh",
+            "name": "walk_normal_arm_small_m.bvh",
+            "url": "/artifacts/walk_normal_arm_small_m/bvh/walk_normal_arm_small_m.bvh",
+            "size": 283467,
+            "sha256": "9a503399a3ad69d11a0f8fca4a5bd2737033f307289fbd78f35802a08cfa6d4d",
+            "available": true
+          },
+          {
+            "kind": "validation",
+            "name": "walk_normal_arm_small_m_validation.json",
+            "url": "/artifacts/walk_normal_arm_small_m/bvh/walk_normal_arm_small_m_validation.json",
+            "size": 14427,
+            "sha256": "7bea6e7bc23221eec6cac030b683d3bf482716d93f0c3904f54b648c9fee747e",
+            "available": true
+          },
+          {
+            "kind": "bvh_preview",
+            "name": "3_bvh_preview.mp4",
+            "url": "/artifacts/walk_normal_arm_small_m/video/3_bvh_preview.mp4",
+            "size": 312807,
+            "sha256": "1681e51bebc772f6ce0fdbc9f7a2304b19addaad6fba3dda96dd79f8b2f44911",
+            "available": true
+          }
+        ]
+      },
+      "female": {
+        "caseId": "BASE_WALK_FORWARD_NORMAL_ARM_SMALL_006_F",
+        "gender": "F",
+        "slug": "walk_normal_arm_small_f",
+        "duration": 8.042,
+        "admission": {
+          "status": "PASS",
+          "gates": {
+            "first_frame_identity": true,
+            "no_excessive_freeze": true,
+            "no_speed_ramp_signature": true,
+            "no_probable_loop": true,
+            "no_probable_end_truncation": true,
+            "constant_stream_rate": true,
+            "requested_duration_match": true
+          }
+        },
+        "gpu": {
+          "stage": "complete",
+          "completedAt": "2026-08-09T20:10:04.130840+00:00"
+        },
+        "audit": {
+          "profile": "biped",
+          "status": "FAIL",
+          "supportCoverage": 0.32642487046632124,
+          "contactSpeed": 0.32429080419457934,
+          "maxTurnDegrees": 17.52734559212044
+        },
+        "validation": {
+          "status": "PASS",
+          "frameCount": 193,
+          "fps": 24.0
+        },
+        "refinement": {
+          "available": false,
+          "accepted": false,
+          "gates": {}
+        },
+        "lineage": {
+          "status": "partial",
+          "reason": "Archived GPU source is hashed; original Seedance download is not retained for byte comparison.",
+          "archivedSourceSha256": "4694b4810ccd83e611278c866eae82ccc352be79ef5e04b71d462bef065884fa",
+          "referenceSha256": "68bea57b9fa43919bcc8a5c0fee0ab5408161d4220743a9ba47af296edb44f60"
+        },
+        "files": [
+          {
+            "kind": "seedance",
+            "name": "0_input_video.mp4",
+            "url": "/artifacts/walk_normal_arm_small_f/video/0_input_video.mp4",
+            "size": 1859220,
+            "sha256": "4694b4810ccd83e611278c866eae82ccc352be79ef5e04b71d462bef065884fa",
+            "available": true
+          },
+          {
+            "kind": "gvhmr_preview",
+            "name": "1_incam.mp4",
+            "url": "/artifacts/walk_normal_arm_small_f/video/1_incam.mp4",
+            "size": 772919,
+            "sha256": "1b206fe7476b210a141f02d0d5b7abb949a6b2327c02ba884c1ab2a5ddd0a79c",
+            "available": true
+          },
+          {
+            "kind": "gvhmr_global",
+            "name": "2_global.mp4",
+            "url": "/artifacts/walk_normal_arm_small_f/video/2_global.mp4",
+            "size": 247779,
+            "sha256": "3cf1de87885131ee958c2d8bea3801be32fd175be3c7dc21760435ed7ee4ae40",
+            "available": true
+          },
+          {
+            "kind": "gvhmr",
+            "name": "hmr4d_results.pt",
+            "url": "/artifacts/walk_normal_arm_small_f/video/hmr4d_results.pt",
+            "size": 845439,
+            "sha256": "a246b7d8dfd172e0588c2940b610c62ead3a03a1a874e4dcc8f14e7dc066e8aa",
+            "available": true
+          },
+          {
+            "kind": "smplx",
+            "name": "walk_normal_arm_small_f.smplx.npz",
+            "url": "/artifacts/walk_normal_arm_small_f/walk_normal_arm_small_f.smplx.npz",
+            "size": 51408,
+            "sha256": "4ad56b299c8477e4c2b7210d265e35158fbdb1a918807b6760e79e7d66ff835d",
+            "available": true
+          },
+          {
+            "kind": "bvh",
+            "name": "walk_normal_arm_small_f.bvh",
+            "url": "/artifacts/walk_normal_arm_small_f/bvh/walk_normal_arm_small_f.bvh",
+            "size": 282427,
+            "sha256": "19a19a5240d982d2b32e1f504d7d78c9e638bd93214db3bce3263ae4bbfb4476",
+            "available": true
+          },
+          {
+            "kind": "validation",
+            "name": "walk_normal_arm_small_f_validation.json",
+            "url": "/artifacts/walk_normal_arm_small_f/bvh/walk_normal_arm_small_f_validation.json",
+            "size": 15207,
+            "sha256": "fa6515f1a5f4d0af2f7b4ba7d70c6aa592ffcbf65fc69c45d38e02d754103eb2",
+            "available": true
+          },
+          {
+            "kind": "bvh_preview",
+            "name": "3_bvh_preview.mp4",
+            "url": "/artifacts/walk_normal_arm_small_f/video/3_bvh_preview.mp4",
+            "size": 331894,
+            "sha256": "2ac54e5b9e3221242c541eb368c3b18ef8390d270471e86134933a186498c2e7",
+            "available": true
+          }
+        ]
+      }
+    },
+    {
+      "actionId": "BASE_GAIT_CROSS_FRONT_LEFT_ARM_NAT_145",
+      "name": "Left Grapevine Cross-Step",
+      "description": "Travel to screen-left with a clear front cross-step pattern and visible foot clearance.",
+      "category": "Generated",
+      "categorySlug": "generated",
+      "subcategory": "Product Tasks",
+      "difficulty": "unspecified",
+      "idealDuration": 8,
+      "profile": "biped",
+      "male": {
+        "caseId": "BASE_GAIT_CROSS_FRONT_LEFT_ARM_NAT_145_M",
+        "gender": "M",
+        "slug": "wan_base_gait_cross_front_left_arm_nat_145_m",
+        "duration": 8.0,
+        "admission": {
+          "status": "PASS",
+          "gates": {
+            "first_frame_identity": true,
+            "no_excessive_freeze": true,
+            "no_speed_ramp_signature": true,
+            "no_probable_loop": true,
+            "no_probable_end_truncation": true,
+            "constant_stream_rate": true,
+            "requested_duration_match": true,
+            "requested_travel_observed": true,
+            "no_forward_reverse_contradiction": true
+          }
+        },
+        "gpu": {
+          "stage": "complete",
+          "completedAt": "2026-08-11T14:43:32+00:00"
+        },
+        "audit": {
+          "profile": "biped",
+          "status": "FAIL",
+          "supportCoverage": 0.25833333333333336,
+          "contactSpeed": 0.40942583764136464,
+          "maxTurnDegrees": 15.841389982111728
+        },
+        "validation": {
+          "status": "PASS",
+          "frameCount": 240,
+          "fps": 30.0
+        },
+        "refinement": {
+          "available": false,
+          "accepted": false,
+          "gates": {}
+        },
+        "lineage": {
+          "status": "partial",
+          "reason": "Archived GPU source is hashed; original Seedance download is not retained for byte comparison.",
+          "archivedSourceSha256": "67e356972131c2276e85f92272f461f96c719a61e49e60842c3667b4b5b266cf",
+          "referenceSha256": "73abf31d0b804dc3dec554338f0f1d68d7c6c62c52363475b04305d98c1ec11f"
+        },
+        "files": [
+          {
+            "kind": "wan_source",
+            "name": "0_input_video.mp4",
+            "url": "/artifacts/wan_base_gait_cross_front_left_arm_nat_145_m/video/0_input_video.mp4",
+            "size": 8000066,
+            "sha256": "67e356972131c2276e85f92272f461f96c719a61e49e60842c3667b4b5b266cf",
+            "available": true
+          },
+          {
+            "kind": "gvhmr_preview",
+            "name": "1_incam.mp4",
+            "url": "/artifacts/wan_base_gait_cross_front_left_arm_nat_145_m/video/1_incam.mp4",
+            "size": 1428681,
+            "sha256": "d7d25516190ccc47ac6f108a6594ac34c9e562eba1187f6883dde18d47f8299d",
+            "available": true
+          },
+          {
+            "kind": "gvhmr_global",
+            "name": "2_global.mp4",
+            "url": "/artifacts/wan_base_gait_cross_front_left_arm_nat_145_m/video/2_global.mp4",
+            "size": 455102,
+            "sha256": "780338d63a829d3dfdcd557a4206cc00764c2d9327193d5ffd4dd0077e6e5c86",
+            "available": true
+          },
+          {
+            "kind": "gvhmr",
+            "name": "hmr4d_results.pt",
+            "url": "/artifacts/wan_base_gait_cross_front_left_arm_nat_145_m/video/hmr4d_results.pt",
+            "size": 1049855,
+            "sha256": "37bf5f61da55f74a141008711ced1124ccc3684b83b175f7fced15dee3e16adb",
+            "available": true
+          },
+          {
+            "kind": "smplx",
+            "name": "wan_base_gait_cross_front_left_arm_nat_145_m.smplx.npz",
+            "url": "/artifacts/wan_base_gait_cross_front_left_arm_nat_145_m/wan_base_gait_cross_front_left_arm_nat_145_m.smplx.npz",
+            "size": 63634,
+            "sha256": "9be6fa9c935c4cd0340d56ff98fd8dcfb65bb87b76df89204ed47054ddc4b33f",
+            "available": true
+          },
+          {
+            "kind": "bvh",
+            "name": "wan_base_gait_cross_front_left_arm_nat_145_m.bvh",
+            "url": "/artifacts/wan_base_gait_cross_front_left_arm_nat_145_m/bvh/wan_base_gait_cross_front_left_arm_nat_145_m.bvh",
+            "size": 350639,
+            "sha256": "df719c9096e55659fbb99061c418ce1387f533d09ef9012e901d513c7f57885f",
+            "available": true
+          },
+          {
+            "kind": "validation",
+            "name": "wan_base_gait_cross_front_left_arm_nat_145_m_validation.json",
+            "url": "/artifacts/wan_base_gait_cross_front_left_arm_nat_145_m/bvh/wan_base_gait_cross_front_left_arm_nat_145_m_validation.json",
+            "size": 15220,
+            "sha256": "cc6cd702609b402237b974283b3e2bee70889e4e1974e27b9acfc8add893b421",
+            "available": true
+          },
+          {
+            "kind": "bvh_preview",
+            "name": "3_bvh_preview.mp4",
+            "url": "/artifacts/wan_base_gait_cross_front_left_arm_nat_145_m/video/3_bvh_preview.mp4",
+            "size": 333029,
+            "sha256": "7f9247ef5ae50be184c0d46974283a5a8b9b21983c51946c2ebb573b9d0ba2d5",
+            "available": true
+          }
+        ]
+      },
+      "female": {
+        "caseId": "BASE_GAIT_CROSS_FRONT_LEFT_ARM_NAT_145_F",
+        "gender": "F",
+        "slug": "wan_base_gait_cross_front_left_arm_nat_145_f",
+        "duration": 8.0,
+        "admission": {
+          "status": "PASS",
+          "gates": {
+            "first_frame_identity": true,
+            "no_excessive_freeze": true,
+            "no_speed_ramp_signature": true,
+            "no_probable_loop": true,
+            "no_probable_end_truncation": true,
+            "constant_stream_rate": true,
+            "requested_duration_match": true,
+            "requested_travel_observed": true,
+            "no_forward_reverse_contradiction": true
+          }
+        },
+        "gpu": {
+          "stage": "complete",
+          "completedAt": "2026-08-11T14:43:44+00:00"
+        },
+        "audit": {
+          "profile": "biped",
+          "status": "FAIL",
+          "supportCoverage": 0.275,
+          "contactSpeed": 0.3559379192170178,
+          "maxTurnDegrees": 14.323300764001077
+        },
+        "validation": {
+          "status": "PASS",
+          "frameCount": 240,
+          "fps": 30.0
+        },
+        "refinement": {
+          "available": false,
+          "accepted": false,
+          "gates": {}
+        },
+        "lineage": {
+          "status": "partial",
+          "reason": "Archived GPU source is hashed; original Seedance download is not retained for byte comparison.",
+          "archivedSourceSha256": "007685bbb47dc9820782d4f1fed57c7af24e64421c6baa5719506184fd76220f",
+          "referenceSha256": "68bea57b9fa43919bcc8a5c0fee0ab5408161d4220743a9ba47af296edb44f60"
+        },
+        "files": [
+          {
+            "kind": "wan_source",
+            "name": "0_input_video.mp4",
+            "url": "/artifacts/wan_base_gait_cross_front_left_arm_nat_145_f/video/0_input_video.mp4",
+            "size": 7447668,
+            "sha256": "007685bbb47dc9820782d4f1fed57c7af24e64421c6baa5719506184fd76220f",
+            "available": true
+          },
+          {
+            "kind": "gvhmr_preview",
+            "name": "1_incam.mp4",
+            "url": "/artifacts/wan_base_gait_cross_front_left_arm_nat_145_f/video/1_incam.mp4",
+            "size": 1374970,
+            "sha256": "827fd692bbafa5f9799ea0d6e8317becb2942b686d7f6eb1fe06f049497fb40b",
+            "available": true
+          },
+          {
+            "kind": "gvhmr_global",
+            "name": "2_global.mp4",
+            "url": "/artifacts/wan_base_gait_cross_front_left_arm_nat_145_f/video/2_global.mp4",
+            "size": 406999,
+            "sha256": "c52463c528b5cc42a8642ad33641fb3803ebc8e61c906741ace79c9aa281b709",
+            "available": true
+          },
+          {
+            "kind": "gvhmr",
+            "name": "hmr4d_results.pt",
+            "url": "/artifacts/wan_base_gait_cross_front_left_arm_nat_145_f/video/hmr4d_results.pt",
+            "size": 1049855,
+            "sha256": "d451db6579a9a98cda95039c9d438f1eae7f00a6634e13009bb9d1ca9e18e94b",
+            "available": true
+          },
+          {
+            "kind": "smplx",
+            "name": "wan_base_gait_cross_front_left_arm_nat_145_f.smplx.npz",
+            "url": "/artifacts/wan_base_gait_cross_front_left_arm_nat_145_f/wan_base_gait_cross_front_left_arm_nat_145_f.smplx.npz",
+            "size": 63494,
+            "sha256": "c12d28a732fbe1efbe6f4c9d8eeae7b9d95dfc50f5e50a31412d0e76678d0c0b",
+            "available": true
+          },
+          {
+            "kind": "bvh",
+            "name": "wan_base_gait_cross_front_left_arm_nat_145_f.bvh",
+            "url": "/artifacts/wan_base_gait_cross_front_left_arm_nat_145_f/bvh/wan_base_gait_cross_front_left_arm_nat_145_f.bvh",
+            "size": 349529,
+            "sha256": "9f0db353d8ffa8c7704dec6d9615fda3ae53f7ccfe241b32301ad47b37547189",
+            "available": true
+          },
+          {
+            "kind": "validation",
+            "name": "wan_base_gait_cross_front_left_arm_nat_145_f_validation.json",
+            "url": "/artifacts/wan_base_gait_cross_front_left_arm_nat_145_f/bvh/wan_base_gait_cross_front_left_arm_nat_145_f_validation.json",
+            "size": 15071,
+            "sha256": "301d7ee2709069ba8e148dbbb9fac7ffe93a38db5c5569365a55b4d0a5b475ed",
+            "available": true
+          },
+          {
+            "kind": "bvh_preview",
+            "name": "3_bvh_preview.mp4",
+            "url": "/artifacts/wan_base_gait_cross_front_left_arm_nat_145_f/video/3_bvh_preview.mp4",
+            "size": 320576,
+            "sha256": "c2dab74556e9354813e74c5b2892540d7269671aa6e217b4135c4feed4666483",
+            "available": true
+          }
+        ]
+      }
+    },
+    {
+      "actionId": "BASE_LEG_KICK_FRONT_MID_4_204",
+      "name": "Mid-Height Front Kick",
+      "description": "Perform a controlled mid-height front kick and return to a stable stance.",
+      "category": "Generated",
+      "categorySlug": "generated",
+      "subcategory": "Product Tasks",
+      "difficulty": "unspecified",
+      "idealDuration": 8,
+      "profile": "biped",
+      "male": {
+        "caseId": "BASE_LEG_KICK_FRONT_MID_4_204_M",
+        "gender": "M",
+        "slug": "wan_base_leg_kick_front_mid_4_204_m",
+        "duration": 8.0,
+        "admission": {
+          "status": "PASS",
+          "gates": {
+            "first_frame_identity": true,
+            "no_excessive_freeze": true,
+            "no_speed_ramp_signature": true,
+            "no_probable_loop": true,
+            "no_probable_end_truncation": true,
+            "constant_stream_rate": true,
+            "requested_duration_match": true,
+            "requested_travel_observed": true,
+            "no_forward_reverse_contradiction": true
+          }
+        },
+        "gpu": {
+          "stage": "complete",
+          "completedAt": "2026-08-11T14:44:12+00:00"
+        },
+        "audit": {
+          "profile": "biped",
+          "status": "PASS",
+          "supportCoverage": 0.25833333333333336,
+          "contactSpeed": 0.10152992147533235,
+          "maxTurnDegrees": 9.059201632939892
+        },
+        "validation": {
+          "status": "PASS",
+          "frameCount": 240,
+          "fps": 30.0
+        },
+        "refinement": {
+          "available": false,
+          "accepted": false,
+          "gates": {}
+        },
+        "lineage": {
+          "status": "partial",
+          "reason": "Archived GPU source is hashed; original Seedance download is not retained for byte comparison.",
+          "archivedSourceSha256": "a73e5dc3b285555dfa4347abfa3d4a6131a112552705d79bfa038c79163e0a11",
+          "referenceSha256": "73abf31d0b804dc3dec554338f0f1d68d7c6c62c52363475b04305d98c1ec11f"
+        },
+        "files": [
+          {
+            "kind": "wan_source",
+            "name": "0_input_video.mp4",
+            "url": "/artifacts/wan_base_leg_kick_front_mid_4_204_m/video/0_input_video.mp4",
+            "size": 5504091,
+            "sha256": "a73e5dc3b285555dfa4347abfa3d4a6131a112552705d79bfa038c79163e0a11",
+            "available": true
+          },
+          {
+            "kind": "gvhmr_preview",
+            "name": "1_incam.mp4",
+            "url": "/artifacts/wan_base_leg_kick_front_mid_4_204_m/video/1_incam.mp4",
+            "size": 877923,
+            "sha256": "ce71e7a08cc49b24e15b5cba29836c375ea58509e064a5a201f520bd8e601c26",
+            "available": true
+          },
+          {
+            "kind": "gvhmr_global",
+            "name": "2_global.mp4",
+            "url": "/artifacts/wan_base_leg_kick_front_mid_4_204_m/video/2_global.mp4",
+            "size": 335771,
+            "sha256": "681c9cbcfe12a7003f4e61ab7526186c0a0c16654536074a9aa079f965e3f4ca",
+            "available": true
+          },
+          {
+            "kind": "gvhmr",
+            "name": "hmr4d_results.pt",
+            "url": "/artifacts/wan_base_leg_kick_front_mid_4_204_m/video/hmr4d_results.pt",
+            "size": 1049855,
+            "sha256": "c42d9eb24561af138e6dce60503141d7ff1a99aad036bd5c291391e7bbee79b9",
+            "available": true
+          },
+          {
+            "kind": "smplx",
+            "name": "wan_base_leg_kick_front_mid_4_204_m.smplx.npz",
+            "url": "/artifacts/wan_base_leg_kick_front_mid_4_204_m/wan_base_leg_kick_front_mid_4_204_m.smplx.npz",
+            "size": 63505,
+            "sha256": "e31ad9ba9afe0caa918e3d220fd5f4cd5725bc96529fc5587e2388b41d023a75",
+            "available": true
+          },
+          {
+            "kind": "bvh",
+            "name": "wan_base_leg_kick_front_mid_4_204_m.bvh",
+            "url": "/artifacts/wan_base_leg_kick_front_mid_4_204_m/bvh/wan_base_leg_kick_front_mid_4_204_m.bvh",
+            "size": 350842,
+            "sha256": "caf2784661d3598f24a140861d4cda75822854d1926d91ba80f8ee29ed5f54b4",
+            "available": true
+          },
+          {
+            "kind": "validation",
+            "name": "wan_base_leg_kick_front_mid_4_204_m_validation.json",
+            "url": "/artifacts/wan_base_leg_kick_front_mid_4_204_m/bvh/wan_base_leg_kick_front_mid_4_204_m_validation.json",
+            "size": 14749,
+            "sha256": "2f19bd6046cff33152e34bf746d74c2d15c5c526201076d8949589f5c95d4c21",
+            "available": true
+          },
+          {
+            "kind": "bvh_preview",
+            "name": "3_bvh_preview.mp4",
+            "url": "/artifacts/wan_base_leg_kick_front_mid_4_204_m/video/3_bvh_preview.mp4",
+            "size": 222809,
+            "sha256": "51b1df27abe0e529b32c7e333b0540e3ecc1dbc6bf306c44d4d091cc16a1981f",
+            "available": true
+          }
+        ]
+      },
+      "female": {
+        "caseId": "BASE_LEG_KICK_FRONT_MID_4_204_F",
+        "gender": "F",
+        "slug": "wan_base_leg_kick_front_mid_4_204_f",
+        "duration": 8.0,
+        "admission": {
+          "status": "PASS",
+          "gates": {
+            "first_frame_identity": true,
+            "no_excessive_freeze": true,
+            "no_speed_ramp_signature": true,
+            "no_probable_loop": true,
+            "no_probable_end_truncation": true,
+            "constant_stream_rate": true,
+            "requested_duration_match": true,
+            "requested_travel_observed": true,
+            "no_forward_reverse_contradiction": true
+          }
+        },
+        "gpu": {
+          "stage": "complete",
+          "completedAt": "2026-08-11T14:44:22+00:00"
+        },
+        "audit": {
+          "profile": "biped",
+          "status": "PASS",
+          "supportCoverage": 0.25,
+          "contactSpeed": 0.11861884198127136,
+          "maxTurnDegrees": 16.723225524604466
+        },
+        "validation": {
+          "status": "PASS",
+          "frameCount": 240,
+          "fps": 30.0
+        },
+        "refinement": {
+          "available": false,
+          "accepted": false,
+          "gates": {}
+        },
+        "lineage": {
+          "status": "partial",
+          "reason": "Archived GPU source is hashed; original Seedance download is not retained for byte comparison.",
+          "archivedSourceSha256": "19bd894892ef81234f337e8e5ac8a660abf370180f226986e29e954923eff464",
+          "referenceSha256": "68bea57b9fa43919bcc8a5c0fee0ab5408161d4220743a9ba47af296edb44f60"
+        },
+        "files": [
+          {
+            "kind": "wan_source",
+            "name": "0_input_video.mp4",
+            "url": "/artifacts/wan_base_leg_kick_front_mid_4_204_f/video/0_input_video.mp4",
+            "size": 6405075,
+            "sha256": "19bd894892ef81234f337e8e5ac8a660abf370180f226986e29e954923eff464",
+            "available": true
+          },
+          {
+            "kind": "gvhmr_preview",
+            "name": "1_incam.mp4",
+            "url": "/artifacts/wan_base_leg_kick_front_mid_4_204_f/video/1_incam.mp4",
+            "size": 1114111,
+            "sha256": "77b3b9a525d53e164d29a60d6ac773be50be4ff825afd8e53ffeb5d5c3fdc525",
+            "available": true
+          },
+          {
+            "kind": "gvhmr_global",
+            "name": "2_global.mp4",
+            "url": "/artifacts/wan_base_leg_kick_front_mid_4_204_f/video/2_global.mp4",
+            "size": 383437,
+            "sha256": "7388d3328bb839f9247b4555e4b1295ed9bf8760353ee0f8ba9dcf12fb767f72",
+            "available": true
+          },
+          {
+            "kind": "gvhmr",
+            "name": "hmr4d_results.pt",
+            "url": "/artifacts/wan_base_leg_kick_front_mid_4_204_f/video/hmr4d_results.pt",
+            "size": 1049855,
+            "sha256": "572c236db6203bc5abd830c44e18346d47e77eac36d27b4db43548f1847dcec5",
+            "available": true
+          },
+          {
+            "kind": "smplx",
+            "name": "wan_base_leg_kick_front_mid_4_204_f.smplx.npz",
+            "url": "/artifacts/wan_base_leg_kick_front_mid_4_204_f/wan_base_leg_kick_front_mid_4_204_f.smplx.npz",
+            "size": 63489,
+            "sha256": "2f4aed6d6926bcff074153e1c0259042a599b63aafec5c121a05a7907df00dd9",
+            "available": true
+          },
+          {
+            "kind": "bvh",
+            "name": "wan_base_leg_kick_front_mid_4_204_f.bvh",
+            "url": "/artifacts/wan_base_leg_kick_front_mid_4_204_f/bvh/wan_base_leg_kick_front_mid_4_204_f.bvh",
+            "size": 351603,
+            "sha256": "fa20c8e4c962bc367077446ba58d835bbd5465b92e9ad4ed07233ce148cf118c",
+            "available": true
+          },
+          {
+            "kind": "validation",
+            "name": "wan_base_leg_kick_front_mid_4_204_f_validation.json",
+            "url": "/artifacts/wan_base_leg_kick_front_mid_4_204_f/bvh/wan_base_leg_kick_front_mid_4_204_f_validation.json",
+            "size": 15522,
+            "sha256": "061045ef552299ee8bc8f34955ba93eb2f94f19c9acd28e5d0355ac3110b6680",
+            "available": true
+          },
+          {
+            "kind": "bvh_preview",
+            "name": "3_bvh_preview.mp4",
+            "url": "/artifacts/wan_base_leg_kick_front_mid_4_204_f/video/3_bvh_preview.mp4",
+            "size": 287826,
+            "sha256": "c9f24fe582b81a891fda8f952e7777dd2a5eb9de67565d3d690346d2db5a3477",
+            "available": true
+          }
+        ]
+      }
+    },
+    {
+      "actionId": "BASE_SQUATKNEEL_BEND_TOUCH_GETUP_2_252",
+      "name": "Bend, Floor Touch, and Recover",
+      "description": "Bend down to touch the floor and recover to an upright standing posture.",
+      "category": "Generated",
+      "categorySlug": "generated",
+      "subcategory": "Product Tasks",
+      "difficulty": "unspecified",
+      "idealDuration": 8,
+      "profile": "biped",
+      "male": {
+        "caseId": "BASE_SQUATKNEEL_BEND_TOUCH_GETUP_2_252_M",
+        "gender": "M",
+        "slug": "wan_base_squatkneel_bend_touch_getup_2_252_m",
+        "duration": 8.0,
+        "admission": {
+          "status": "PASS",
+          "gates": {
+            "first_frame_identity": true,
+            "no_excessive_freeze": true,
+            "no_speed_ramp_signature": true,
+            "no_probable_loop": true,
+            "no_probable_end_truncation": true,
+            "constant_stream_rate": true,
+            "requested_duration_match": true,
+            "requested_travel_observed": true,
+            "no_forward_reverse_contradiction": true
+          }
+        },
+        "gpu": {
+          "stage": "complete",
+          "completedAt": "2026-08-11T14:44:30+00:00"
+        },
+        "audit": {
+          "profile": "biped",
+          "status": "FAIL",
+          "supportCoverage": 0.22916666666666666,
+          "contactSpeed": 0.04276970681141694,
+          "maxTurnDegrees": 3.2721866958101424
+        },
+        "validation": {
+          "status": "PASS",
+          "frameCount": 240,
+          "fps": 30.0
+        },
+        "refinement": {
+          "available": false,
+          "accepted": false,
+          "gates": {}
+        },
+        "lineage": {
+          "status": "partial",
+          "reason": "Archived GPU source is hashed; original Seedance download is not retained for byte comparison.",
+          "archivedSourceSha256": "c3f0749f7b8aa67c4ec87e7a0a9a586ecfffa4edf48d1dcf144d5527711d4859",
+          "referenceSha256": "73abf31d0b804dc3dec554338f0f1d68d7c6c62c52363475b04305d98c1ec11f"
+        },
+        "files": [
+          {
+            "kind": "wan_source",
+            "name": "0_input_video.mp4",
+            "url": "/artifacts/wan_base_squatkneel_bend_touch_getup_2_252_m/video/0_input_video.mp4",
+            "size": 5494847,
+            "sha256": "c3f0749f7b8aa67c4ec87e7a0a9a586ecfffa4edf48d1dcf144d5527711d4859",
+            "available": true
+          },
+          {
+            "kind": "gvhmr_preview",
+            "name": "1_incam.mp4",
+            "url": "/artifacts/wan_base_squatkneel_bend_touch_getup_2_252_m/video/1_incam.mp4",
+            "size": 921107,
+            "sha256": "365f42373f42f8ab578a85dca123727a240f2714351833840845ff0f66200777",
+            "available": true
+          },
+          {
+            "kind": "gvhmr_global",
+            "name": "2_global.mp4",
+            "url": "/artifacts/wan_base_squatkneel_bend_touch_getup_2_252_m/video/2_global.mp4",
+            "size": 294200,
+            "sha256": "15800be4c1b1ff1565e68dceb32632af05941f2343870b24afb64e6af78e8a38",
+            "available": true
+          },
+          {
+            "kind": "gvhmr",
+            "name": "hmr4d_results.pt",
+            "url": "/artifacts/wan_base_squatkneel_bend_touch_getup_2_252_m/video/hmr4d_results.pt",
+            "size": 1049855,
+            "sha256": "bc67f6f921fb7a47365fb91e17cb13da8cf435587973f5c59b330496b6d7c46c",
+            "available": true
+          },
+          {
+            "kind": "smplx",
+            "name": "wan_base_squatkneel_bend_touch_getup_2_252_m.smplx.npz",
+            "url": "/artifacts/wan_base_squatkneel_bend_touch_getup_2_252_m/wan_base_squatkneel_bend_touch_getup_2_252_m.smplx.npz",
+            "size": 63491,
+            "sha256": "fa1a884e71f89c2de3a7beeec0b31b2058991ac265b839c70e44385683b93564",
+            "available": true
+          },
+          {
+            "kind": "bvh",
+            "name": "wan_base_squatkneel_bend_touch_getup_2_252_m.bvh",
+            "url": "/artifacts/wan_base_squatkneel_bend_touch_getup_2_252_m/bvh/wan_base_squatkneel_bend_touch_getup_2_252_m.bvh",
+            "size": 352101,
+            "sha256": "0daf26e6973a2bd1394604f4f80a41bf01b09cd6d05a2bab4df40c420af5a72a",
+            "available": true
+          },
+          {
+            "kind": "validation",
+            "name": "wan_base_squatkneel_bend_touch_getup_2_252_m_validation.json",
+            "url": "/artifacts/wan_base_squatkneel_bend_touch_getup_2_252_m/bvh/wan_base_squatkneel_bend_touch_getup_2_252_m_validation.json",
+            "size": 15337,
+            "sha256": "9b75734f3d583ec39c798ff07ff0b34615f0a0d0ca2fbdb8d77d22f2c05685e9",
+            "available": true
+          },
+          {
+            "kind": "bvh_preview",
+            "name": "3_bvh_preview.mp4",
+            "url": "/artifacts/wan_base_squatkneel_bend_touch_getup_2_252_m/video/3_bvh_preview.mp4",
+            "size": 218538,
+            "sha256": "cb34e286faa7e7d7893101f210684d34ef473ebe2252e8bc4f1d22ac9b2783e5",
+            "available": true
+          }
+        ]
+      },
+      "female": {
+        "caseId": "BASE_SQUATKNEEL_BEND_TOUCH_GETUP_2_252_F",
+        "gender": "F",
+        "slug": "wan_base_squatkneel_bend_touch_getup_2_252_f",
+        "duration": 8.0,
+        "admission": {
+          "status": "PASS",
+          "gates": {
+            "first_frame_identity": true,
+            "no_excessive_freeze": true,
+            "no_speed_ramp_signature": true,
+            "no_probable_loop": true,
+            "no_probable_end_truncation": true,
+            "constant_stream_rate": true,
+            "requested_duration_match": true,
+            "requested_travel_observed": true,
+            "no_forward_reverse_contradiction": true
+          }
+        },
+        "gpu": {
+          "stage": "complete",
+          "completedAt": "2026-08-11T14:44:41+00:00"
+        },
+        "audit": {
+          "profile": "biped",
+          "status": "PASS",
+          "supportCoverage": 0.2708333333333333,
+          "contactSpeed": 0.05156591737158179,
+          "maxTurnDegrees": 2.7402599883614815
+        },
+        "validation": {
+          "status": "PASS",
+          "frameCount": 240,
+          "fps": 30.0
+        },
+        "refinement": {
+          "available": false,
+          "accepted": false,
+          "gates": {}
+        },
+        "lineage": {
+          "status": "partial",
+          "reason": "Archived GPU source is hashed; original Seedance download is not retained for byte comparison.",
+          "archivedSourceSha256": "1f298769da378bd295ade766765a8e71a420c6bd5bbc9d9380658dadbd1ad1e8",
+          "referenceSha256": "68bea57b9fa43919bcc8a5c0fee0ab5408161d4220743a9ba47af296edb44f60"
+        },
+        "files": [
+          {
+            "kind": "wan_source",
+            "name": "0_input_video.mp4",
+            "url": "/artifacts/wan_base_squatkneel_bend_touch_getup_2_252_f/video/0_input_video.mp4",
+            "size": 6493579,
+            "sha256": "1f298769da378bd295ade766765a8e71a420c6bd5bbc9d9380658dadbd1ad1e8",
+            "available": true
+          },
+          {
+            "kind": "gvhmr_preview",
+            "name": "1_incam.mp4",
+            "url": "/artifacts/wan_base_squatkneel_bend_touch_getup_2_252_f/video/1_incam.mp4",
+            "size": 1094134,
+            "sha256": "976cbb3ec618bb1518c808b3d475c5d32cb95fcc5ec008ea1a9b8741b8597103",
+            "available": true
+          },
+          {
+            "kind": "gvhmr_global",
+            "name": "2_global.mp4",
+            "url": "/artifacts/wan_base_squatkneel_bend_touch_getup_2_252_f/video/2_global.mp4",
+            "size": 299762,
+            "sha256": "3f09dcc3cfc0d7834fb8effc31cbf3995a4cd7be8fdcf31e9de23e8aa85f26d8",
+            "available": true
+          },
+          {
+            "kind": "gvhmr",
+            "name": "hmr4d_results.pt",
+            "url": "/artifacts/wan_base_squatkneel_bend_touch_getup_2_252_f/video/hmr4d_results.pt",
+            "size": 1049855,
+            "sha256": "ed94554d7d1d5258d4b646e46fffbf33e22a9552fdeaa9096255e89909bd53a5",
+            "available": true
+          },
+          {
+            "kind": "smplx",
+            "name": "wan_base_squatkneel_bend_touch_getup_2_252_f.smplx.npz",
+            "url": "/artifacts/wan_base_squatkneel_bend_touch_getup_2_252_f/wan_base_squatkneel_bend_touch_getup_2_252_f.smplx.npz",
+            "size": 63447,
+            "sha256": "83aad04b40717815f9850b400d66875c1c02004eafa51bb00d519f5043892f14",
+            "available": true
+          },
+          {
+            "kind": "bvh",
+            "name": "wan_base_squatkneel_bend_touch_getup_2_252_f.bvh",
+            "url": "/artifacts/wan_base_squatkneel_bend_touch_getup_2_252_f/bvh/wan_base_squatkneel_bend_touch_getup_2_252_f.bvh",
+            "size": 351450,
+            "sha256": "8a57a671aae78a074ff337464f4e186b3a56b08be21272be0accd978462b41a0",
+            "available": true
+          },
+          {
+            "kind": "validation",
+            "name": "wan_base_squatkneel_bend_touch_getup_2_252_f_validation.json",
+            "url": "/artifacts/wan_base_squatkneel_bend_touch_getup_2_252_f/bvh/wan_base_squatkneel_bend_touch_getup_2_252_f_validation.json",
+            "size": 15149,
+            "sha256": "455c15ba9efab1746183055f4dfab7313449c9306277b0761c165a744c136627",
+            "available": true
+          },
+          {
+            "kind": "bvh_preview",
+            "name": "3_bvh_preview.mp4",
+            "url": "/artifacts/wan_base_squatkneel_bend_touch_getup_2_252_f/video/3_bvh_preview.mp4",
+            "size": 213245,
+            "sha256": "8096599acb3cdd48831ede790def51d70de1e9f5c2eb2f9c712adf5e0057d835",
+            "available": true
+          }
+        ]
+      }
+    },
+    {
+      "actionId": "KUNGFU_TAIJI_TAIJI_EASY_02_552",
+      "name": "Basic Tai Chi Sequence 02",
+      "description": "Perform a controlled Tai Chi sequence with clear weight transfer and coordinated limbs.",
+      "category": "Generated",
+      "categorySlug": "generated",
+      "subcategory": "Product Tasks",
+      "difficulty": "unspecified",
+      "idealDuration": 8,
+      "profile": "biped",
+      "male": {
+        "caseId": "KUNGFU_TAIJI_TAIJI_EASY_02_552_M",
+        "gender": "M",
+        "slug": "wan_kungfu_taiji_taiji_easy_02_552_m",
+        "duration": 8.0,
+        "admission": {
+          "status": "PASS",
+          "gates": {
+            "first_frame_identity": true,
+            "no_excessive_freeze": true,
+            "no_speed_ramp_signature": true,
+            "no_probable_loop": true,
+            "no_probable_end_truncation": true,
+            "constant_stream_rate": true,
+            "requested_duration_match": true,
+            "requested_travel_observed": true,
+            "no_forward_reverse_contradiction": true
+          }
+        },
+        "gpu": {
+          "stage": "complete",
+          "completedAt": "2026-08-11T14:45:15+00:00"
+        },
+        "audit": {
+          "profile": "biped",
+          "status": "FAIL",
+          "supportCoverage": 0.24583333333333332,
+          "contactSpeed": 0.13800811830835832,
+          "maxTurnDegrees": 7.458846747792814
+        },
+        "validation": {
+          "status": "PASS",
+          "frameCount": 240,
+          "fps": 30.0
+        },
+        "refinement": {
+          "available": false,
+          "accepted": false,
+          "gates": {}
+        },
+        "lineage": {
+          "status": "partial",
+          "reason": "Archived GPU source is hashed; original Seedance download is not retained for byte comparison.",
+          "archivedSourceSha256": "326beef6878e9bf5b6897a02ac074988a8838dba6356290a96b2e21fd95af2bc",
+          "referenceSha256": "73abf31d0b804dc3dec554338f0f1d68d7c6c62c52363475b04305d98c1ec11f"
+        },
+        "files": [
+          {
+            "kind": "wan_source",
+            "name": "0_input_video.mp4",
+            "url": "/artifacts/wan_kungfu_taiji_taiji_easy_02_552_m/video/0_input_video.mp4",
+            "size": 6282904,
+            "sha256": "326beef6878e9bf5b6897a02ac074988a8838dba6356290a96b2e21fd95af2bc",
+            "available": true
+          },
+          {
+            "kind": "gvhmr_preview",
+            "name": "1_incam.mp4",
+            "url": "/artifacts/wan_kungfu_taiji_taiji_easy_02_552_m/video/1_incam.mp4",
+            "size": 1114864,
+            "sha256": "a7db523789bf2c9775408cc4da16a9bb040b21c7a327306b871fd4c9ac96035d",
+            "available": true
+          },
+          {
+            "kind": "gvhmr_global",
+            "name": "2_global.mp4",
+            "url": "/artifacts/wan_kungfu_taiji_taiji_easy_02_552_m/video/2_global.mp4",
+            "size": 426316,
+            "sha256": "51f65932af636627fb9fabf8fb2858c071f17e804c6b16d31502fc1c3ec86250",
+            "available": true
+          },
+          {
+            "kind": "gvhmr",
+            "name": "hmr4d_results.pt",
+            "url": "/artifacts/wan_kungfu_taiji_taiji_easy_02_552_m/video/hmr4d_results.pt",
+            "size": 1049855,
+            "sha256": "2a75273fb4a2bfec5c375e2343bd549fe80c72c6ba8ed6e84b866a22b75fd09b",
+            "available": true
+          },
+          {
+            "kind": "smplx",
+            "name": "wan_kungfu_taiji_taiji_easy_02_552_m.smplx.npz",
+            "url": "/artifacts/wan_kungfu_taiji_taiji_easy_02_552_m/wan_kungfu_taiji_taiji_easy_02_552_m.smplx.npz",
+            "size": 63577,
+            "sha256": "579410d54f9931ad8d26f902a93f96bec16ecbd36a063a8638302b3fd0ae3eb4",
+            "available": true
+          },
+          {
+            "kind": "bvh",
+            "name": "wan_kungfu_taiji_taiji_easy_02_552_m.bvh",
+            "url": "/artifacts/wan_kungfu_taiji_taiji_easy_02_552_m/bvh/wan_kungfu_taiji_taiji_easy_02_552_m.bvh",
+            "size": 353088,
+            "sha256": "834aa3b4b697001a8db5ef827193eb471d6f49124268fb42f3243c64ff198f81",
+            "available": true
+          },
+          {
+            "kind": "validation",
+            "name": "wan_kungfu_taiji_taiji_easy_02_552_m_validation.json",
+            "url": "/artifacts/wan_kungfu_taiji_taiji_easy_02_552_m/bvh/wan_kungfu_taiji_taiji_easy_02_552_m_validation.json",
+            "size": 15040,
+            "sha256": "6901928f3897ac7f4c2450c2abefaa865fd09ad96e043b6fe5a6ad4d508eaeb8",
+            "available": true
+          },
+          {
+            "kind": "bvh_preview",
+            "name": "3_bvh_preview.mp4",
+            "url": "/artifacts/wan_kungfu_taiji_taiji_easy_02_552_m/video/3_bvh_preview.mp4",
+            "size": 303963,
+            "sha256": "212cedb3d2081ea0ae2aaccc081572bb2d26e10f241e1407d08002933614e4e8",
+            "available": true
+          }
+        ]
+      },
+      "female": {
+        "caseId": "KUNGFU_TAIJI_TAIJI_EASY_02_552_F",
+        "gender": "F",
+        "slug": "wan_kungfu_taiji_taiji_easy_02_552_f",
+        "duration": 8.0,
+        "admission": {
+          "status": "PASS",
+          "gates": {
+            "first_frame_identity": true,
+            "no_excessive_freeze": true,
+            "no_speed_ramp_signature": true,
+            "no_probable_loop": true,
+            "no_probable_end_truncation": true,
+            "constant_stream_rate": true,
+            "requested_duration_match": true,
+            "requested_travel_observed": true,
+            "no_forward_reverse_contradiction": true
+          }
+        },
+        "gpu": {
+          "stage": "complete",
+          "completedAt": "2026-08-11T14:45:24+00:00"
+        },
+        "audit": {
+          "profile": "biped",
+          "status": "PASS",
+          "supportCoverage": 0.275,
+          "contactSpeed": 0.07347806974518782,
+          "maxTurnDegrees": 8.558896546899934
+        },
+        "validation": {
+          "status": "PASS",
+          "frameCount": 240,
+          "fps": 30.0
+        },
+        "refinement": {
+          "available": false,
+          "accepted": false,
+          "gates": {}
+        },
+        "lineage": {
+          "status": "partial",
+          "reason": "Archived GPU source is hashed; original Seedance download is not retained for byte comparison.",
+          "archivedSourceSha256": "e47f7fae3245c0185c8e4ac3365091f685d33fcc33065572047dd23217ad4080",
+          "referenceSha256": "68bea57b9fa43919bcc8a5c0fee0ab5408161d4220743a9ba47af296edb44f60"
+        },
+        "files": [
+          {
+            "kind": "wan_source",
+            "name": "0_input_video.mp4",
+            "url": "/artifacts/wan_kungfu_taiji_taiji_easy_02_552_f/video/0_input_video.mp4",
+            "size": 6599696,
+            "sha256": "e47f7fae3245c0185c8e4ac3365091f685d33fcc33065572047dd23217ad4080",
+            "available": true
+          },
+          {
+            "kind": "gvhmr_preview",
+            "name": "1_incam.mp4",
+            "url": "/artifacts/wan_kungfu_taiji_taiji_easy_02_552_f/video/1_incam.mp4",
+            "size": 1173771,
+            "sha256": "c6d28d13e935d3f842371f48acab3996174cc5c8c1b1b1bd375322301c9c994e",
+            "available": true
+          },
+          {
+            "kind": "gvhmr_global",
+            "name": "2_global.mp4",
+            "url": "/artifacts/wan_kungfu_taiji_taiji_easy_02_552_f/video/2_global.mp4",
+            "size": 408880,
+            "sha256": "9b603b066b8d1c4acbc8f57c189a03a2e3f63f3e9ee64bb3c1e9140c319f9f27",
+            "available": true
+          },
+          {
+            "kind": "gvhmr",
+            "name": "hmr4d_results.pt",
+            "url": "/artifacts/wan_kungfu_taiji_taiji_easy_02_552_f/video/hmr4d_results.pt",
+            "size": 1049855,
+            "sha256": "c75cc219d4561ad7b896af91feea68eb1e20c1da06a350f56630bd4daf760537",
+            "available": true
+          },
+          {
+            "kind": "smplx",
+            "name": "wan_kungfu_taiji_taiji_easy_02_552_f.smplx.npz",
+            "url": "/artifacts/wan_kungfu_taiji_taiji_easy_02_552_f/wan_kungfu_taiji_taiji_easy_02_552_f.smplx.npz",
+            "size": 63508,
+            "sha256": "55de5795cebb91e2239c6962ed6ac32ecbef07b68e86921ddb2294d98644b80f",
+            "available": true
+          },
+          {
+            "kind": "bvh",
+            "name": "wan_kungfu_taiji_taiji_easy_02_552_f.bvh",
+            "url": "/artifacts/wan_kungfu_taiji_taiji_easy_02_552_f/bvh/wan_kungfu_taiji_taiji_easy_02_552_f.bvh",
+            "size": 351661,
+            "sha256": "1bf1c84c3e7dd53f4b9889ec08277c2f75085fd1f74aa21096c49fefa11042f1",
+            "available": true
+          },
+          {
+            "kind": "validation",
+            "name": "wan_kungfu_taiji_taiji_easy_02_552_f_validation.json",
+            "url": "/artifacts/wan_kungfu_taiji_taiji_easy_02_552_f/bvh/wan_kungfu_taiji_taiji_easy_02_552_f_validation.json",
+            "size": 15117,
+            "sha256": "75fdae1a34145cc3cbe692cb2aed115ae00bcdc4afef633ab9eb764bd454f1c9",
+            "available": true
+          },
+          {
+            "kind": "bvh_preview",
+            "name": "3_bvh_preview.mp4",
+            "url": "/artifacts/wan_kungfu_taiji_taiji_easy_02_552_f/video/3_bvh_preview.mp4",
+            "size": 262087,
+            "sha256": "10f0c3fd9b20883f87d29ac48931e060840b4487d5815817cf6f13b84e83fb95",
+            "available": true
+          }
+        ]
+      }
+    }
+  ]
+}
